@@ -1,0 +1,78 @@
+/* General */
+html,
+body {
+    font-family: 'Noto Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0.5px;
+    font-size: 12px;
+    background: #eee;
+    @media print {
+        background: #fff;
+    }
+}
+
+main {
+    padding-top: 5rem;
+}
+section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Fonts */
+h1, h2, h3, h4, h5 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.35;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1D1D1C;
+}
+
+li {
+    text-indent: -3em;
+    list-style-type: none;
+}
+.resume-container {
+    max-width: calc(1180px + 4rem);
+    margin: 3rem auto 3rem auto;
+    width: 800px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background: #fff;
+    @media print {
+        margin: 0;
+    }
+}
+
+#title-catcher {
+    
+}
+
+#subtitle-catcher {
+
+}
+
+.container-wrapper{
+    padding: 16px 20px;
+}
+
+
+/* Media Query */
+
+@media (min-width: 400px) {
+    html { background: #eee; }
+}
+
+@media (min-width: 680) {
+    section {
+    width: 680px;
+    }
+}
+
+@media (min-width: 960px) {
+    html { background: #eee; }
+}
