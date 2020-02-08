@@ -32,6 +32,7 @@ h1, h2, h3, h4, h5 {
     color: #1D1D1C;
 }
 
+
 li {
     text-indent: -3em;
     list-style-type: none;
@@ -49,7 +50,7 @@ li {
 }
 
 #title-catcher {
-    
+    font-size: 4rem;
 }
 
 #subtitle-catcher {
