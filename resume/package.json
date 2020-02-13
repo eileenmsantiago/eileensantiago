@@ -1,0 +1,27 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Personal Responsive Resume - Eileen Santiago | UX/UI Design & Web Development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eileenmsantiago/eileensantiago.git"
+  },
+  "keywords": [
+    "Responsive",
+    "Resume",
+    "UX/UI",
+    "Design",
+    "Web",
+    "Development"
+  ],
+  "author": "Eileen Santiago",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eileenmsantiago/eileensantiago/issues"
+  },
+  "homepage": "https://github.com/eileenmsantiago/eileensantiago#readme"
+}
