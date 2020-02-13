@@ -1,9 +1,10 @@
-## A Portfolio by Eileen. 
-A collection of ideas and inspirations designed & developed with heart by me, for yours to see. 
+# Personal Web Design & Development Portolio 
+— by Eileen Santiago 
 
+A detail-oriented designer who loves developing intuitive digital web experiences. Aiming to utilize experiences working in the health sector, in nursing, and fusing it with visual and technical creativity to solve product problems.
 
 # Projects
-Here, you'll find projects I've worked on while studying at Sheridan College in the Interactive Media Management program. Showcasing proven skills in: 
+A collection of web design & web development work showcasing proven skills in: 
 - Product Design
 - Mobile + Web UI/UX
 - Wireframing
@@ -14,3 +15,4 @@ Here, you'll find projects I've worked on while studying at Sheridan College in 
 - JavaScript
 - PHP
 - MySQL
+
