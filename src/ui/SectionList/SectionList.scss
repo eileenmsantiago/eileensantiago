@@ -1,0 +1,12 @@
+.section-list {
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid $color-grey-light;
+        }
+    }
+    &__subheading {
+        color: $color-grey;
+        margin-bottom: 1rem;
+    }
+}

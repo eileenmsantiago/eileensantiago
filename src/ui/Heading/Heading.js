@@ -15,9 +15,9 @@ const Heading = (props) => {
 
     // Determine which class to use based on style
     const styleClass = `e-heading-${style}`;
-
+    
     return (
-        <Tag className={styleClass}>
+        <Tag className={`${props.className} ${styleClass}`}>
             {props.children}
         </Tag>
     )

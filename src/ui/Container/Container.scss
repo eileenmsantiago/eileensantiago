@@ -1,7 +1,21 @@
 .e-container {
-    padding-top: 10rem;
-    @media (min-width: 1200px){
-        
-        max-width: 1000px;
+
+    .container {
+        padding-top: 90px;
+        padding-bottom: 90px;
+
+        @media (min-width: 1200px){
+            max-width: 1000px;
+        }
     }
+    
+    &--bg-grey {
+        background: $color-peach-light;
+    }
+
+    &--bg-blue {
+        background: $color-blue;
+        color: #fff;
+    }
+
 }

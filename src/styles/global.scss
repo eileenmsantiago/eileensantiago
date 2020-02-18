@@ -7,5 +7,20 @@
 html {
     body {
         font-family: 'Karla', sans-serif;
+
+        ul {
+            margin-bottom: 0;
+        }
+    }
+
+    a {
+        color: black;
+        &:hover {
+            color: black;
+        }
+    }
+
+    main {
+        padding-top:100px;
     }
 }
