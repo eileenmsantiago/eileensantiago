@@ -2,7 +2,7 @@ import React from 'react'
 
 const Paragraph = (props) => {
     return(
-        <p>
+        <p className={`p--size-${props.size}`}>
             {props.children}
         </p>
     )

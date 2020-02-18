@@ -52,7 +52,7 @@ const About = () => {
             <Hero
                 pageTitle="About"
                 heading="Eileen Santiago"
-                description="A detail-oriented designer who loves developing intuitive digital web experiences. Aiming to utilize experiences working in the health sector, in nursing, and fusing it with visual and technical creativity to solve product problems."
+                quote="I’m a curious conceptualist, creator, problem-solver, & an ideator."
             />
             <Container bgColor="grey">
                 <Section heading="Education">

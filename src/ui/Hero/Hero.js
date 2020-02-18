@@ -11,7 +11,7 @@ const Hero = (props) => {
                 {props.pageTitle}
             </Heading>
             <div className="row">   
-                <div className="col-6">
+                <div className="col-md-6">
                     <Heading level="h2">
                         {props.heading}
                     </Heading>
@@ -19,8 +19,11 @@ const Hero = (props) => {
                         {props.description}
                     </Paragraph>
                 </div>
-                <div className="col-6">
+                <div className="col-md-6 hero__quote-container">
                     <Blob/>
+                    <Paragraph size="lg">
+                        {props.quote}
+                    </Paragraph>
                 </div>
             </div>
         </Container>
