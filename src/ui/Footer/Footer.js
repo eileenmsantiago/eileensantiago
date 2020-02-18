@@ -6,19 +6,19 @@ import Paragraph from '../Paragraph/Paragraph';
 const socialLinks = [
     {
         name: "Twitter",
-        link: "#"
+        link: "https://twitter.com/eileenmsantiago"
     },
     {
         name: "Dribble",
-        link: "#"
+        link: "https://dribbble.com/eileensantiago"
     },
     {
         name: "Behance",
-        link: "#"
+        link: "https://www.behance.net/eileensantiago"
     },
     {
         name: "LinkedIn",
-        link: "#"
+        link: "https://www.linkedin.com/in/eileensantiago/"
     }
 ]
 const Footer = () => {
@@ -40,6 +40,9 @@ const Footer = () => {
                     </ul>
                 </nav>
                 <div className="footer__separator"></div>
+                <Paragraph>
+                    Download Resume <a className="footer__email-link" target="_blank" href="/assets/Resume-EileenSantiago-2020.pdf">here</a>
+                </Paragraph>
                 <Paragraph>
                     Email me at <a className="footer__email-link" href="mailto:eileenmvs@gmail.com">eileenmvs@gmail.com</a>
                 </Paragraph>
