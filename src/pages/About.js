@@ -35,11 +35,11 @@ const experienceData = [
 const skillsToolsData = [
     {
         title: "Design",
-        description: "product design, mobile + web UI/UX, wireframing, rapid prototyping, sketching + illustration, user testing, typography, data visualization, and branding and creating design systems"
+        description: "Product design, mobile + web UI/UX, wireframing, rapid prototyping, sketching + illustration, user testing, typography, data visualization, and branding and creating design systems"
     },
     {
         title: "Development",
-        description: "HTML & CSS, JavaScript, React, Node.js, MongoDB, PHP, MySQL "
+        description: "HTML & CSS, SCSS, JavaScript, React, Node.js, MongoDB, PHP, MySQL"
     },
     {
         title: "Tools",
