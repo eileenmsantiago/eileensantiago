@@ -1,0 +1,29 @@
+.heading {
+    @include color();
+    &-h1 {
+        @include type-heading-lg();
+    }
+    &-h2 {
+        @include type-heading-md();
+    }
+    &-h3 {
+        @include type-heading-reg();
+    }
+    &-h4 {
+        @include type-body-lg();
+        font-weight: bold;
+    }
+}
+
+// .heading-h2 {
+//     @include type-heading-md();
+// }
+
+// .heading-h3 {
+//     @include type-heading-reg();
+// }
+
+// .heading-h4 {
+//     @include type-body-lg();
+//     font-weight: bold;
+// }

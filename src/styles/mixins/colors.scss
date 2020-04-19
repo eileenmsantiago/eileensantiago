@@ -1,0 +1,53 @@
+@mixin color {
+    &-peach {
+        color: $color-peach;
+    }
+    &-blue {
+        color: $color-blue;
+    }
+    &-black {
+        color: $color-black-purple;
+    }
+    &-peach-light {
+        color: $color-peach-light;
+    }
+    &-grey-light {
+        color: $color-grey-light;
+    }
+    &-grey {
+        color: $color-grey;
+    }
+    &-white {
+        color: $color-white;
+    }
+    &-brand {
+        &-light {
+            &-peach {
+                color: $color-brand-light-peach;
+            }
+            &-purple {
+                color: $color-brand-light-purple;
+            }
+            &-red {
+                color: $color-brand-light-red;
+            }
+            &-blue {
+                color: $color-brand-light-blue;
+            }
+        }
+        &-dark {
+            &-peach {
+                color: $color-brand-dark-peach;
+            }
+            &-purple {
+                color: $color-brand-dark-purple;
+            }
+            &-red {
+                color: $color-brand-dark-red;
+            }
+            &-blue {
+                color: $color-brand-dark-blue;
+            }
+        }
+    }
+}

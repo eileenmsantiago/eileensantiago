@@ -1,0 +1,16 @@
+.section-list {
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid $color-grey-light;
+        }
+    }
+    &__date {
+        color: $color-grey;
+        margin-bottom: 1rem;
+    }
+
+    &__content {
+        margin-bottom: 1.4rem;
+    }
+}

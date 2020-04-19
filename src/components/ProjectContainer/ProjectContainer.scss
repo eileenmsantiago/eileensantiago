@@ -1,0 +1,25 @@
+.projects {
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 1200px;
+        padding: 1rem 2.5rem;
+
+        &-image {
+            width: 100%;
+        }
+
+        &-content {
+            margin: 2rem 6rem;
+        }
+    }
+}
+
+.wrapper {
+    margin: 5rem 1rem;
+}
+
+.description {
+    margin-bottom: 5rem;
+}
