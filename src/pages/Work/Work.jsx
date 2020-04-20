@@ -11,7 +11,7 @@ const projectData = [
     },
     {
         title: "YODAE",
-        description: "A digital space utilizing Google’s Speech Recognition API that allows users to create doodles from QuickDraw! dataset through voice command by.",
+        description: "A digital space utilizing Google’s Speech Recognition API that allows users to create doodles from a dataset by QuickDraw! through voice command.",
         tags: "development      ux/ui",
         image: "PaperSpace-container.svg"
     },
@@ -31,23 +31,16 @@ const projectData = [
 
 const Work = (props) => {
 
-    // const { projectData } = props;
     return(
         <>
             <Hero 
                 pageTitle="A Portfolio" 
                 heading="by Eileen"
-                description="A detail-oriented UX/UI designer & front-end developer based in Toronto. I design and develop digital products, user interfaces and experiences. 
+                description="A systems thinker, based in Toronto, who uses design & code to strategize and solve digital product solutions.  
                 Email me at eileenmvs@gmail.com"
             />
             <img src="/assets/scroll.svg" className="divider"/>
             <ProjectContainer items={projectData}/>
-            {/* <ProjectContainer 
-                title="PaperSpace" 
-                description="A journaling App that tracks user’s emotions based on their written entries."
-                tags="development       ux/ui"
-                cta="View project here"
-            /> */}
         </> 
     );
 }

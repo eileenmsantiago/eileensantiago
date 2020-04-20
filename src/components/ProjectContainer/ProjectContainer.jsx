@@ -1,6 +1,7 @@
 import React from 'react'
 import Heading from '../Heading/Heading'
 import Paragraph from '../Paragraph/Paragraph';
+import ProjectList from '../../ProjectList/ProjectList';
 
 const ProjectContainer = (props) => {
     
@@ -27,6 +28,7 @@ const ProjectContainer = (props) => {
                                         </a>
                                     </div>
                                 </div>
+                                <ProjectList></ProjectList>
                             </div>
                         </section>
                     );

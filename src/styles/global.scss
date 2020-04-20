@@ -6,15 +6,17 @@
 
 html {
     body {
+        // @include color();
         ul {
             margin-bottom: 0;
         }
     }
 
     a {
-        color: black;
+
+        color: $color-black;
         &:hover {
-            color: black;
+            color: $color-black;
         }
     }
 

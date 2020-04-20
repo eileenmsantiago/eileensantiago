@@ -69,7 +69,7 @@ const About = (props) => {
             <Container bgColor="blue">
                 <div className="row">
                     <div className="col-md-4">
-                        <Heading level="h3" style="h1">
+                        <Heading level="h3" style="h1" color="white">
                             Skills <br/>
                             & Tools
                         </Heading>

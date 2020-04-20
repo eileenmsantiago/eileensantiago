@@ -1,5 +1,5 @@
 .e-container {
-
+    @include color();
     .container {
         padding-top: 90px;
         padding-bottom: 90px;
@@ -14,8 +14,8 @@
     }
 
     &--bg-blue {
-        background: $color-blue;
-        color: #fff;
+        background: $color-black;
+        color: $color-white;
     }
 
 }
