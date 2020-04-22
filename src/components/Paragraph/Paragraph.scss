@@ -5,8 +5,11 @@ p {
 
 .p-text {
     &--size {
-        &-reg {
-            @include type-body-reg();
+        &-sm {
+            @include type-body-sm();
+        }
+        &-md {
+            @include type-body-md();
         }
         &-lg {
             @include type-body-lg();

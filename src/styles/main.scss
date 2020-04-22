@@ -9,17 +9,23 @@
 
 @import '../components/App/App.scss';
 @import '../components/Container/Container.scss';
-@import '../components/ProjectContainer/ProjectContainer.scss';
 
 @import '../pages/About/About.scss';
 @import '../pages/Contact/Contact.scss';
 @import '../pages/Work/Work.scss';
+@import '../pages/Project/Project.scss';
 
+@import '../components/ProjectHero/ProjectHero.scss';
 @import '../components/Heading/Heading.scss';
 @import '../components/Paragraph/Paragraph.scss';
 @import '../components/Nav/Nav.scss';
 @import '../components/Blob/Blob.scss';
 @import '../components/Hero/Hero.scss';
 @import '../components/Section/Section.scss';
+@import '../components/CommentSection/CommentSection.scss';
 @import '../components/SectionList/SectionList.scss';
 @import '../components/Footer/Footer.scss';
+@import '../components/PaperSpace/PaperSpace.scss';
+@import '../components/GlucoCheck/GlucoCheck.scss';
+@import '../components/Covid19/Covid19.scss';
+@import '../components/Yodae/Yodae.scss';

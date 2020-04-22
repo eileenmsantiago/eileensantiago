@@ -1,16 +1,28 @@
 import React from 'react'
 import Container from '../Container/Container'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import Heading from '../Heading/Heading'
 
 const Nav = (props) => {
+    
+    const {projects} = props;
+    const location = useLocation();
+
+    let bgHex;
+    Object.values(projects).forEach(project => {
+        if(location.pathname === project.route) {
+            bgHex = project.bgHex;
+        }
+    })
 
     return(
-        <div className='e-nav'>
+        <div className='e-nav' style={{backgroundColor: bgHex}}>
             <div className='container'>
-                <Heading className='e-nav__logo' style="h3" level="h1">
-                    ~ e
-                </Heading>
+                <a href="/">
+                    <Heading className='e-nav__logo' style="h3" level="h1">
+                        ~ e
+                    </Heading>
+                </a>
                 <nav>
                     <ul>
                         <li>

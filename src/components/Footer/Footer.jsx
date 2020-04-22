@@ -21,33 +21,46 @@ const socialLinks = [
         link: "https://www.linkedin.com/in/eileensantiago/"
     }
 ]
-const Footer = () => {
+const Footer = (props) => {
+
+    const { projects } = props;
     return (
-        <div className="footer">
-            <Container>
-                <a href="/contact">
-                    <Heading level="h4">
-                        Contact
-                    </Heading>
-                </a>
-                <nav>
-                    <ul>
-                        {socialLinks.map(social => (
-                            <li>
-                                <a href={social.link}>{social.name}</a>
-                            </li>
-                        ))}
-                    </ul>
-                </nav>
-                <div className="footer__separator"></div>
-                <Paragraph>
-                    Download Resume <a className="footer__email-link" target="_blank" href="/assets/Resume-EileenSantiago-2020.pdf">here</a>
-                </Paragraph>
-                <Paragraph>
-                    Email me at <a className="footer__email-link" href="mailto:eileenmvs@gmail.com">eileenmvs@gmail.com</a>
-                </Paragraph>
-            </Container>
-        </div>
+        <>
+            <div className="footer">
+                <Container>
+                    <Paragraph className="footer__project-list" size="lg" weight="regular" color="black">
+                        {
+                            projects.map((project, index) => {
+                                return (
+                                    <a href={project.route} className="projectLink">{project.title}</a>
+                                )
+                            })
+                        }
+                    </Paragraph>
+                    <a href="/contact">
+                        <Heading level="h4">
+                            Contact
+                        </Heading>
+                    </a>
+                    <nav>
+                        <ul>
+                            {socialLinks.map(social => (
+                                <li>
+                                    <a href={social.link}>{social.name}</a>
+                                </li>
+                            ))}
+                        </ul>
+                    </nav>
+                    <div className="footer__separator"></div>
+                    <Paragraph>
+                        Download Resume <a className="footer__email-link" target="_blank" href="/assets/Resume-EileenSantiago-2020.pdf">here</a>
+                    </Paragraph>
+                    <Paragraph>
+                        👋🏼 Say hello at <a className="footer__email-link" href="mailto:eileenmvs@gmail.com">eileenmvs@gmail.com</a>
+                    </Paragraph>
+                </Container>
+            </div>
+        </>
     )
 }
 

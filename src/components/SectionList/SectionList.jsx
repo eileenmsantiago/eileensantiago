@@ -16,7 +16,7 @@ const SectionList = (props) => {
                             </Heading>
                             <Paragraph 
                                 className="section-list__location"
-                                size="reg"
+                                size="sm"
                                 weight="bold"
                                 color="black"
                             > 
@@ -24,16 +24,16 @@ const SectionList = (props) => {
                             </Paragraph>
                             <Paragraph 
                                 className="section-list__date"
-                                size="reg"
-                                weight="reg"
+                                size="sm"
+                                weight="sm"
                                 color="grey"
                             > 
                                 {item.subheading}
                             </Paragraph>
                             <Paragraph
                                 className="section-list__content"
-                                size="reg"
-                                weight="reg"
+                                size="sm"
+                                weight="sm"
                                 color="black"
                             >
                                 {item.description}

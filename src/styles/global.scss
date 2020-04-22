@@ -6,7 +6,6 @@
 
 html {
     body {
-        // @include color();
         ul {
             margin-bottom: 0;
         }
@@ -17,6 +16,8 @@ html {
         color: $color-black;
         &:hover {
             color: $color-black;
+            text-decoration: none;
+            font-weight: bold;
         }
     }
 

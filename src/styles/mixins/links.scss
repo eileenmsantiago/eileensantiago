@@ -4,17 +4,17 @@
     color: $color-grey;
 
     &:active {
-        color: $color-black;
+        color: $color-peach;
         font-weight: bold;
-        // border-bottom: 1.5px solid $color-primary-peach;
+        border-bottom: 1.5px solid $color-peach;
         text-decoration: none;
     }
 
     &:hover {
         transition: all 0.1s ease 0s;
-        color: $color-black;
+        color: $color-peach;
         font-weight: bold;
-        border-bottom: 1.5px solid $color-black;
+        // border-bottom: 1.5px solid $color-peach;
         text-decoration: none;
     }
 }

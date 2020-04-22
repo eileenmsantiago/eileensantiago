@@ -1,5 +1,7 @@
 .heading {
-    @include color();
+    &--color {
+        @include color();
+    }
     &-h1 {
         @include type-heading-lg();
     }
@@ -7,10 +9,10 @@
         @include type-heading-md();
     }
     &-h3 {
-        @include type-heading-reg();
+        @include type-heading-sm();
     }
     &-h4 {
-        @include type-body-lg();
+        @include type-body-md();
         font-weight: bold;
     }
 }

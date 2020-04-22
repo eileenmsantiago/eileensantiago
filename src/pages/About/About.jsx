@@ -36,7 +36,7 @@ const experienceData = [
 const skillsToolsData = [
     {
         title: "Design",
-        description: "Product design, mobile + web UI/UX, wireframing, rapid prototyping, sketching + illustration, user testing, typography, data visualization, and branding and creating design systems"
+        description: "Product design, mobile + web UI/UX, wireframing, rapid prototyping, sketching + illustration, user testing, typography, data visualization, branding & visual identity and creating design systems"
     },
     {
         title: "Development",
@@ -54,8 +54,14 @@ const About = (props) => {
             <Hero
                 pageTitle="About"
                 heading="Eileen Santiago"
+                // description="Aiming to utilize experiences working in the health sector, in nursing, and fusing it with visual and technical creativity to solve product problems."
                 quote="I’m a curious conceptualist, creator, problem-solver, & an ideator."
             />
+            <Container>
+                <Paragraph className="about__statement" size="lg" weight="regular" color="black">
+                Aiming to utilize experiences working in the health sector, in nursing, and fusing it with visual and technical creativity to solve product problems.
+                </Paragraph>
+            </Container>
             <Container bgColor="grey">
                 <Section heading="Education">
                     <SectionList items={educationData}/>
@@ -66,7 +72,7 @@ const About = (props) => {
                     <SectionList items={experienceData}/>
                 </Section>
             </Container>
-            <Container bgColor="blue">
+            <Container bgColor="grey">
                 <div className="row">
                     <div className="col-md-4">
                         <Heading level="h3" style="h1" color="white">
@@ -78,7 +84,7 @@ const About = (props) => {
                         {skillsToolsData.map(skillsTools => {
                             return (
                                 <Section noGutter heading={skillsTools.title}>
-                                    <Paragraph size="reg" weight="regular" color="white">
+                                    <Paragraph size="sm" weight="regular" color="black">
                                         {skillsTools.description}
                                     </Paragraph> 
                                 </Section>

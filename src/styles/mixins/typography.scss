@@ -5,23 +5,30 @@
     color: $color-black;
 }
 
-@mixin typheading-base {
+@mixin type-heading-base {
     font-family: 'Berlingske', sans-serif;
     font-style: normal;
     color: $color-black;
 }
 
-@mixin type-body-reg{
+@mixin type-body-sm{
     @include type-body-base();
     font-size: 16px;
     // line-height: 35px;
 }
 
-@mixin type-body-lg {
+@mixin type-body-md {
     @include type-body-base();
     font-size: 18px;
     // line-height: 45px;
     // font-weight: bold;
+}
+
+@mixin type-body-lg {
+    @include type-body-base();
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 2.5rem;
 }
 
 @mixin type-body-xl {
@@ -31,8 +38,16 @@
     line-height: normal;
 }
 
-@mixin type-heading-reg {
-    @include typheading-base();
+@mixin type-heading-xs {
+    @include type-body-base();
+    // font-weight: 900;
+    font-size: 28px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+}
+
+@mixin type-heading-sm {
+    @include type-heading-base();
     // font-weight: 900;
     font-size: 28px;
     line-height: 25px;
@@ -40,7 +55,7 @@
 }
 
 @mixin type-heading-md {
-    @include typheading-base();
+    @include type-heading-base();
     // font-weight: 900;
     font-size: 48px;
     line-height: 58px;
@@ -48,7 +63,7 @@
 }
 
 @mixin type-heading-lg {
-    @include typheading-base();
+    @include type-heading-base();
     // font-weight: 900;
     font-size: 72px;
     line-height: 100%;

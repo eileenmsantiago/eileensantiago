@@ -1,46 +1,48 @@
 import React from 'react'
-import ProjectContainer from '../../components/ProjectContainer/ProjectContainer'
 import Hero from '../../components/Hero/Hero';
+import Heading from '../../components/Heading/Heading'
+import Paragraph from '../../components/Paragraph/Paragraph';
+import Container from '../../components/Container/Container';
 
-const projectData = [
-    {
-        title: "PaperSpace",
-        description: "A journaling App that tracks user’s emotions based on their written entries.",
-        tags: "front-end & back-end development      ux/ui       project management",
-        image: "PaperSpace-container.svg"
-    },
-    {
-        title: "YODAE",
-        description: "A digital space utilizing Google’s Speech Recognition API that allows users to create doodles from a dataset by QuickDraw! through voice command.",
-        tags: "development      ux/ui",
-        image: "PaperSpace-container.svg"
-    },
-    {
-        title: "GlucoCheck",
-        description: "GlucoCheck is a Smartwatch app to guide or be a best-friend to count on (health wise) to keep your blood sugar levels in check.",
-        tags: "ux/ui       case study",
-        image: "Glucocheck-container.svg"
-    },
-    {
-        title: "COVID-19 Tracker",
-        description: "A React.js application viewing a COVID-19 Case Data that interacts with an Express server retrieving its data from a COVID-19 API.",
-        tags: "back-end development",
-        image: "COVID-container.svg"
-    },
-]
 
 const Work = (props) => {
 
+    const {projects} = props;
     return(
         <>
             <Hero 
                 pageTitle="A Portfolio" 
                 heading="by Eileen"
-                description="A systems thinker, based in Toronto, who uses design & code to strategize and solve digital product solutions.  
-                Email me at eileenmvs@gmail.com"
+                description="A systems thinker, based in Toronto, who uses design & code to strategize in creating digital product solutions"
+                showEmail = {true}
             />
-            <img src="/assets/scroll.svg" className="divider"/>
-            <ProjectContainer items={projectData}/>
+            <Container>
+                <img src="/assets/scroll.svg" className="divider"/>
+                {
+                    projects.map((project, index) => {
+                        return (
+                            <section className="projects">
+                                <div className="row projects__container" style={{flexDirection: index % 2 == 1 ? 'row-reverse' : undefined}}>
+                                    <div className="col-md-6">
+                                        <img className="projects__container-image" src={project.tileImg}/>
+                                    </div>
+                                    <div className="col-md-6 project__container-content">
+                                        <div className="wrapper">
+                                            <Heading level="h3" style="h2">{project.title}</Heading>
+                                            <Paragraph className="description" size="reg" weight="regular" color="grey">{project.description}</Paragraph>
+                                            <Paragraph size="sm" weight="bold" color="grey">{project.tags}</Paragraph>
+                                            <a href={project.route} className="cta">
+                                                <Paragraph size="sm" weight="md" weight="bold" color="black">View More</Paragraph>
+                                                <img src="/assets/arrow.svg"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        );
+                    })
+                }
+            </Container>
         </> 
     );
 }

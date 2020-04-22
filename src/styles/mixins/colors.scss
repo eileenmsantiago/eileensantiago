@@ -21,6 +21,17 @@
         color: $color-white;
     }
     &-brand {
+        &-ps {
+            &-brown {
+                color: $color-ps-brown;
+            }
+            &-brown-light {
+                color: $color-ps-brown-light;
+            }
+            &-peach-light {
+                color: $color-ps-peach-light;
+            }
+        }
         &-light {
             &-peach {
                 color: $color-brand-light-peach;
