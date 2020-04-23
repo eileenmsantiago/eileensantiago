@@ -1,26 +1,23 @@
 //import router dependency
 const router = require("express").Router();
 //import our model(which is our mongodb collection and schema)
-let Comments = require("../models/comments.model");
+let Comment = require("../model/comments.model");
 const moment = require('moment');
 
 //Get data from the database i.e get entries stored in the database
 router.route("/").get((req, res) => {
 
-const {from, to} = req.query;
-
-Comments
+Comment
     .then(comments => {
         return res.json(comments)
     })
     .catch(err => res.status(400).json("Error:" + err))
 });
 
-// Add/insert into the database i.e add a new entry to the database
+// Add/insert into the database i.e add a new comment into the database
 router.route("/add").post((req, res) => {
 
-
-    const newComments = new Comments({
+    const newComments = new Comment({
         ...req.body,
     });
 
@@ -34,7 +31,7 @@ router.route("/add").post((req, res) => {
 
 //find a specific entry from the database
 router.route('/:id').get((req, res) => {
-Comments.findById(req.params.id)
+Comment.findById(req.params.id)
     .then(comments => res.json(comments))
     .catch(err => res.status(400).json('Error: ' + err));
 });
@@ -42,7 +39,7 @@ Comments.findById(req.params.id)
 //edit a specific entry from the database and update it
 router.route('/update/:id').put((req, res) => {
 
-    return Comments.findById(req.params.id)
+    return Comment.findById(req.params.id)
     .then(comments => {
         comments.content = req.body.content;
         comments.prompt = req.body.prompt;

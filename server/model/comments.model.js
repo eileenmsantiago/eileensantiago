@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-
 const Schema = mongoose.Schema;
 
 const CommentsSchema = new Schema({
@@ -9,9 +8,9 @@ const CommentsSchema = new Schema({
     },
     email: {
         type: String,
-        required: true
+        required: false
     },
-    comment: { 
+    text: { 
         type: String
     },
 }, {
@@ -19,5 +18,5 @@ const CommentsSchema = new Schema({
 });
 
 // API end-point routes
-const Comments = mongoose.model("comments", CommentsSchema);
-module.exports = Comments;
+const Comment = mongoose.model('Comment', CommentsSchema);
+module.exports = Comment;

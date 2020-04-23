@@ -3,11 +3,12 @@ import Container from '../../components/Container/Container';
 import Heading from '../../components/Heading/Heading';
 import ProjectHero from '../../components/ProjectHero/ProjectHero';
 import Paragraph from '../../components/Paragraph/Paragraph';
-import CommentSection from '../../components/CommentSection/CommentSection';
+import CommentContainer from '../../components/CommentContainer/CommentContainer';
 
 const Project = (props) => {
 
     const {project, children} = props;
+
 
     return (
         <>
@@ -68,7 +69,7 @@ const Project = (props) => {
             </Container>
             {children}
             <Container>
-                <CommentSection></CommentSection>
+                <CommentContainer/>
             </Container>
         </>
     )
