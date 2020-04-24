@@ -30,7 +30,7 @@ const Footer = (props) => {
                 <Container>
                     <Paragraph className="footer__project-list" size="lg" weight="regular" color="black">
                         {
-                            projects.map((project, index) => {
+                            projects.map((project, key) => {
                                 return (
                                     <a href={project.route} className="projectLink">{project.title}</a>
                                 )
@@ -59,6 +59,13 @@ const Footer = (props) => {
                         👋🏼 Say hello at <a className="footer__email-link" href="mailto:eileenmvs@gmail.com">eileenmvs@gmail.com</a>
                     </Paragraph>
                 </Container>
+                <Paragraph 
+                    className="footer__name"
+                    color="grey"
+                >
+
+                    Designed & coded with ♥ by yours truly, © 2020 Eileen Santiago
+                </Paragraph>
             </div>
         </>
     )

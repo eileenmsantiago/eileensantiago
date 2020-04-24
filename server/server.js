@@ -41,35 +41,5 @@ app.delete('*/api/comments/:id', (req, res, next) => {
     })
 })
 
-// router.get('/', function(req, res) {
-//     res.json({ message: 'API Initialized!'});
-// });
-
-//adding the /comments route to our /api router
-// router.route('/comments')
-//retrieve all comments from the database
-// .get(function(req, res) {
-//     //looks at our Comment Schema
-//     Comment.find().then(comments => res.json(comments));
-// })
-//post new comment to the database
-// .post(function(req, res) {
-//     var comment = new Comment();
-//     comment.name = req.body.name;
-//     comment.email = req.body
-//     comment.text = req.body.text;
-
-//     comment.save(function(err) {
-//     if (err)
-//         res.send(err);
-//     res.json({ message: 'Comment successfully added!' });
-//     });
-// });
-
-//connecting the backend routing
-// app.use("/comments", commentRouter);
-// app.use("/api", router);
-
-
 const port = process.env.Port || 5001; 
 app.listen(port, () => console.log(`Server started on port ${port} `));

@@ -1,6 +1,7 @@
 {
   "name": "eileensantiago",
   "version": "0.1.0",
+  "homepage": "https://www.eileensantiago.com",
   "private": true,
   "dependencies": {
     "axios": "^0.19.2",

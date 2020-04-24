@@ -15,7 +15,9 @@ class CommentContainer extends Component {
 
     getComments = () => {
         axios.get('/api/comments').then((comments) => {
-            this.setState({allComments: comments.data}); // mounts component again
+            if(comments && comments.data && comments.data.length) {
+                this.setState({allComments: comments.data}); // mounts component again
+            }
         })
     }
 
