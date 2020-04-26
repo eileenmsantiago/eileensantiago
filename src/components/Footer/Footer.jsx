@@ -30,7 +30,7 @@ const Footer = (props) => {
                 <Container>
                     <Paragraph className="footer__project-list" size="lg" weight="regular" color="black">
                         {
-                            projects.map((project, key) => {
+                            projects.map((project, id) => {
                                 return (
                                     <a href={project.route} className="projectLink">{project.title}</a>
                                 )

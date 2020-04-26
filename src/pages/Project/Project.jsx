@@ -22,7 +22,7 @@ const Project = (props) => {
             <Container>
                 <div className="project-overview">
                     <Heading level="h1" style="h4" className="project-overview__section">PROJECT OVERVIEW</Heading>
-                    <div className="row project-overview__col">
+                    <div className="row project-overview__container">
                         <div className="col-md-4 project-overview__col-logo">
                             <img src={project.logoImg}></img>
                         </div>

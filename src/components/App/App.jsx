@@ -77,7 +77,7 @@ const projects = {
     gallery: [
       '/assets/paper-space-hero.png'
     ],
-    component: Yodae
+    component: GlucoCheck
   },
   covid19: {
     route: '/covid19-tracker',
@@ -97,7 +97,7 @@ const projects = {
     gallery: [
       '/assets/paper-space-hero.png'
     ],
-    component: Yodae
+    component: Covid19
   }
 }
 
