@@ -14,7 +14,7 @@ class CommentContainer extends Component {
     }
 
     getComments = () => {
-        axios.get('/.netlify/functions/server/api/comments').then((comments) => {
+        axios.get('/.netlify/server/lambda/api/comments').then((comments) => {
             if(comments && comments.data && comments.data.length) {
                 this.setState({allComments: comments.data}); // mounts component again
             }
