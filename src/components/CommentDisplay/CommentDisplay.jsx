@@ -6,7 +6,7 @@ const axios = require('axios').default;
 const CommentDisplay = (props) => {
 
     const deleteComment = () => {
-        axios.delete(`/.netlify/server/app/api/comments/${props.comment._id}`).then(res => {
+        axios.delete(`/.netlify/functions/app/api/comments/${props.comment._id}`).then(res => {
             console.log(res);
             props.updateComments();
         }).catch(err => {

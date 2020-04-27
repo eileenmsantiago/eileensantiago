@@ -5,7 +5,7 @@ const serverless = require("serverless-http");
 // const cors = require("cors");
 
 // Instances
-const basePath = '/.netlify/server/app/';
+const basePath = '/.netlify/functions/app/';
 
 const app = express(); 
 app.use(bodyParser.urlencoded({extended: true}));

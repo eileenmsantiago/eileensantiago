@@ -21,7 +21,7 @@ class CommentForm extends Component {
             email: this.state.email, 
             text: this.state.comment
         }
-        axios.post('/.netlify/server/app/api/comments', newComment, {}).then(res => {
+        axios.post('/.netlify/functions/app/api/comments', newComment, {}).then(res => {
             this.props.updateComments();
             console.log(res); 
         }).catch((error) => {
