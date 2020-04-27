@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require("cors");
 
 // Instances
-const basePath = '/.netlify/server/lambda';
+const basePath = '/.netlify/server/lambda/';
 
 const app = express(); 
 app.use(bodyParser.urlencoded({extended: true}));
