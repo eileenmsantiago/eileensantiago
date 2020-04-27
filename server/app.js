@@ -1,16 +1,17 @@
 const express = require('express');
 const mongoose = require('mongoose'); 
 const bodyParser = require('body-parser');
-const cors = require("cors");
+const serverless = require("serverless-http");
+// const cors = require("cors");
 
 // Instances
-const basePath = '/.netlify/server/lambda/';
+const basePath = '/.netlify/server/app/';
 
 const app = express(); 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json()); 
-app.use(cors());
-
+// app.use(cors());
+console.log(basePath)
 // const router = express.Router();
 
 // configure/connect to Mongo Database 
@@ -43,5 +44,7 @@ app.delete(`${basePath}api/comments/:id`, (req, res, next) => {
     })
 })
 
+console.log('app done');
 
 module.exports = app;
+module.exports.handler = serverless(app);
