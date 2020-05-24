@@ -1,0 +1,37 @@
+p {
+    line-height: 26px;
+    margin-bottom: 0;
+}
+
+.p-text {
+    &--size {
+        &-xs {
+            @include type-body-xs();
+        }
+        &-sm {
+            @include type-body-sm();
+        }
+        &-md {
+            @include type-body-md();
+        }
+        &-lg {
+            @include type-body-lg();
+        }
+        &-xl {
+            @include type-body-xl();
+        }
+    }
+
+    &--weight {
+        &-bold {
+            font-weight: 900;
+        }
+        &-regular {
+            font-weight: 400;
+        }
+    }
+    &--color {
+        @include color();
+    }
+    
+}

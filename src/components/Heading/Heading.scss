@@ -1,0 +1,22 @@
+.heading {
+    &--color {
+        @include color();
+    }
+    &-h1 {
+        @include type-heading-h1();
+    }
+    &-h2 {
+        @include type-heading-h2();
+    }
+    &-h3 {
+        @include type-body-lg();
+        font-weight: bold;
+    }
+    &-h4 {
+        @include type-heading-h3();
+    }
+    &-h5 {
+        @include type-body-md();
+        font-weight: bold;
+    }
+}

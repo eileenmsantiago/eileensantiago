@@ -1,0 +1,83 @@
+@mixin type-body-base {
+    font-family: 'Karla', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: $color-black;
+}
+
+@mixin type-heading-base {
+    font-family: 'Berlingske', sans-serif;
+    font-style: normal;
+    color: $color-black;
+}
+
+@mixin type-body-xs{
+    @include type-body-base();
+    font-size: 12px;
+}
+
+@mixin type-body-sm{
+    @include type-body-base();
+    font-size: 16px;
+    line-height: 26px;
+}
+
+@mixin type-body-md {
+    @include type-body-base();
+    font-size: 18px;
+    line-height: 35px;
+    // font-weight: bold;
+}
+
+@mixin type-body-lg {
+    @include type-body-base();
+    font-size: 28px;
+    // font-weight: bold;
+    line-height: 2.5rem;
+}
+
+@mixin type-body-xl {
+    @include type-body-base();
+    font-size: 48px;
+    // font-weight: bold;
+    line-height: normal;
+}
+
+// =========== HEADINGS
+@mixin type-heading-h1 {
+    @include type-heading-base();
+    font-size: 72px;
+    line-height: 100%;
+    margin-bottom: 1.8rem;
+
+    @include media-breakpoint-down(md) {
+        font-size: 48px;
+    }
+}
+
+@mixin type-heading-h2 {
+    @include type-heading-base();
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 2rem;
+
+    @include media-breakpoint-down(md) {
+        font-size: 32px;
+        margin-bottom: 1rem;
+    }
+}
+
+@mixin type-heading-h3 {
+    @include type-heading-base();
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+
+    @include media-breakpoint-down(md) {
+        font-size: 20px;
+    }
+}
+
+
+
+

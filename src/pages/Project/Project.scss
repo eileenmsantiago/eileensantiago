@@ -1,0 +1,35 @@
+.project-overview {
+    &__section {
+        margin-bottom: 3rem;
+    }
+    &__container {
+        display: flex;
+        flex-direction: row;
+        max-width: 1200px;
+        margin: 40px 0;
+        // padding: 1rem 2.5rem;
+        position: relative;
+
+        &-header {
+            margin-left: 2rem;
+        }
+
+        &-logo img {
+            width: 100%;
+        }
+    }
+}
+
+.header {
+    margin-bottom: 4rem;
+}
+
+.category-list {
+    margin-bottom: 3rem;
+}
+
+.project-hero {
+    &__description {
+        margin-bottom: 3rem;
+    }
+}

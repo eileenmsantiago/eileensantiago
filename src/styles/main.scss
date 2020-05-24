@@ -1,17 +1,36 @@
 @import '~bootstrap/scss/bootstrap-reboot';
 @import '~bootstrap/scss/bootstrap-grid';
+@import '~bootstrap/scss/mixins/_breakpoints.scss';
 
-
-@import './variables';
-
+@import './variables.scss';
 @import './global.scss';
+@import './mixins/links.scss';
+@import './mixins/typography.scss';
+@import './mixins/colors.scss';
+@import './mixins/breakpoints.scss';
 
-@import '../ui/Container/Container.scss';
-@import '../ui/Heading/Heading.scss';
-@import '../ui/Paragraph/Paragraph.scss';
-@import '../ui/Header/Header.scss';
-@import '../ui/Blob/Blob.scss';
-@import '../ui/Hero/Hero.scss';
-@import '../ui/Section/Section.scss';
-@import '../ui/SectionList/SectionList.scss';
-@import '../ui/Footer/Footer.scss';
+@import '../components/App/App.scss';
+@import '../components/Container/Container.scss';
+
+@import '../pages/About/About.scss';
+@import '../pages/Contact/Contact.scss';
+@import '../pages/Work/Work.scss';
+@import '../pages/Project/Project.scss';    
+
+@import '../components/ProjectHero/ProjectHero.scss';
+@import '../components/Heading/Heading.scss';
+@import '../components/Paragraph/Paragraph.scss';
+@import '../components/Nav/Nav.scss';
+@import '../components/Blob/Blob.scss';
+@import '../components/Hero/Hero.scss';
+@import '../components/Section/Section.scss';
+@import '../components/CommentContainer/CommentContainer.scss';
+@import '../components/CommentForm/CommentForm.scss';
+@import '../components/SectionList/SectionList.scss';
+@import '../components/Footer/Footer.scss';
+@import '../components/FadeIn/FadeIn.scss';
+
+@import '../components/PaperSpace/PaperSpace.scss';
+@import '../components/GlucoCheck/GlucoCheck.scss';
+@import '../components/Covid19/Covid19.scss';
+@import '../components/Yodae/Yodae.scss';

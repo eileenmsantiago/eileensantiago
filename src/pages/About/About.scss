@@ -1,0 +1,36 @@
+.about {
+    display: flex;
+    justify-content: center;
+
+    &__wrapper {
+        max-width: 80%;
+    }
+    
+    &__content {
+        padding-left: 0rem;
+        
+        @include media-breakpoint-up(md) {
+            padding-left: 7rem;
+        }
+
+        &-statement {
+            margin: 4rem 0;
+        }
+    }
+
+    &-skills__content {
+        max-width: 60%;
+        padding-left: 1rem;
+    }
+}
+
+.container {
+    &-heading {
+        border-bottom: 1px solid $color-black;
+        margin-bottom: 2.2rem;
+    }
+    &-text {
+        @include type-body-md();
+    }
+}
+
