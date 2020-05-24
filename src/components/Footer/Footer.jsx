@@ -19,6 +19,10 @@ const socialLinks = [
     {
         name: "LinkedIn",
         link: "https://www.linkedin.com/in/eileensantiago/"
+    },
+    {
+        name: "Github",
+        link: "https://github.com/eileenmsantiago"
     }
 ]
 const Footer = (props) => {
@@ -26,47 +30,53 @@ const Footer = (props) => {
     const { projects } = props;
     return (
         <>
-            <div className="footer">
+            <footer className="footer">
                 <Container>
-                    <Paragraph className="footer__project-list" size="lg" weight="regular" color="black">
-                        {
-                            projects.map((project, id) => {
-                                return (
-                                    <a href={project.route} className="projectLink">{project.title}</a>
-                                )
-                            })
-                        }
-                    </Paragraph>
-                    <a href="/contact">
-                        <Heading level="h4">
-                            Contact
-                        </Heading>
-                    </a>
-                    <nav>
-                        <ul>
-                            {socialLinks.map(social => (
-                                <li>
-                                    <a href={social.link}>{social.name}</a>
-                                </li>
-                            ))}
-                        </ul>
-                    </nav>
+                    <div className="row footer__project-next">
+                        <Paragraph className="col" size="lg" weight="regular" color="black">
+                            {
+                                projects.map((project, id) => {
+                                    return (
+                                        <a href={project.route} className="projectLink">{project.title}</a>
+                                    )
+                                })
+                            }
+                        </Paragraph>
+                    </div>
+                    <div className="footer__links-wrapper">
+                        <a href="/contact">
+                            <Heading level="h4" style="h5">
+                                Get in touch
+                            </Heading>
+                        </a>
+                        <nav>
+                            <ul>
+                                {socialLinks.map(social => (
+                                    <li>
+                                        <a className="e-nav__link" href={social.link}>{social.name}</a>
+                                        <br></br>
+                                    </li>
+                                ))}
+                            </ul>
+                        </nav>
+                    </div>
                     <div className="footer__separator"></div>
                     <Paragraph>
-                        Download Resume <a className="footer__email-link" target="_blank" href="/assets/Resume-EileenSantiago-2020.pdf">here</a>
+                        Download Resume <a className="custom-link" target="_blank" href="/assets/Resume-EileenSantiago-2020.pdf">here</a>
                     </Paragraph>
                     <Paragraph>
-                        👋🏼 Say hello at <a className="footer__email-link" href="mailto:eileenmvs@gmail.com">eileenmvs@gmail.com</a>
+                        👋🏼 Say hello at <a className="custom-link" href="mailto:eileenmvs@gmail.com">eileenmvs@gmail.com</a>
                     </Paragraph>
                 </Container>
                 <Paragraph 
                     className="footer__name"
                     color="grey"
+                    size="xs"
                 >
 
-                    Designed & coded with ♥ by yours truly, © 2020 Eileen Santiago
+                    © 2020 Eileen Santiago, Made in Toronto, CA.
                 </Paragraph>
-            </div>
+            </footer>
         </>
     )
 }

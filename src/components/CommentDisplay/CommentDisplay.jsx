@@ -17,14 +17,14 @@ const CommentDisplay = (props) => {
     return (
         <div className="comment">
             <div className="comment__label">
-                <Paragraph className="comment__label-para" size="md" weight="bold">love, {props.comment.name}</Paragraph>
+                <Paragraph className="comment__label-para" size="md" weight="bold">{props.comment.name}</Paragraph>
                 <Paragraph size="md" weight="regular">({props.comment.email})</Paragraph>
             </div>
             <div className="comment__label">
                 <Paragraph>{props.comment.text}</Paragraph>
             </div>
             {/* <button>Edit</button> */}
-            <div className="delete" onClick={deleteComment}>Delete</div>
+            {/* <div className="delete" onClick={deleteComment}>Delete</div> */}
         </div>
     )
 }

@@ -10,9 +10,18 @@
     .container {
         display: flex;
     }
+    
+    &__link {
+        @include links();
+    }
 
     &__logo {
-        font-weight: bold;
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+            color: $color-peach;
+            transition: all .2s ease-in-out;
+        }
     }
 
     nav {
@@ -30,15 +39,5 @@
         margin-bottom: 0;
         list-style-type: none;
     }
-
-    &__link {
-        @include links();
-        // color: grey;
-        // &:hover {
-        //     color: black;
-        // &-active {
-        //     color: black;
-        //     font-weight: bold;
-        // }
-    }
 }
+

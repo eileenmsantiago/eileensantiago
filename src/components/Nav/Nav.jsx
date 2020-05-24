@@ -19,8 +19,8 @@ const Nav = (props) => {
         <div className='e-nav' style={{backgroundColor: bgHex}}>
             <div className='container'>
                 <a href="/">
-                    <Heading className='e-nav__logo' style="h3" level="h1">
-                        ~ e
+                    <Heading className='e-nav__logo' style="h4" level="h1">
+                        e.
                     </Heading>
                 </a>
                 <nav>

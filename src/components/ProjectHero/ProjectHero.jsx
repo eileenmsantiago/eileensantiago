@@ -7,16 +7,16 @@ const ProjectHero = (props) => {
 
     const { pageTitle, heading, description, imagePath, bgHex } = props;
     return(
-        <Container bgHex={bgHex}>
-            <Heading className="project-hero__title" level="h1" style="h4" weight="bold" color="brand-ps-brown">
+        <Container className="project-hero" bgHex={bgHex}>
+            <Heading className="project-hero__title" level="h1" style="h5" weight="bold" color="brand-ps-brown">
                 {pageTitle}
             </Heading>
             <div className="row">   
                 <div className="col-md-6">
-                    <Heading level="h2" style="h1" weight="bold" color="brand-ps-brown">
+                    <Heading className="project-hero__heading" level="h2" style="h1" weight="bold" color="brand-ps-brown">
                         {heading}
                     </Heading>
-                    <Paragraph className="description" size="lg" weight="regular" color="brand-ps-brown">
+                    <Paragraph className="project-hero__description" size="lg" weight="regular" color="brand-ps-brown">
                         {description}
                     </Paragraph>
                 </div>

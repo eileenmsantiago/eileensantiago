@@ -1,5 +1,5 @@
 <svg width="604" height="483" viewBox="0 0 604 483" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect x="66" width="530" height="480" fill="#DFF5F6"/>
+<rect x="78" width="500" height="470" fill="#DFF5F6"/>
 <g filter="url(#filter0_dd)">
 <path d="M50 119C50 116.239 52.2386 114 55 114H549C551.761 114 554 116.239 554 119V418C554 420.761 551.761 423 549 423H55C52.2386 423 50 420.761 50 418V119Z" fill="white"/>
 <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="50" y="114" width="504" height="309">
@@ -38,7 +38,7 @@
 <path d="M204 133H202V134H204V133Z" fill="#979798"/>
 <rect x="154" y="122" width="25" height="22" rx="4" fill="url(#paint9_linear)"/>
 <rect x="153.75" y="121.75" width="25.5" height="22.5" rx="4.25" stroke="url(#paint10_linear)" stroke-opacity="0.15" stroke-width="0.5"/>
-<path d="M163.934 138.156L168.847 133.243C168.879 133.211 168.904 133.173 168.922 133.131C168.939 133.09 168.948 133.045 168.948 133C168.948 132.955 168.939 132.91 168.922 132.869C168.904 132.827 168.879 132.789 168.847 132.757L163.934 127.844" stroke="#ADADAD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M163.934 138.156L168.848 133.243C168.879 133.211 168.905 133.173 168.922 133.131C168.939 133.09 168.948 133.045 168.948 133C168.948 132.955 168.939 132.91 168.922 132.869C168.905 132.827 168.879 132.789 168.848 132.757L163.934 127.844" stroke="#ADADAD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 <rect x="128" y="122" width="25" height="22" rx="4" fill="url(#paint11_linear)"/>
 <rect x="127.75" y="121.75" width="25.5" height="22.5" rx="4.25" stroke="url(#paint12_linear)" stroke-opacity="0.15" stroke-width="0.5"/>
 <path d="M142.948 138.156L138.034 133.243C138.002 133.211 137.977 133.173 137.96 133.131C137.942 133.09 137.934 133.045 137.934 133C137.934 132.955 137.942 132.91 137.96 132.869C137.977 132.827 138.002 132.789 138.034 132.757L142.948 127.844" stroke="#575757" stroke-opacity="0.24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

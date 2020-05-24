@@ -3,6 +3,7 @@ import Hero from '../../components/Hero/Hero';
 import Heading from '../../components/Heading/Heading'
 import Paragraph from '../../components/Paragraph/Paragraph';
 import Container from '../../components/Container/Container';
+import FadeIn from '../../components/FadeIn/FadeIn';
 
 
 const Work = (props) => {
@@ -21,24 +22,41 @@ const Work = (props) => {
                 {
                     projects.map((project, index) => {
                         return (
-                            <section className="projects">
-                                <div className="row projects__container" style={{flexDirection: index % 2 == 1 ? 'row-reverse' : undefined}}>
-                                    <div className="col-md-6">
-                                        <img className="projects__container-image" src={project.tileImg}/>
-                                    </div>
-                                    <div className="col-md-6 project__container-content">
-                                        <div className="wrapper">
-                                            <Heading level="h3" style="h2">{project.title}</Heading>
-                                            <Paragraph className="description" size="reg" weight="regular" color="grey">{project.description}</Paragraph>
-                                            <Paragraph size="sm" weight="bold" color="grey">{project.tags}</Paragraph>
-                                            <a href={project.route} className="cta">
-                                                <Paragraph size="sm" weight="md" weight="bold" color="black">View More</Paragraph>
-                                                <img src="/assets/arrow.svg"/>
-                                            </a>
+                            <FadeIn>
+
+                                <article className="projects">
+                                        <div className="row projects__container" style={{flexDirection: index % 2 == 1 ? 'row-reverse' : undefined}}>
+                                            <div className="col-md-6">
+                                                <a href={project.route} className="cta e-nav__link" >   
+                                                    <img className="projects__container-image" src={project.tileImg}/>
+                                                </a>
+                                            </div>
+                                            <div className="col-md-6 projects__container-content">
+                                                <div className="projects__container-content-wrapper">
+                                                    <a href={project.route} className="cta e-nav__link" >   
+                                                        <Heading className="project__container--header" level="h3" style="h2">{project.title}</Heading>
+                                                    </a>
+                                                    <Paragraph size="reg" weight="regular" color="grey">
+                                                        {project.description}
+                                                    </Paragraph>
+                                                    <div className="description">
+                                                        <Paragraph className="tags" size="sm" weight="bold" color="grey">
+                                                            {project.tags.map(tag => (
+                                                                <>
+                                                                    {tag} 
+                                                                </>
+                                                            ))}
+                                                        </Paragraph>
+                                                        <a href={project.route} className="cta e-nav__link" >   
+                                                            <Paragraph size="sm" weight="md" weight="bold" color="black">View More</Paragraph>
+                                                            <img className="cta-icon" src="/assets/arrow.svg"/>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </section>
+                                </article>
+                            </FadeIn>
                         );
                     })
                 }

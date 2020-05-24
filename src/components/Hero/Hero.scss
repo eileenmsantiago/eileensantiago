@@ -12,9 +12,18 @@
 
 .hero {
     margin: 0 4rem;
+    
+    @include media-breakpoint-down(md) {
+        margin: 0rem;
+    }
+
     &__title {
         opacity: 0;
         animation: fade-in-right 1.5s forwards;
+    }
+
+    &__description {
+        line-height: 35px;
     }
 
     &__quote-container {

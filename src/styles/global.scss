@@ -12,16 +12,36 @@ html {
     }
 
     a {
-
         color: $color-black;
+        text-decoration: none;
         &:hover {
-            color: $color-black;
             text-decoration: none;
-            font-weight: bold;
+            color: $color-peach;
+        }
+    }
+
+    .custom-link {
+        text-decoration: underline;
+        color: $color-peach;
+        
+        &:hover {
+            text-decoration: underline;
+            color: $color-brand-dark-peach;
+            transition: all .2s ease-in-out;
         }
     }
 
     main {
         padding-top:100px;
+    }
+
+    .container {
+        padding-right: 25px;
+        padding-left: 25px
+    }
+
+    section {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
     }
 }

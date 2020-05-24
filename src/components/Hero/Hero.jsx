@@ -10,7 +10,7 @@ const Hero = (props) => {
     return(
         <Container>
             <div className="hero">
-                <Heading className="hero__title" level="h1" style="h4" weight="bold">
+                <Heading className="hero__title" level="h1" style="h5" weight="bold">
                     {pageTitle}
                 </Heading>
                 <div className="row">   
@@ -18,18 +18,18 @@ const Hero = (props) => {
                         <Heading level="h2" style="h1" weight="bold">
                             {heading}
                         </Heading>
-                        <Paragraph size="sm" weight="regular" color="black">
+                        <Paragraph className="hero__description" size="sm" weight="regular" color="black">
                             {description}
                         </Paragraph>
                         {showEmail ?
-                            <Paragraph size="sm" weight="bold" color="black">
+                            <Paragraph size="sm" weight="regular" color="black">
                                 Say hello at <a className="footer__email-link" href="mailto:eileenmvs@gmail.com">eileenmvs@gmail.com</a>
                             </Paragraph>
                         : null }
                     </div>
                     <div className="col-md-6 hero__quote-container">
                         <Blob/>
-                        <Paragraph size="xl" color="black-purple">
+                        <Paragraph size="xl" weight="regular" color="black-purple">
                             {quote}
                         </Paragraph>
                     </div>

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import CommentForm from '../CommentForm/CommentForm';
 import CommentDisplay from '../CommentDisplay/CommentDisplay';
-import Heading from '../Heading/Heading';
 
 const axios = require('axios').default;
 
@@ -33,9 +32,6 @@ class CommentContainer extends Component {
                 {this.state.allComments.map((comment, index) => { 
                     return (
                         <>
-                            {/* <Heading className="comment-section__heading" level="h4" style="h3">
-                                I would love to hear from you! 💞
-                            </Heading> */}
                             <CommentDisplay key={index} comment={comment} updateComments={this.getComments}/>
                         </>
                     )

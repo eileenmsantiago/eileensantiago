@@ -1,10 +1,13 @@
 p {
-    line-height: 35px;
+    line-height: 26px;
     margin-bottom: 0;
 }
 
 .p-text {
     &--size {
+        &-xs {
+            @include type-body-xs();
+        }
         &-sm {
             @include type-body-sm();
         }
