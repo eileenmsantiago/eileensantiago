@@ -20,7 +20,7 @@ const Nav = (props) => {
             <Container>   
                 <div className="e-nav__wrapper">
                     <a href="/">
-                        <Heading className="e-nav__logo" style="h2" level="h1">
+                        <Heading className="e-nav__logo" style="h4" level="h1">
                             e.
                         </Heading>
                     </a>

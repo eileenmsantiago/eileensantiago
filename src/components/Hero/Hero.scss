@@ -13,7 +13,7 @@
 .hero {
     
     @include media-breakpoint-down(md) {
-        margin: 0rem;
+        margin: 2rem;
     }
 
     &__title {
@@ -22,7 +22,7 @@
     }
 
     &__description {
-        line-height: 2.45rem;
+        line-height: 2rem;
         margin-bottom: 1rem;
     }
 

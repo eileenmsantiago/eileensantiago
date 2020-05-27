@@ -12,13 +12,16 @@
 
         @include media-breakpoint-down(sm) {
             flex-direction: column;
+            justify-content: center;
         }
     }
 
     &__link {
         @include links();
+        letter-spacing: 0.0125rem;
         &--active {
-            color: $color-peach;
+            color: $color-grey;
+            border-bottom: thin;
         }
     }
 

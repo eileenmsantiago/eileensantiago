@@ -1,5 +1,5 @@
 p {
-    line-height: 26px;
+    line-height: 1.5rem;
     margin-bottom: 0;
 }
 
@@ -30,6 +30,7 @@ p {
             font-weight: 400;
         }
     }
+    
     &--color {
         @include color();
     }

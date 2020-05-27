@@ -1,4 +1,6 @@
 .footer {
+    display: flex;
+    flex-direction: column;
 
     nav {
         margin-top: 60px;
@@ -33,17 +35,45 @@
         padding-inline-start: 0em;
     }
 
-    &__links-wrapper {
+    p {
+        @include media-breakpoint-down(sm) {
+            text-align: center;
+        }
+    }
+
+    &__container {
+        margin: 2rem 0;
+    }
+    
+    &__logo {
+        @include media-breakpoint-down(sm) {
+            justify-content: center;
+        }
+    }
+    &__content {
+        flex-direction: column;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        @include media-breakpoint-down(sm) {
+            text-align: center;
+            margin-top: 0rem;
+            margin-bottom: 0rem;
+        }
+    }
+
+    &__nav {
+        flex-direction: column;
 
         @include media-breakpoint-down(sm) {
             text-align: center;
         }
     }
+
     &__separator {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-top: 1.3rem;
+        margin-bottom: 1.3rem;
         border-bottom: 1px solid black;
-        width: 15rem;
+        width: 20rem;
 
         @include media-breakpoint-down(sm) {
             margin: 1rem auto;
@@ -52,20 +82,17 @@
 
     &__link {
         @include links();
-    }
-
-    &__name {
-        text-align: center;
-        margin-bottom: 3rem;
-    }
-
-    p {
-        @include media-breakpoint-down(sm) {
-            text-align: center;
-        }
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
     }
 
     &__project-next {
         margin-bottom: 8rem;
     }
+}
+
+.copy-right {
+    margin-top:0.5rem;
 }

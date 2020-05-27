@@ -19,4 +19,8 @@
         @include type-body-md();
         font-weight: bold;
     }
+    &-h6 {
+        @include type-body-xs();
+        font-weight: bold;
+    }
 }
