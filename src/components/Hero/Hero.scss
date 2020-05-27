@@ -11,7 +11,6 @@
 }
 
 .hero {
-    margin: 0 4rem;
     
     @include media-breakpoint-down(md) {
         margin: 0rem;
@@ -23,7 +22,8 @@
     }
 
     &__description {
-        line-height: 35px;
+        line-height: 2.45rem;
+        margin-bottom: 1rem;
     }
 
     &__quote-container {
