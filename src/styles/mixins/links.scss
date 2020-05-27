@@ -2,10 +2,6 @@
     color: $color-black;
     font-weight: regular;
     text-decoration: none;
-    
-    &:active {
-        color: $color-peach;
-    }
 
     &:hover {
         transition: all .2s ease-in-out;

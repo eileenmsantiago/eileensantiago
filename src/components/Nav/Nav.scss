@@ -1,22 +1,30 @@
 .e-nav {
-    height: 100px;
+    position: relative;
     background: white;
     width: 100%;
     position: fixed;
     z-index: 10;
-    display: flex;
-    align-items: center;
-
-    .container {
-        display: flex;
-    }
     
+    &__wrapper {
+        align-items: center;
+        display: flex;
+        height: 100px;
+
+        @include media-breakpoint-down(sm) {
+            flex-direction: column;
+        }
+    }
+
     &__link {
         @include links();
+        &--active {
+            color: $color-peach;
+        }
     }
 
     &__logo {
         text-decoration: none;
+        margin-bottom: 0;
         &:hover {
             text-decoration: none;
             color: $color-peach;
@@ -24,20 +32,29 @@
         }
     }
 
-    nav {
+    &__list {
         margin-left: auto;
-    }
-    nav li {
-        display: inline-block;
-        margin-left: 60px;
+        display: flex;
+        align-items: center;
+
+        li {
+            font-size: 0.95rem;
+            display: inline-block;
+            margin-left: 60px;
+    
+            @include media-breakpoint-down(sm) {
+                margin-left: 25px;
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
 
         @include media-breakpoint-down(sm) {
-            margin-left: 25px;
+            margin-left: 0;
         }
     }
-    nav ul {
-        margin-bottom: 0;
-        list-style-type: none;
-    }
+    
 }
 
