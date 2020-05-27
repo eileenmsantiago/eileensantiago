@@ -1,17 +1,10 @@
 .e-container {
     @include color();
-    .container {
-        padding-top: 90px;
-        padding-bottom: 90px;
-
-        // @media (min-width: 1200px){
-        //     max-width: 1200px;
-        // }
-    }
     
     &--bg-grey {
         background: $color-peach-light;
     }
+    
     &--bg-peach {
         background: $color-ps-peach-light;
     }

@@ -1,13 +1,19 @@
 import React from 'react'
+import cx from 'classnames'
 
 const Container = (props) => {
-    const {bgHex} = props;
-    const bgClass = `e-container--bg-${props.bgColor}`;
+
+    const { bgHex, className, children, bgColor } = props;
 
     return (
-        <div className={`e-container ${bgClass}`} style={{backgroundColor: bgHex}}>
-            <div className="container">
-                {props.children}
+        <div
+            className={cx('e-container', `e-container--bg-${bgColor}`)}
+            style={{backgroundColor: bgHex}}
+        >
+            <div className={cx("container",{
+                className: !!className,
+            })}>
+                {children}
             </div>
         </div>
     ) 
