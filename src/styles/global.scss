@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 @font-face {
     font-family: 'Berlingske';
     src: url('/assets/BerlingskeSerif-Blk.ttf')
@@ -6,6 +7,8 @@
 
 html {
     body {
+        color: $color-black;
+        line-height: 1.8rem;
         ul {
             margin-bottom: 0;
             padding-inline-start: 0px;
@@ -37,12 +40,30 @@ html {
     }
 
     .container {
-        padding-right: 25px;
-        padding-left: 25px
+        // padding-right: 25px;
+        // padding-left: 25px
+        // padding: 2rem;
     }
 
     section {
-        margin-top: 4rem;
-        margin-bottom: 4rem;
+        // margin-top: 3rem;
+        // margin-bottom: 3rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    ::selection {
+        background: $color-brand-light-blue;
+    }
+
+    .separator {
+        margin-top: 1.3rem;
+        margin-bottom: 1.3rem;
+        border-bottom: 1px solid black;
+        width: 20rem;
+
+        @include media-breakpoint-down(sm) {
+            margin: 1rem auto;
+        }
     }
 }

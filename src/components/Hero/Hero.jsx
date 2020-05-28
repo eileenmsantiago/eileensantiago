@@ -9,11 +9,12 @@ const Hero = (props) => {
     const { pageTitle, heading, description, showEmail, quote } = props;
     return(
         <>
+        <section className="hero"> 
             <Heading className="hero__title" level="h1" style="h5" weight="bold">
                 {pageTitle}
             </Heading>
             <div className="row">   
-                <div className="col-md-6">
+                <div className="col-md-5">
                     <Heading level="h2" style="h1" weight="bold">
                         {heading}
                     </Heading>
@@ -26,15 +27,18 @@ const Hero = (props) => {
                         </Paragraph>
                     : null }
                 </div>
-                <div className="col-md-6 hero__quote-container">
+                <div className="col-md-7 hero__container">
                     <div style={{position: quote ? 'absolute' : 'static'}}>
                         <Blob/>
                     </div>
-                    <Paragraph size="xl" weight="regular" color="black-purple">
-                        {quote}
-                    </Paragraph>
+                    <div className="hero__container--quote">
+                        <Paragraph size="lg" weight="lt" color="black">
+                            {quote}
+                        </Paragraph>
+                    </div>
                 </div>
             </div>
+        </section>
         </>
     )
 }

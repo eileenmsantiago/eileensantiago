@@ -1,5 +1,5 @@
 p {
-    line-height: 1.5rem;
+    line-height: 1.65rem;
     margin-bottom: 0;
 }
 
@@ -23,11 +23,20 @@ p {
     }
 
     &--weight {
+        &-xbold {
+            font-weight: 800;
+        }
         &-bold {
-            font-weight: 900;
+            font-weight: 700;
+        }
+        &-semi {
+            font-weight: 600;
         }
         &-regular {
             font-weight: 400;
+        }
+        &-lt {
+            font-weight: 300;
         }
     }
     

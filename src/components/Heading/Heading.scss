@@ -1,7 +1,4 @@
 .heading {
-    &--color {
-        @include color();
-    }
     &-h1 {
         @include type-heading-h1();
     }
@@ -9,18 +6,39 @@
         @include type-heading-h2();
     }
     &-h3 {
-        @include type-body-lg();
-        font-weight: bold;
+        @include type-body-xl();
     }
     &-h4 {
         @include type-heading-h3();
     }
     &-h5 {
-        @include type-body-md();
-        font-weight: bold;
+        @include type-body-sm();
+        font-weight: 600;
     }
     &-h6 {
         @include type-body-xs();
-        font-weight: bold;
+        font-weight: 600;
+    }
+
+    &--color {
+        @include color();
+    }
+
+    &--weight {
+        &-xbold {
+            font-weight: 800;
+        }
+        &-bold {
+            font-weight: 700;
+        }
+        &-semi {
+            font-weight: 600;
+        }
+        &-regular {
+            font-weight: 400;
+        }
+        &-lt {
+            font-weight: 300;
+        }
     }
 }

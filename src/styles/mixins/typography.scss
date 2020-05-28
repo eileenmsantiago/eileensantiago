@@ -1,20 +1,20 @@
 @mixin type-body-base {
-    font-family: 'Karla', sans-serif;
+    // font-family: 'Karla', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
-    color: $color-black;
+    line-height: 2rem;
 }
 
 @mixin type-heading-base {
     font-family: 'Berlingske', sans-serif;
     font-style: normal;
-    color: $color-black;
 }
 
 @mixin type-body-xs{
     @include type-body-base();
-    font-size: 0.8rem;
-    letter-spacing: -0.03em;
+    font-size: 0.85rem;
+    letter-spacing: -0.02em;
 }
 
 @mixin type-body-sm{
@@ -24,20 +24,20 @@
 
 @mixin type-body-md {
     @include type-body-base();
-    font-size: 18px;
-    line-height: 1.75rem;
+    font-size: 1.5em;
+    line-height: 1.85rem;
 }
 
 @mixin type-body-lg {
     @include type-body-base();
-    font-size: 28px;
-    line-height: 2.5rem;
+    // font-size: 28px;
+    font-size: 2rem; // 37.9px
+    line-height: 3rem;
 }
 
 @mixin type-body-xl {
     @include type-body-base();
-    font-size: 36px;
-    // font-weight: bold;
+    font-size: 3rem;
     line-height: 50px;
 }
 

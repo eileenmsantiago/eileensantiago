@@ -69,16 +69,16 @@
         }
     }
 
-    &__separator {
-        margin-top: 1.3rem;
-        margin-bottom: 1.3rem;
-        border-bottom: 1px solid black;
-        width: 20rem;
+    // &separator {
+    //     margin-top: 1.3rem;
+    //     margin-bottom: 1.3rem;
+    //     border-bottom: 1px solid black;
+    //     width: 20rem;
 
-        @include media-breakpoint-down(sm) {
-            margin: 1rem auto;
-        }
-    }
+    //     @include media-breakpoint-down(sm) {
+    //         margin: 1rem auto;
+    //     }
+    // }
 
     &__link {
         @include links();

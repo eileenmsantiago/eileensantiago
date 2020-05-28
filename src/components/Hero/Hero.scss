@@ -26,7 +26,11 @@
         margin-bottom: 1rem;
     }
 
-    &__quote-container {
-        padding-top: 4rem;
+    &__container {
+        display: flex;
+
+        &--quote {
+            margin: 4rem;
+        }
     }
 }

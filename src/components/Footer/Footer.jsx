@@ -68,7 +68,7 @@ const Footer = (props) => {
                                     ))}
                                 </ul>
                             </nav>
-                            <div className="footer__separator"></div>   
+                            <div className="separator"></div>   
                         </div>
                         <div className="row footer__link">
                             <Paragraph>
