@@ -6,16 +6,18 @@ const Section = (props) => {
 
     const { heading, children, noGutter } = props;
     return(
-        <section className="section fade-in-section is-visible">
-            <div className="section__nav">
-                <Heading level="h3" style="h4" color="white">                    
+        <>
+        <div className="category-container ">
+            <div className="category-container__nav">
+                <Heading level="h3" style="h4" color="black">                    
                     {heading}
                 </Heading>
             </div>
-            <div className={`section__content ${noGutter? 'section__content--no-gutter' : ''}`}>
+            <div className={`fade-in-section is-visible category-container__content ${noGutter ? 'category-container__content--no-gutter' : ''}`}>
                 {children}
             </div>
-        </section>
+        </div>
+        </>
     )
 }
 

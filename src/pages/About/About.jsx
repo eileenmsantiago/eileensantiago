@@ -34,80 +34,91 @@ const experienceData = [
         description: "Analyzed patterns from client’s technical inquires and proposed product improvements, including the UX/UI design for the app’s user dashboard.  "
     },
 ]
-const skillsToolsData = [
+const skillsData = [
     {
         title: "Design",
-        item: [
-            "Wireframing, ", 
-            "Prototyping, ", 
-            "Sketching + Illustration, ", 
-            "Usability Testing, ", 
-            "Visual Design, ", 
-            "Design Systems, ", 
-            "Brand Identity"
-        ]
+        description: "Product (UX/UI), Visual Design, Interaction Desi Typograp Sketching + Illustration, Wireframing, Prototyping, Usability Testing, Visual Design, Design Systems, & Brand Identity"
     },
     {
         title: "Development",
-        item: [
-            "Front-end & back-end development, web design + development, databases, CMS, Interactive Coding"
-        ]
+        description: "Front-end & back-end development, web design + development, databases, CMS, Interactive Coding"
     },
     {
         title: "Tools",
-        heading: [
-            "Design",
-            "Frameworks + Libraries",
-            "Tech Stacks"
+        items: [
+            {
+                subTitle: "Design",
+                description: "Sketch, Figma, and InVision for Prototyping, Adobe Creative Suite"
+            }, 
+            {
+                subTitle: "Frameworks + Libraries",
+                description: "ReactJS, Bootstrap, VueJS, ThreeJS, Node.js, PHP, MySQL + NoSQL"
+            }, 
+            {
+                subTitle: "Tech Stacks",
+                description: "Git, WordPress, MongoDB, cPanel, REST APIs, npm, Sourcetree, Wordpress"
+            }
         ],
-        item: [
-            "Sketch, Figma, and InVision for Prototyping, Adobe Creative Suite",
-            "ReactJS, Bootstrap, VueJS, ThreeJS, Node.js, PHP, MySQL + NoSQL",
-            "Git, WordPress, MongoDB, cPanel, REST APIs, npm, Sourcetree, Wordpress"
-        ]
     }
 ]
+
+// const toolsData = [
+
+//     {
+//         title: "Tools",
+//         item: [
+//             {
+//                 subTitle: "Design",
+//                 description: "Sketch, Figma, and InVision for Prototyping, Adobe Creative Suite"
+//             }, 
+//             {
+//                 subTitle: "Frameworks + Libraries",
+//                 description: "ReactJS, Bootstrap, VueJS, ThreeJS, Node.js, PHP, MySQL + NoSQL"
+//             }, 
+//             {
+//                 subTitle: "Tech Stacks",
+//                 description: "Git, WordPress, MongoDB, cPanel, REST APIs, npm, Sourcetree, Wordpress"
+//             }
+//         ],
+//     }
+// ]
 
 const About = (props) => {
 
     return(
         <>
-        {/* <FadeIn> */}
-            <Hero
-                pageTitle="About"
-                heading="Eileen Santiago"
-                // description="Aiming to utilize experiences working in the health sector, in nursing, and fusing it with visual and technical creativity to solve product problems."
-                quote="I’m a curious conceptualist, creator, problem-solver, & an ideator."
-            />
-        {/* </FadeIn> */}
-        <section className="about">
+        <section className="hero">
             <Container>
-                <FadeIn>
-                    <Heading className="about__heading" level="h4" style="h3" color="black">
-                        I’m a design systems thinker, 
-                    </Heading>
-                </FadeIn>
+                <Hero
+                    pageTitle="About"
+                    heading="Eileen Santiago"
+                    // description="Aiming to utilize experiences working in the health sector, in nursing, and fusing it with visual and technical creativity to solve product problems."
+                    quote="A designer who builds meaningful interactions & aims to strengthen the bridge between design and development. "
+                />
+            </Container>
+        </section>
+        <section className="about">
+            <Container width="sm" className="about__wrapper">
+                <Paragraph className="about__heading" size="lg" weight="semi" color="black">
+                    I’m a design systems thinker, 
+                </Paragraph>
                 <div className="about__content">
                     <FadeIn>
-                        <Paragraph className="about__content-statement" size="md" weight="regular" color="black">
-                            based in Toronto. I recently completed a post-graduate certificate on Interactive Media Management (IMM) at Sheridan College where I furthered my skills in wireframing, prototyping, and building & developing interactive digital applications. To learn more about me, have a read through of <a className="custom-link" href="/assets/Resume-EileenSantiago-2020.pdf">my resume</a>
+                        <Paragraph className="about__content-statement" size="sm" weight="regular" color="black">
+                        based in Toronto. I recently completed a post-graduate certificate in Interactive Media Management (IMM) at Sheridan College where I furthered my skills in wireframing, prototyping, and building interactive web applications. To learn more about me, have a read through of my <a className="custom-link" target="_blank" href="/assets/Resume-EileenSantiago-2020.pdf">resume</a>.
                         </Paragraph>
                     </FadeIn>
                     <div className="about__content-wrapper">
-                        <div className="container-heading">
-                            <FadeIn>
-                                <Heading className="about__content-heading" level="h4" style="h5" color="black">
-                                    From nursing to 
-                                </Heading>
-                                <Heading className="about__content-heading" level="h4" style="h4" color="black">
-                                    design & development 
-                                </Heading>
-                            </FadeIn>
-                        </div>
+                        <Heading level="h3" style="h5" color="black">
+                            From nursing to 
+                        </Heading>
+                        <Heading className="heading-border" level="h4" style="h4" color="black">
+                            design & development 
+                        </Heading>
                         <FadeIn>
-                            <div className="container-text">
-                                I questioned where and how can I make sense of my health sciences, in nursing, background <strong>benefit me as an aspiring designer?</strong> It is through the iterative process, during my clinical rotations, of <strong>assessing, diagnosing, planning, implementing, & evaluating</strong> patient-centered care situations that help me to further understand and work towards <strong>creating optimal digital solutions.</strong>
-                            </div>
+                            <Paragraph className="about__content-text" size="sm" weight="regular" color="black">
+                                I questioned where and how can I make sense of my health sciences, in nursing, background benefit me as an aspiring designer? The iterative process, during my practice and education, of <strong>assessing, diagnosing, planning, implementing, & evaluating</strong> patient-centered care situations that help me to further understand and work towards <strong>creating optimal digital solutions.</strong>
+                            </Paragraph>
                         </FadeIn>
                     </div>
                 </div>
@@ -118,7 +129,7 @@ const About = (props) => {
                     <div className="row about-skills__wrapper">
                         <div className="col-md-4">
                             {
-                                skillsToolsData.map(skills => (
+                                skillsData.map(skills => (
                                     <>
                                         <Heading className="about-skills__heading" level="h3" style="h4">
                                             {skills.title}
@@ -143,36 +154,53 @@ const About = (props) => {
                     <SectionList items={experienceData}/>
                 </Section>
             </Container> */}
-            <Container bgColor="grey" className="about-skills">
-                <div className="row">
-                    <div className="col-md-4">
-                        <FadeIn>    
-                                <Heading className="about-skills__title" level="h3" style="h1" color="white">
+            <Container bgColor="grey">
+                <section className="about-skills">
+                    <div className="row">
+                        <div className="col-md-4">
+                            <FadeIn>    
+                                <Heading className="about-skills__title" level="h3" style="h1" color="black">
                                     Skills <br/>
                                     & Tools
                                 </Heading>
-                        </FadeIn>
-                    </div>
-                    <div className="col-md-8 about-skills__content">
-                        {skillsToolsData.map(skillsTools => {
-                            return (
-                            <FadeIn>
-                                <Section noGutter heading={skillsTools.title}>
-                                    <div className="about-skills__wrapper section__content">
-                                        <Heading className="about-skills__heading" level="h4" style="h5">
-                                            {skillsTools.heading}
-                                        </Heading>
-                                        <Paragraph className="about-skills__items" size="sm" weight="regular" color="black">
-                                            {skillsTools.item}
-                                        </Paragraph> 
-                                    </div>
-                                </Section>
                             </FadeIn>
-                            )
-                        })}
+                        </div>
+                        <div className="col-md-8 about-skills__content">
+                            {skillsData.map(skillsTools => {
+                                return (
+                                <FadeIn>
+                                    <Section heading={skillsTools.title}>
+                                        <div className="about-skills__wrapper">
+                                            {skillsTools.description ? 
+                                                <Paragraph className="about-skills__items" size="sm" weight="regular" color="black">
+                                                    {skillsTools.description}
+                                                </Paragraph> 
+                                            : (
+                                                <>
+                                                    {skillsTools.items.map(item => (
+                                                        <>
+                                                            <Heading className="about-skills__heading" level="h4" style="h5" color="black">
+                                                                {item.subTitle}
+                                                            </Heading>
+                                                            <Paragraph className="about-skills__items" size="sm" weight="regular" color="black">
+                                                                {item.description}
+                                                            </Paragraph> 
+                                                        </>
+                                                    ))}
+                                                </>
+                                            )}
+                                        </div>
+                                    </Section>
+                                </FadeIn>
+                                )
+                            })}
+                        </div>
                     </div>
-                </div>
+                </section>
             </Container> 
+            <br></br>
+            <br></br>
+            <br></br>
         </>
     )
 }

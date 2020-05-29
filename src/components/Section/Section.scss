@@ -1,4 +1,4 @@
-.section {
+.category-container {
     max-width: 700px;
     margin-bottom: 3rem;
 
@@ -7,7 +7,7 @@
         margin-bottom: 2rem;
     }
     &__content {
-        margin-left: 12rem;
+        margin-left: 10rem;
     
         &:not(:last-child) {
             margin-bottom: 2rem;

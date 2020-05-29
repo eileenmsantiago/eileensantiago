@@ -31,20 +31,20 @@
 @mixin type-body-lg {
     @include type-body-base();
     // font-size: 28px;
-    font-size: 2rem; // 37.9px
+    font-size: 2.369rem; // 37.9px
     line-height: 3rem;
 }
 
 @mixin type-body-xl {
     @include type-body-base();
-    font-size: 3rem;
+    font-size: 3.157rem;
     line-height: 50px;
 }
 
 // =========== HEADINGS
 @mixin type-heading-h1 {
     @include type-heading-base();
-    font-size: 60px;
+    font-size: 4.209rem;
     line-height: 100%;
     margin-bottom: 1.8rem;
 
@@ -55,22 +55,22 @@
 
 @mixin type-heading-h2 {
     @include type-heading-base();
-    font-size: 48px;
+    font-size: 3.157rem;
     line-height: 58px;
 
     @include media-breakpoint-down(sm) {
-        font-size: 32px;
+        font-size: 2.8rem;
     }
 }
 
 @mixin type-heading-h3 {
     @include type-heading-base();
-    font-size: 24px;
+    font-size: 1.777rem;
     line-height: 25px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.05rem;
 
     @include media-breakpoint-down(md) {
-        font-size: 20px;
+        font-size: 1.333rem;
     }
 }
 

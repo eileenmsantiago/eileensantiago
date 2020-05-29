@@ -5,7 +5,7 @@ import Paragraph from '../Paragraph/Paragraph';
  
 const ProjectHero = (props) => {
 
-    const { pageTitle, heading, description, imagePath, bgHex } = props;
+    const { pageTitle, heading, tagline, imagePath, bgHex } = props;
     return(
         <Container className="project-hero" bgHex={bgHex}>
             <section className="project-hero">
@@ -18,7 +18,7 @@ const ProjectHero = (props) => {
                             {heading}
                         </Heading>
                         <Paragraph className="project-hero__description" size="lg" weight="lt">
-                            {description}
+                            {tagline}
                         </Paragraph>
                     </div>
                     <div className="col-md-6 project-hero__image-container">

@@ -16,7 +16,7 @@ const Work = (props) => {
                     <Hero 
                         pageTitle="A Portfolio" 
                         heading="by Eileen"
-                        description="A systems thinker, based in Toronto, who uses design & code to strategize in creating digital product solutions"
+                        description="A design systems thinker, based in Toronto, who uses design & code to strategize in creating digital product solutions"
                         showEmail = {true}
                     />
                 </Container>
@@ -38,11 +38,11 @@ const Work = (props) => {
                                                 <a href={project.route} className="cta " >   
                                                     <Heading className="project__container--header" level="h3" style="h2">{project.title}</Heading>
                                                 </a>
-                                                <Paragraph size="reg" weight="regular" color="black">
+                                                <Paragraph size="sm" color="black">
                                                     {project.description}
                                                 </Paragraph>
                                                 <div className="description">
-                                                    <Paragraph className="tags" size="sm" weight="regular" color="grey">
+                                                    <Paragraph className="tags" size="sm" weight="lt" color="grey">
                                                         {project.tags.map(tag => (
                                                             <>
                                                                 {tag} 
@@ -50,7 +50,7 @@ const Work = (props) => {
                                                         ))}
                                                     </Paragraph>
                                                     <a href={project.route} className="cta " >   
-                                                        <Paragraph size="sm" weight="md" weight="bold" color="black">View More</Paragraph>
+                                                        <Paragraph size="sm" weight="md" weight="semi" color="black">View More</Paragraph>
                                                         <img className="cta-icon" src="/assets/arrow.svg"/>
                                                     </a>
                                                 </div>

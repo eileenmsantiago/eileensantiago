@@ -18,7 +18,7 @@ const projects = {
   paperSpace: {
     route: '/paper-space',
     title: "Paper Space",
-    tagline: "",
+    tagline: "Tracking and visualizing emotions through journal writing",
     description: "A journaling App that tracks user’s emotions based on their written entries.",
     tags: [
       "Mobile Development,   ",
@@ -31,17 +31,34 @@ const projects = {
     paraColor: "brand-ps-brown-light",
     bckgColor: "#FAF5F0",
     logoImg: "/assets/ps-logo-full.svg",
-    description: "A journal App that tracks user’s emotions based on their written entries.",
+    description: "A journaling App that tracks user’s emotions based on their written entries.",
     role: "Front-end & back-end Development, Design Systems, & Project Management",
     timeline: "Jan - Apr 2020 4 months",
     platform: "Mobile iOS",
+    tools: "Figma, MERN Stack, Sass Preprocessor, Watson Tone Analyzer API, + MongoDB",
     team: [
       "Evonne Oby Okoye — Back-end development, UX Research, & Content Writing",
       "Yang Yang — Design Sprint Facilitator, UX Researcher, UI Design, Front-end development",
     ],
     problem: "To have a simple digital interface to journal and receive feedback on their entries",
     solution: "To simplify the writing process for the user that feels organic while adding visual feedback that is asethetically pleasing",
-    challenge: "How might we provide users a digital space where they can write freely and reflect on their emotions in an intuitive way?",
+    challenge: " provide users a digital space where they can write freely and reflect on their emotions in an intuitive way?",
+    headerTitle: [
+      "Research",
+      "Synthesis",
+      "Research + define",
+      "Ideation",
+      "Validate",
+      "Branding"
+    ],
+    headerListItems: [
+      "Research, User Interviews",
+      "Affinity Diagram, Persona, Experience Mapping",
+      "Competitive Martket Analysis, Define HMW?",
+      "User Stories, Task Flow, Concept Sketching, Wireframing",
+      "Usability Testing, Iteration", 
+      "Moodboard, Visual Identity, Hi-fidelity Prototype, Design System"
+    ],
     gallery: [
       '/assets/paper-space-hero.png'
     ],
@@ -50,6 +67,7 @@ const projects = {
   yodae: {
     route: '/yodae',
     title: "YODAE",
+    tagline: "",
     description: "A digital space utilizing Google’s Speech Recognition API that allows users to create doodles from a dataset by QuickDraw! through voice command.",
     tags: [
       "API Integration  ", 
@@ -65,15 +83,32 @@ const projects = {
     role: "Front-end development, UX/UI, Project Management",
     timeline: "Feb - Apr 2020 4 months",
     platform: "Web & Mobile",
+    tools: "Adobe Xd, JavaScript, Quick, Draw! API, Google Speech Analyzer API, Natural Language Processing + Firebase",
     team: [
       "Ankit Gupta,",
       "Drayhia Gohil, ",
       "Yang Yang, ",
       "& Evonne Oby Okoye"
     ],
-    userGoal: "To have a fun doodling web experience",
-    designGoal: "To simplify the doodling experience that is intuitive with error handling that smoothes the process",
-    productGoal: "",
+    problem: "To have a simple digital interface to journal and receive feedback on their entries",
+    solution: "To simplify the writing process for the user that feels organic while adding visual feedback that is asethetically pleasing",
+    challenge: " provide users a digital space where they can write freely and reflect on their emotions in an intuitive way?",
+    headerTitle: [
+      "Research",
+      "Synthesis",
+      "Research + define",
+      "Ideation",
+      "Validate",
+      "Branding"
+    ],
+    headerListItems: [
+      "Research, User Interviews",
+      "Affinity Diagram, Persona, Experience Mapping",
+      "Competitive Martket Analysis, Define HMW?",
+      "User Stories, Task Flow, Concept Sketching, Wireframing",
+      "Usability Testing, Iteration", 
+      "Moodboard, Visual Identity, Hi-fidelity Prototype, Design System"
+    ],
     gallery: [
       '/assets/yodae-container.svg'
     ],
@@ -82,6 +117,7 @@ const projects = {
   glucochek: {
     route: '/glucochek',
     title: "GlucoCheck",
+    tagline: "",
     description: "GlucoCheck is a Smartwatch app to guide or be a best-friend to count on (health wise) to keep your blood sugar levels in check.",
     tags: [
       "UX/UI Design,   ",
@@ -98,10 +134,27 @@ const projects = {
     role: "Product Design, Wire framing, Prototyping, Content Writing, User Research",
     timeline: "2 weeks",
     platform: "Mobile iOS",
-    team: "Figma",
-    userGoal: "To build a solid understanding of the challenges of what diabetics go through",
-    designGoal: "To simplify process in adding details to managing one's diabetes that is easily accessible and viewable on a smartwatch",
-    productGoal: "To seemingly give users flexiblility in their day as they document their diabetes entries",
+    tools: "Figma",
+    team: "",
+    problem: "To have a simple digital interface to journal and receive feedback on their entries",
+    solution: "To simplify the writing process for the user that feels organic while adding visual feedback that is asethetically pleasing",
+    challenge: " provide users a digital space where they can write freely and reflect on their emotions in an intuitive way?",
+    headerTitle: [
+      "Research",
+      "Synthesis",
+      "Research + define",
+      "Ideation",
+      "Validate",
+      "Branding"
+    ],
+    headerListItems: [
+      "Research, User Interviews",
+      "Affinity Diagram, Persona, Experience Mapping",
+      "Competitive Martket Analysis, Define HMW?",
+      "User Stories, Task Flow, Concept Sketching, Wireframing",
+      "Usability Testing, Iteration", 
+      "Moodboard, Visual Identity, Hi-fidelity Prototype, Design System"
+    ],
     gallery: [
       '/assets/paper-space-hero.png'
     ],
@@ -110,6 +163,7 @@ const projects = {
   covid19: {
     route: '/covid19-tracker',
     title: "COVID-19 Tracker",
+    tagline: "",
     description: "A React.js application viewing a COVID-19 Case Data that interacts with an Express server retrieving its data from a COVID-19 API.",
     tags: [
       "Web Development,  ",
@@ -125,8 +179,28 @@ const projects = {
     description: "A React.js application viewing a COVID-19 Case Data that interacts with an Express server retrieving its data from a COVID-19 API. ",
     role: "Front-end & back-end development",
     timeline: "1 week",
-    platform: "desktop",
-    team: "Figma (illustrations & prototyping)",
+    platform: "Web Desktop Application",
+    tools: "Figma + MERN stack",
+    team: "",
+    problem: "To have a simple digital interface to journal and receive feedback on their entries",
+    solution: "To simplify the writing process for the user that feels organic while adding visual feedback that is asethetically pleasing",
+    challenge: " provide users a digital space where they can write freely and reflect on their emotions in an intuitive way?",
+    headerTitle: [
+      "Research",
+      "Synthesis",
+      "Research + define",
+      "Ideation",
+      "Validate",
+      "Branding"
+    ],
+    headerListItems: [
+      "Research, User Interviews",
+      "Affinity Diagram, Persona, Experience Mapping",
+      "Competitive Martket Analysis, Define HMW?",
+      "User Stories, Task Flow, Concept Sketching, Wireframing",
+      "Usability Testing, Iteration", 
+      "Moodboard, Visual Identity, Hi-fidelity Prototype, Design System"
+    ],
     gallery: [
       '/assets/paper-space-hero.png'
     ],
