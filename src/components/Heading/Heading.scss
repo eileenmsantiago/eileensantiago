@@ -6,7 +6,8 @@
         @include type-heading-h2();
     }
     &-h3 {
-        @include type-body-xl();
+        @include type-body-lg();
+        font-weight: 600;
     }
     &-h4 {
         @include type-heading-h3();
