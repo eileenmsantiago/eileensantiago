@@ -3,7 +3,7 @@
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
-    line-height: 2rem;
+    // line-height: 2rem;
 }
 
 @mixin type-heading-base {
@@ -31,13 +31,13 @@
 @mixin type-body-lg {
     @include type-body-base();
     // font-size: 28px;
-    font-size: 2.369rem; // 37.9px
+    font-size: 2.2rem; // 37.9px
     line-height: 3rem;
 }
 
 @mixin type-body-xl {
     @include type-body-base();
-    font-size: 3.157rem;
+    font-size: 3rem;
     line-height: 50px;
 }
 

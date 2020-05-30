@@ -16,6 +16,7 @@ import Container from '../Container/Container';
 
 const projects = {
   paperSpace: {
+    id: "paper-space",
     route: '/paper-space',
     title: "Paper Space",
     tagline: "Tracking and visualizing emotions through journal writing",
@@ -40,24 +41,49 @@ const projects = {
       "Evonne Oby Okoye — Back-end development, UX Research, & Content Writing",
       "Yang Yang — Design Sprint Facilitator, UX Researcher, UI Design, Front-end development",
     ],
-    problem: "To have a simple digital interface to journal and receive feedback on their entries",
-    solution: "To simplify the writing process for the user that feels organic while adding visual feedback that is asethetically pleasing",
-    challenge: " provide users a digital space where they can write freely and reflect on their emotions in an intuitive way?",
-    headerTitle: [
-      "Research",
-      "Synthesis",
-      "Research + define",
-      "Ideation",
-      "Validate",
-      "Branding"
+    problem: [
+      "Students take notes physically or digitally to document new information learnt from school and or to simply take notes of their day-to-day lives. Our group initially ventured off of the idea of note-taking but then questioned if we wanted to take a more personal approach in digital writing. We liked the idea of a digital space to journal. ",
+      "By conducting a competitive analysis research of the current market for journaling apps, our group discovered a handful of eye-catching features such as mood tracking. We wanted to expand on the idea but the feature of displaying mood trackers for most lifestyle journaling apps in the current market include emojis or graphical interfaces that for us, didn't quite fit our idea for mood-tracking."
     ],
-    headerListItems: [
-      "Research, User Interviews",
-      "Affinity Diagram, Persona, Experience Mapping",
-      "Competitive Martket Analysis, Define HMW?",
-      "User Stories, Task Flow, Concept Sketching, Wireframing",
-      "Usability Testing, Iteration", 
-      "Moodboard, Visual Identity, Hi-fidelity Prototype, Design System"
+    solution: "To have a simple digital interface to journal and receive feedback on their entries. To simplify the writing process for the user that feels organic while adding visual feedback that is asethetically pleasing",
+    challenge: " provide users a digital space where they can write freely and reflect on their emotions in an intuitive way?",
+    process: [
+      {
+        title: "Research",
+        descriptionList: [
+          "Research", "User Interviews"
+        ]
+      },
+      {
+        title: "Synthesis",
+        descriptionList: [
+          "Affinity Diagram", "Persona", "Experience Mapping"
+        ]
+      },
+      {
+        title: "Research + define",
+        descriptionList: [
+          "Competitive Martket Analysis", "Define HMW?"
+        ]
+      },
+      {
+        title: "Ideation",
+        descriptionList: [
+          "User Stories", "Task Flow", "Concept Sketching", "Wireframing"
+        ]
+      },
+      {
+        title: "Validate",
+        descriptionList: [
+          "Usability Testing", "Iteration"
+        ]
+      },
+      {
+        title: "Branding",
+        descriptionList: [
+          "Moodboard", "Visual Identity", "Hi-fidelity Prototype", "Design System"
+        ]
+      },
     ],
     gallery: [
       '/assets/paper-space-hero.png'
@@ -136,8 +162,8 @@ const projects = {
     platform: "Mobile iOS",
     tools: "Figma",
     team: "",
-    problem: "To have a simple digital interface to journal and receive feedback on their entries",
-    solution: "To simplify the writing process for the user that feels organic while adding visual feedback that is asethetically pleasing",
+    problem: "As students, we take notes physically or digitally to document new information we learn from school and or to simply take notes of our day-to-day lives. We initially ventured off of the idea of note-taking but then questioned if we wanted to take a more personal approach in digital writing. We liked the idea of a digital space to journal.",
+    solution: "To have a simple digital interface to journal and receive feedback on their entries. To simplify the writing process for the user that feels organic while adding visual feedback that is asethetically pleasing",
     challenge: " provide users a digital space where they can write freely and reflect on their emotions in an intuitive way?",
     headerTitle: [
       "Research",
@@ -228,7 +254,7 @@ class App extends Component {
                   path={project.route}
                   render={props => (
                     <Project {...props} project={project}>
-                      {CustomComponent ? <CustomComponent/> : null}
+                      {CustomComponent ? <CustomComponent project={project}/> : null}
                     </Project>
                   )}
                 />

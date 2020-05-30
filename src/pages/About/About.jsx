@@ -37,7 +37,7 @@ const experienceData = [
 const skillsData = [
     {
         title: "Design",
-        description: "Product (UX/UI), Visual Design, Interaction Desi Typograp Sketching + Illustration, Wireframing, Prototyping, Usability Testing, Visual Design, Design Systems, & Brand Identity"
+        description: "Product (UX/UI), Visual Design, Interaction Design, Typograpy, Sketching + Illustration, Wireframing, Prototyping, Usability Testing, Visual Design, Design Systems, & Brand Identity"
     },
     {
         title: "Development",
@@ -61,27 +61,6 @@ const skillsData = [
         ],
     }
 ]
-
-// const toolsData = [
-
-//     {
-//         title: "Tools",
-//         item: [
-//             {
-//                 subTitle: "Design",
-//                 description: "Sketch, Figma, and InVision for Prototyping, Adobe Creative Suite"
-//             }, 
-//             {
-//                 subTitle: "Frameworks + Libraries",
-//                 description: "ReactJS, Bootstrap, VueJS, ThreeJS, Node.js, PHP, MySQL + NoSQL"
-//             }, 
-//             {
-//                 subTitle: "Tech Stacks",
-//                 description: "Git, WordPress, MongoDB, cPanel, REST APIs, npm, Sourcetree, Wordpress"
-//             }
-//         ],
-//     }
-// ]
 
 const About = (props) => {
 
@@ -198,9 +177,9 @@ const About = (props) => {
                     </div>
                 </section>
             </Container> 
-            <br></br>
-            <br></br>
-            <br></br>
+            <Container>
+                <Paragraph size="md" weight="lt" color="grey-light"></Paragraph>
+            </Container>
         </>
     )
 }

@@ -33,8 +33,8 @@ class CommentForm extends Component {
         console.log(this.state);
         return (
             <>
-                <Heading className="comment-section__heading" level="h4" style="h3">
-                    I would love to hear from you! 💞
+                <Heading className="comment-section__heading" level="h4" style="h5">
+                    I would love to hear from you 💞
                 </Heading>
                 <form 
                     onSubmit={this.handleSubmit}

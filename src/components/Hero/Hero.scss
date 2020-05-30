@@ -11,9 +11,9 @@
 }
 
 .hero {
-    
+    margin: 0 2.7rem;
     @include media-breakpoint-down(md) {
-        margin: 2rem;
+        margin: 0;
     }
 
     &__title {
