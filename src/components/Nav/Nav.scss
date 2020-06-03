@@ -61,3 +61,11 @@
     
 }
 
+#logo-plain {
+    @include type-heading-h3; 
+    line-height: 1.5rem;
+
+    span {
+        color: $color-peach;
+    }
+}

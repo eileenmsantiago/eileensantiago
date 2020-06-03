@@ -54,6 +54,7 @@
         flex-direction: column;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
+
         @include media-breakpoint-down(sm) {
             text-align: center;
             margin-top: 0rem;
@@ -69,17 +70,6 @@
         }
     }
 
-    // &separator {
-    //     margin-top: 1.3rem;
-    //     margin-bottom: 1.3rem;
-    //     border-bottom: 1px solid black;
-    //     width: 20rem;
-
-    //     @include media-breakpoint-down(sm) {
-    //         margin: 1rem auto;
-    //     }
-    // }
-
     &__link {
         @include links();
         display: flex;
@@ -90,6 +80,14 @@
 
     &__project-next {
         margin-bottom: 8rem;
+    }
+
+    #logo-plain {
+        @include type-heading-h2; 
+    
+        span {
+            color: $color-peach;
+        }
     }
 }
 

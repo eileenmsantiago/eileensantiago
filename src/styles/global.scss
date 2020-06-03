@@ -14,6 +14,15 @@ html {
             padding-inline-start: 0px;
         }
     }
+    
+    main {
+        padding-top:100px;
+    }
+    
+    section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
 
     a {
         color: $color-black;
@@ -24,6 +33,26 @@ html {
         }
     }
 
+    h1, h2, h3, h4, h5, h6 {
+        @include media-breakpoint-up(md) {
+            margin-bottom: 1.25rem;
+        }
+    }
+
+    ::selection {
+        background: $color-brand-light-blue;
+    }
+
+    .container {
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+        
+        @include media-breakpoint-up(md) {
+            padding-right: 2rem;
+            padding-left: 2rem;
+
+        }
+    }
     .custom-link {
         text-decoration: underline;
         color: $color-peach;
@@ -34,28 +63,7 @@ html {
             transition: all .2s ease-in-out;
         }
     }
-
-    main {
-        padding-top:100px;
-    }
-
-    .container {
-        // padding-right: 25px;
-        // padding-left: 25px
-        // padding: 2rem;
-    }
-
-    section {
-        // margin-top: 3rem;
-        // margin-bottom: 3rem;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-    }
-
-    ::selection {
-        background: $color-brand-light-blue;
-    }
-
+    
     .separator {
         margin-top: 1.3rem;
         margin-bottom: 1.3rem;

@@ -3,7 +3,6 @@
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
-    // line-height: 2rem;
 }
 
 @mixin type-heading-base {
@@ -13,64 +12,83 @@
 
 @mixin type-body-xs{
     @include type-body-base();
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     letter-spacing: -0.02em;
 }
 
 @mixin type-body-sm{
     @include type-body-base();
-    font-size: 1rem;
+    font-size: 0.85rem;
+
+    @include media-breakpoint-up(md) {
+        font-size: 1rem;
+    }
 }
 
 @mixin type-body-md {
     @include type-body-base();
-    font-size: 1.5em;
+    font-size: 1.333rem;
     line-height: 1.85rem;
+
+    @include media-breakpoint-up(md) {
+        font-size: 1.777em;
+    }
 }
 
 @mixin type-body-lg {
     @include type-body-base();
     // font-size: 28px;
-    font-size: 2.2rem; // 37.9px
-    line-height: 3rem;
+    font-size: 1.777rem;
+    line-height: 2.75rem;
+
+    @include media-breakpoint-up(md) {
+        font-size: 2.369rem; // 37.9px
+        line-height: 3rem;
+    }
 }
 
 @mixin type-body-xl {
     @include type-body-base();
-    font-size: 3rem;
-    line-height: 50px;
+    font-size: 2.369rem;
+    line-height: 4rem;
+    
+    @include media-breakpoint-up(md) {
+        font-size: 3.157rem; // 37.9px 
+        line-height: 4.5rem;
+    }
 }
 
 // =========== HEADINGS
 @mixin type-heading-h1 {
     @include type-heading-base();
-    font-size: 4.209rem;
+    font-size: 3.157rem;
     line-height: 100%;
     margin-bottom: 1.8rem;
-
-    @include media-breakpoint-down(sm) {
-        font-size: 48px;
+    
+    @include media-breakpoint-up(md) {
+        font-size: 4.209rem;
+        // font-size: 48px;
     }
 }
 
 @mixin type-heading-h2 {
     @include type-heading-base();
-    font-size: 3.157rem;
-    line-height: 58px;
+    font-size: 2.369rem;
+    line-height: 4rem;
 
-    @include media-breakpoint-down(sm) {
-        font-size: 2.8rem;
+    @include media-breakpoint-up(md) {
+        font-size: 3.157rem;
     }
 }
 
 @mixin type-heading-h3 {
     @include type-heading-base();
-    font-size: 1.777rem;
-    line-height: 25px;
+    font-size: 1.333rem;
+    line-height: 4rem;
     letter-spacing: 0.05rem;
-
-    @include media-breakpoint-down(md) {
-        font-size: 1.333rem;
+    
+    @include media-breakpoint-up(md) {
+        font-size: 1.777rem;
     }
 }
 

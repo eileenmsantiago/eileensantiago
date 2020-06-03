@@ -137,12 +137,10 @@ const About = (props) => {
                 <section className="about-skills">
                     <div className="row">
                         <div className="col-md-4">
-                            <FadeIn>    
-                                <Heading className="about-skills__title" level="h3" style="h1" color="black">
-                                    Skills <br/>
-                                    & Tools
-                                </Heading>
-                            </FadeIn>
+                            <Heading className="about-skills__title" level="h3" style="h1" color="black">
+                                Skills <br/>
+                                & Tools
+                            </Heading>
                         </div>
                         <div className="col-md-8 about-skills__content">
                             {skillsData.map(skillsTools => {
@@ -158,12 +156,14 @@ const About = (props) => {
                                                 <>
                                                     {skillsTools.items.map(item => (
                                                         <>
-                                                            <Heading className="about-skills__heading" level="h4" style="h5" color="black">
-                                                                {item.subTitle}
-                                                            </Heading>
-                                                            <Paragraph className="about-skills__items" size="sm" weight="regular" color="black">
-                                                                {item.description}
-                                                            </Paragraph> 
+                                                            <div id="tools-block">
+                                                                <Heading className="about-skills__heading" level="h4" style="h5" color="black">
+                                                                    {item.subTitle}
+                                                                </Heading>
+                                                                <Paragraph className="about-skills__items" size="sm" weight="regular" color="black">
+                                                                    {item.description}
+                                                                </Paragraph> 
+                                                            </div>
                                                         </>
                                                     ))}
                                                 </>

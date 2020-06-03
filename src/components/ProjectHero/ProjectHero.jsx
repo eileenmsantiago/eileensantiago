@@ -1,4 +1,5 @@
 import React from 'react'
+import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from '../Container/Container';
 import Heading from '../Heading/Heading';
 import Paragraph from '../Paragraph/Paragraph';
@@ -7,13 +8,14 @@ const ProjectHero = (props) => {
 
     const { pageTitle, heading, tagline, imagePath, bgHex } = props;
     return(
-        <Container className="project-hero" bgHex={bgHex}>
-            <section className="project-hero">
+        <Container bgHex={bgHex}>
+            {/* <section className="project-hero"> */}
+            <Jumbotron className="project-hero">
                 <Heading className="project-hero__title" level="h1" style="h5">
                     {pageTitle}
                 </Heading>
                 <div className="row">   
-                    <div className="col-md-6">
+                    <div className="col-sm-12 col-md-12 col-lg-5">
                         <Heading className="project-hero__heading" level="h2" style="h1" weight="bold">
                             {heading}
                         </Heading>
@@ -21,11 +23,12 @@ const ProjectHero = (props) => {
                             {tagline}
                         </Paragraph>
                     </div>
-                    <div className="col-md-6 project-hero__image-container">
+                    <div className="col-sm-12 col-md-12 col-lg-7 project-hero__image">
                         <img src={imagePath} alt="mockup image"/>
                     </div>
                 </div>
-            </section>
+            </Jumbotron>
+            {/* </section> */}
         </Container>
     )
 }

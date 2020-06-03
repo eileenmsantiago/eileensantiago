@@ -30,7 +30,7 @@ const Footer = (props) => {
     const { projects } = props;
     return (
         <>
-            <footer className="footer">
+            <footer class="footer">
                     {/* <div className="row footer__project-next">
                         <Paragraph className="col" size="lg" weight="regular" color="black">
                             {
@@ -45,10 +45,8 @@ const Footer = (props) => {
                 <Container bgColor="grey">
                     <div className="footer__container">
                         <div className="row footer__logo">
-                            <a href="/">
-                                <Heading level="h1" style="h2">
-                                    e.
-                                </Heading>
+                            <a href="/" id="logo-plain">
+                                e<span id="logo-color">.</span>
                             </a>
                         </div>
                         <div className="row footer__content">

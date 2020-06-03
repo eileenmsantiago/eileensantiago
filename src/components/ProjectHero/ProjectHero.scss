@@ -2,6 +2,12 @@
     animation: a .5s ease-in-out forwards;
     animation-delay: .7s;
 }
+
+.project-hero {
+    img {
+        width: 100%;
+    }
+}
 @keyframes description {
     0% {opacity:0;}
     100% {opacity:1;}
