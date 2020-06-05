@@ -77,13 +77,13 @@ const About = (props) => {
             </Container>
         </section>
         <section className="about">
-            <Container width="sm" className="about__wrapper">
+            <Container width="sm" className="about--wrapper">
                 <Paragraph className="about__heading" size="lg" weight="semi" color="black">
                     I’m a design systems thinker, 
                 </Paragraph>
                 <div className="about__content">
                     <FadeIn>
-                        <Paragraph className="about__content-statement" size="sm" weight="regular" color="black">
+                        <Paragraph className="about__content-statement" size="sm" weight="reg" color="black">
                         based in Toronto. I recently completed a post-graduate certificate in Interactive Media Management (IMM) at Sheridan College where I furthered my skills in wireframing, prototyping, and building interactive web applications. To learn more about me, have a read through of my <a className="custom-link" target="_blank" href="/assets/Resume-EileenSantiago-2020.pdf">resume</a>.
                         </Paragraph>
                     </FadeIn>
@@ -95,7 +95,7 @@ const About = (props) => {
                             design & development 
                         </Heading>
                         <FadeIn>
-                            <Paragraph className="about__content-text" size="sm" weight="regular" color="black">
+                            <Paragraph className="about__content-text" size="sm" weight="reg" color="black">
                                 I questioned where and how can I make sense of my health sciences, in nursing, background benefit me as an aspiring designer? The iterative process, during my practice and education, of <strong>assessing, diagnosing, planning, implementing, & evaluating</strong> patient-centered care situations that help me to further understand and work towards <strong>creating optimal digital solutions.</strong>
                             </Paragraph>
                         </FadeIn>
@@ -105,7 +105,7 @@ const About = (props) => {
         </section>
             {/* <section className="about-skills">
                 <Container bgColor="grey">
-                    <div className="row about-skills__wrapper">
+                    <div className="row about-skills--wrapper">
                         <div className="col-md-4">
                             {
                                 skillsData.map(skills => (
@@ -113,7 +113,7 @@ const About = (props) => {
                                         <Heading className="about-skills__heading" level="h3" style="h4">
                                             {skills.title}
                                         </Heading>
-                                        <Paragraph className="about-skills__items" weight="regular" color="black">
+                                        <Paragraph className="about-skills__items" weight="reg" color="black">
                                             {skills.item}
                                         </Paragraph>
                                     </>
@@ -147,9 +147,9 @@ const About = (props) => {
                                 return (
                                 <FadeIn>
                                     <Section heading={skillsTools.title}>
-                                        <div className="about-skills__wrapper">
+                                        <div className="about-skills--wrapper">
                                             {skillsTools.description ? 
-                                                <Paragraph className="about-skills__items" size="sm" weight="regular" color="black">
+                                                <Paragraph className="about-skills__items" size="sm" weight="reg" color="black">
                                                     {skillsTools.description}
                                                 </Paragraph> 
                                             : (
@@ -160,7 +160,7 @@ const About = (props) => {
                                                                 <Heading className="about-skills__heading" level="h4" style="h5" color="black">
                                                                     {item.subTitle}
                                                                 </Heading>
-                                                                <Paragraph className="about-skills__items" size="sm" weight="regular" color="black">
+                                                                <Paragraph className="about-skills__items" size="sm" weight="reg" color="black">
                                                                     {item.description}
                                                                 </Paragraph> 
                                                             </div>

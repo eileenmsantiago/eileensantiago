@@ -4,8 +4,21 @@
 }
 
 .project-hero {
+    padding: 4rem 0;
+    
+    @include media-breakpoint-up(md) {
+        padding: 7rem 0;
+    }
     img {
         width: 100%;
+
+        @include media-breakpoint-up(md) {
+            width: 90%;
+        }
+    }
+
+    &__description {
+        margin-bottom: 3rem;
     }
 }
 @keyframes description {

@@ -12,8 +12,8 @@
 
 @mixin type-body-xs{
     @include type-body-base();
-    font-size: 0.75rem;
-    letter-spacing: -0.02em;
+    font-size: 0.85rem;
+    // letter-spacing: -0.02em;
 }
 
 @mixin type-body-sm{
@@ -67,28 +67,29 @@
     
     @include media-breakpoint-up(md) {
         font-size: 4.209rem;
-        // font-size: 48px;
     }
 }
 
 @mixin type-heading-h2 {
     @include type-heading-base();
     font-size: 2.369rem;
-    line-height: 4rem;
+    line-height: 2.75rem;
 
     @include media-breakpoint-up(md) {
         font-size: 3.157rem;
+        line-height: 3.75rem;
     }
 }
 
 @mixin type-heading-h3 {
     @include type-heading-base();
     font-size: 1.333rem;
-    line-height: 4rem;
+    line-height: 2rem;
     letter-spacing: 0.05rem;
     
     @include media-breakpoint-up(md) {
         font-size: 1.777rem;
+        line-height: 2.75rem;
     }
 }
 

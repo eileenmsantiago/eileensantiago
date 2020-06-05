@@ -11,10 +11,10 @@
 }
 
 .hero {
-    margin: 0 2.7rem;
-    @include media-breakpoint-down(md) {
-        margin: 0;
-    }
+    // margin: 0 2.7rem;
+    // @include media-breakpoint-down(md) {
+    //     margin: 0;
+    // }
 
     &__title {
         opacity: 0;
@@ -24,6 +24,10 @@
     &__description {
         line-height: 2rem;
         margin-bottom: 1rem;
+        
+        @include media-breakpoint-up(md) {
+            line-height: 2.85rem;
+        }
     }
 
     &__container {

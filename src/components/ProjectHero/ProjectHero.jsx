@@ -9,13 +9,12 @@ const ProjectHero = (props) => {
     const { pageTitle, heading, tagline, imagePath, bgHex } = props;
     return(
         <Container bgHex={bgHex}>
-            {/* <section className="project-hero"> */}
-            <Jumbotron className="project-hero">
+            <section className="project-hero">
                 <Heading className="project-hero__title" level="h1" style="h5">
                     {pageTitle}
                 </Heading>
                 <div className="row">   
-                    <div className="col-sm-12 col-md-12 col-lg-5">
+                    <div className="col-sm-12 col-md-12 col-lg-6">
                         <Heading className="project-hero__heading" level="h2" style="h1" weight="bold">
                             {heading}
                         </Heading>
@@ -23,12 +22,11 @@ const ProjectHero = (props) => {
                             {tagline}
                         </Paragraph>
                     </div>
-                    <div className="col-sm-12 col-md-12 col-lg-7 project-hero__image">
+                    <div className="col-sm-12 col-md-12 col-lg-6 project-hero__image">
                         <img src={imagePath} alt="mockup image"/>
                     </div>
                 </div>
-            </Jumbotron>
-            {/* </section> */}
+            </section>
         </Container>
     )
 }

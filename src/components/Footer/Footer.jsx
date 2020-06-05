@@ -32,7 +32,7 @@ const Footer = (props) => {
         <>
             <footer class="footer">
                     {/* <div className="row footer__project-next">
-                        <Paragraph className="col" size="lg" weight="regular" color="black">
+                        <Paragraph className="col" size="lg" weight="reg" color="black">
                             {
                                 projects.map((project, id) => {
                                     return (
@@ -53,7 +53,7 @@ const Footer = (props) => {
                             <a href="/">
                                 <Heading level="h1" style="h3">Eileen Santiago</Heading>
                             </a>
-                            <Paragraph size="sm" weight="regular" color="black">USER EXPERIENCE DEVELOPER</Paragraph>
+                            <Paragraph size="sm" weight="reg" color="black">USER EXPERIENCE DEVELOPER</Paragraph>
                         </div>
                         <div className="row footer__nav">
                             <nav>

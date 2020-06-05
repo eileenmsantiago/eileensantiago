@@ -18,7 +18,7 @@ const Nav = (props) => {
     return(
         <nav className="e-nav" style={{backgroundColor: bgHex}}>
             <Container>   
-                <div className="e-nav__wrapper">
+                <div className="e-nav--wrapper">
                     <a href="/" id="logo-plain">
                         {/* <Heading className="e-nav__logo" style="h4" level="h1">
                             e

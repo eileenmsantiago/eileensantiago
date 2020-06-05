@@ -13,6 +13,11 @@ p {
         }
         &-md {
             @include type-body-md();
+            line-height: 2.3rem;
+
+            @include media-breakpoint-up(md) {
+                line-height: 3rem;
+            }
         }
         &-lg {
             @include type-body-lg();
@@ -32,7 +37,7 @@ p {
         &-semi {
             font-weight: 600;
         }
-        &-regular {
+        &-reg {
             font-weight: 400;
         }
         &-lt {

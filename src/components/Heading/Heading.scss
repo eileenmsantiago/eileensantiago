@@ -1,12 +1,14 @@
 .heading {
+
     &-h1 {
         @include type-heading-h1();
     }
     &-h2 {
         @include type-heading-h2();
+        letter-spacing: 2px;
     }
     &-h3 {
-        @include type-body-lg();
+        @include type-body-xl();
         font-weight: 600;
     }
     &-h4 {
@@ -15,6 +17,7 @@
     &-h5 {
         @include type-body-sm();
         font-weight: 600;
+        letter-spacing: 1.15px;
     }
     &-h6 {
         @include type-body-xs();
@@ -35,7 +38,7 @@
         &-semi {
             font-weight: 600;
         }
-        &-regular {
+        &-reg {
             font-weight: 400;
         }
         &-lt {

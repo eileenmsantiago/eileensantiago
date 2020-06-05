@@ -12,14 +12,12 @@ const Work = (props) => {
     return(
         <>
             <section className="hero">
-                <Container width="md">
-                    <Hero 
-                        pageTitle="A Portfolio" 
-                        heading="by Eileen"
-                        description="A design systems thinker, based in Toronto, who uses design & code to strategize in creating digital product solutions"
-                        showEmail = {true}
-                    />
-                </Container>
+                <Hero 
+                    pageTitle="A Portfolio" 
+                    heading="by Eileen"
+                    description="A design systems thinker, based in Toronto, who uses design & code to strategize in creating digital product solutions"
+                    showEmail = {true}
+                />
             </section>
             <section className="projects">
                 <Container width="md">
