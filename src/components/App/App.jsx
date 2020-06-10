@@ -38,15 +38,21 @@ const projects = {
     platform: "Mobile iOS",
     tools: "Figma, MERN Stack, Sass Preprocessor, Watson Tone Analyzer API, + MongoDB",
     team: [
-      "Evonne Oby Okoye — Back-end development, UX Research, & Content Writing",
-      "Yang Yang — Design Sprint Facilitator, UX Researcher, UI Design, Front-end development",
+      {
+        memberName: "Evonne Oby Okoye",
+        memberSite: "http://iamoby.com/"
+      },
+      {
+        memberName: "Yang Yang",
+        memberSite: "https://yangdesign.ca/"
+      }
     ],
     problem: [
       "Students take notes physically or digitally to document new information learnt from school and or to simply take notes of their day-to-day lives. Our group initially ventured off of the idea of note-taking but then questioned if we wanted to take a more personal approach in digital writing. We liked the idea of a digital space to journal. ",
       "By conducting a competitive analysis research of the current market for journaling apps, our group discovered a handful of eye-catching features such as mood tracking. We wanted to expand on the idea but the feature of displaying mood trackers for most lifestyle journaling apps in the current market include emojis or graphical interfaces that for us, didn't quite fit our idea for mood-tracking."
     ],
     solution: "To have a simple digital interface to journal and receive feedback on their entries. To simplify the writing process for the user that feels organic while adding visual feedback that is asethetically pleasing",
-    challenge: " provide users a digital space where they can write freely and reflect on their emotions in an intuitive way?",
+    hmw: " provide users a digital space where they can write freely and reflect on their emotions in an intuitive way?",
     process: [
       {
         title: "Research",
@@ -91,10 +97,11 @@ const projects = {
     component: PaperSpace
   },
   yodae: {
+    id: "yodae",
     route: '/yodae',
     title: "YODAE",
-    tagline: "",
-    description: "A digital space utilizing Google’s Speech Recognition API that allows users to create doodles from a dataset by QuickDraw! through voice command.",
+    tagline: "Say what you want and draw doodles with your voice.",
+    description: "An experimental project that uses Google Speech API and Natural Language API to interpret voice commands and render doodles using Quick,Draw!",
     tags: [
       "API Integration  ", 
       "Mobile + Web Development   "
@@ -111,29 +118,63 @@ const projects = {
     platform: "Web & Mobile",
     tools: "Adobe Xd, JavaScript, Quick, Draw! API, Google Speech Analyzer API, Natural Language Processing + Firebase",
     team: [
-      "Ankit Gupta,",
-      "Drayhia Gohil, ",
-      "Yang Yang, ",
-      "& Evonne Oby Okoye"
+      {
+        memberName: "Ankit Gupta",
+        memberSite: "https://ankit.life/"
+      },
+      {
+        memberName: "Drayhia Gohil",
+        memberSite: "http://www.drashyagohil.com/"
+      },
+      {
+        memberName: "Evonne Oby Okoye",
+        memberSite: "http://iamoby.com/"
+      },
+      {
+        memberName: "Yang Yang",
+        memberSite: "https://yangdesign.ca/"
+      }
     ],
     problem: "To have a simple digital interface to journal and receive feedback on their entries",
     solution: "To simplify the writing process for the user that feels organic while adding visual feedback that is asethetically pleasing",
-    challenge: " provide users a digital space where they can write freely and reflect on their emotions in an intuitive way?",
-    headerTitle: [
-      "Research",
-      "Synthesis",
-      "Research + define",
-      "Ideation",
-      "Validate",
-      "Branding"
-    ],
-    headerListItems: [
-      "Research, User Interviews",
-      "Affinity Diagram, Persona, Experience Mapping",
-      "Competitive Martket Analysis, Define HMW?",
-      "User Stories, Task Flow, Concept Sketching, Wireframing",
-      "Usability Testing, Iteration", 
-      "Moodboard, Visual Identity, Hi-fidelity Prototype, Design System"
+    hmw: " provide users a digital space where they can write freely and reflect on their emotions in an intuitive way?",
+    process: [
+      {
+        title: "Understand",
+        descriptionList: [
+          "Research + discovery", "User Research", "Competitive Martket Analysis"
+        ]
+      },
+      {
+        title: "Define",
+        descriptionList: [
+          "User Interviews", "Findings + Solutions", "Define HMW?"
+        ]
+      },
+      {
+        title: "Ideation",
+        descriptionList: [
+          "Task Flow", "8-6-4-2 Method", "Wireframing"
+        ]
+      },
+      {
+        title: "Validate",
+        descriptionList: [
+          "Usability Testing", "Iteration"
+        ]
+      },
+      {
+        title: "Visual Design",
+        descriptionList: [
+          "Brand Colors", "Design System", "Hi-Fidelity Mockups"
+        ]
+      },
+      {
+        title: "Reflection",
+        descriptionList: [
+          "Learnings", "Next Steps"
+        ]
+      }
     ],
     gallery: [
       '/assets/yodae-container.svg'
@@ -141,45 +182,76 @@ const projects = {
     component: Yodae
   },
   glucochek: {
-    route: '/glucochek',
+    id: "glucocheck",
+    route: '/glucocheck',
     title: "GlucoCheck",
-    tagline: "",
-    description: "GlucoCheck is a Smartwatch app to guide or be a best-friend to count on (health wise) to keep your blood sugar levels in check.",
+    tagline: "Where diabetes health care meets technology ",
+    description: "A case study using the 8-6-4-2 methodology on a diabetes technology tracking App that records user’s glucose levels, activities, food & insulin consumption",
     tags: [
       "UX/UI Design,   ",
       "Case Ctudy,  ",
       "Interaction Design  "
     ],
-    heroImg: '/assets/paper-space-hero.png',
+    heroImg: '/assets/GlucoCheck-1.svg',
     tileImg: "/assets/Glucocheck-container.svg",
     bgHex: "#FFD9D4",
-    paraColor: "brand-dark-purple",
-    bckgColor: "brand-light-purple",
+    paraColor: "brand-dark-red",
     logoImg: "/assets/glucoCheck-logo.svg",
-    description: "A diabetes health managing App that tracks user’s glucose levels, activities, food & insulin consumption.",
-    role: "Product Design, Wire framing, Prototyping, Content Writing, User Research",
+    role: "Wireframing, Prototyping, User Researcher ",
     timeline: "2 weeks",
-    platform: "Mobile iOS",
+    platform: "Apple Smartwatch",
     tools: "Figma",
-    team: "",
-    problem: "As students, we take notes physically or digitally to document new information we learn from school and or to simply take notes of our day-to-day lives. We initially ventured off of the idea of note-taking but then questioned if we wanted to take a more personal approach in digital writing. We liked the idea of a digital space to journal.",
-    solution: "To have a simple digital interface to journal and receive feedback on their entries. To simplify the writing process for the user that feels organic while adding visual feedback that is asethetically pleasing",
-    challenge: " provide users a digital space where they can write freely and reflect on their emotions in an intuitive way?",
-    headerTitle: [
-      "Research",
-      "Synthesis",
-      "Research + define",
-      "Ideation",
-      "Validate",
-      "Branding"
+    team: [
+      "",
     ],
-    headerListItems: [
-      "Research, User Interviews",
-      "Affinity Diagram, Persona, Experience Mapping",
-      "Competitive Martket Analysis, Define HMW?",
-      "User Stories, Task Flow, Concept Sketching, Wireframing",
-      "Usability Testing, Iteration", 
-      "Moodboard, Visual Identity, Hi-fidelity Prototype, Design System"
+    descriptionBlurb: "UX is about solving everyday problems and optimizing the user's way of completing the task. As a type 1 diabetic, I face this every day, which is why for a school UX case study assignment I wanted take this opportunity and strategize how I can better manage diabetes easier for myself and hopefully for others.", 
+    problem: [
+      "Self-management of diabetes undoubtedly faces daily challenges of maintaining blood glucose levels to avert diabetes complications. As such, the work is tedious and for some, it is time-consuming. ",
+      "With technological advancements in diabetes technology has answered some of these tiring tasks. There are a number of beneficial hardware, devices and software that people with diabetes use to manage their blood glucose levels, if applied correctly, will assuredly reduce the burden of living with diabetes and improve in one's quality of life.",
+      "However, the complexity of diabetes technology to patient and provider understanding and implementations is an area needing of further guidance."
+    ],
+    solution: [
+      "Diabetics face numerous daily challenges in managing their BG levels where the idea of designing a mobile and smart watch app could help a diabetic remember to test, schedule their medication administrations, record and share their data with their endocrinologists.",
+      "The solution in addition to current technologies is to leverage the accessibility of wearable technology to help diabetics manage their health needs through personalized alerts and reminders."
+    ],
+    hmw: " provide users with a tool that could be integrated into patients' lives in helping them manage and stabilize their diabetes and avoid life threatening complications?",
+    process: [
+      {
+        title: "Research",
+        descriptionList: [
+          "Research + discovery", "User Research", "User Interviews"
+        ]
+      },
+      {
+        title: "Define",
+        descriptionList: [
+          "Findings + Solutions", "Define HMW?"
+        ]
+      },
+      {
+        title: "Ideation",
+        descriptionList: [
+          "8-6-4-2 Method", "Task Flow", "Wireframing"
+        ]
+      },
+      {
+        title: "Validate",
+        descriptionList: [
+          "Usability Testing", "Iteration"
+        ]
+      },
+      {
+        title: "Visual Design",
+        descriptionList: [
+          "Brand Colors", "Design System", "Hi-Fidelity Mockups"
+        ]
+      },
+      {
+        title: "Reflection",
+        descriptionList: [
+          "Learnings", "Next Steps"
+        ]
+      }
     ],
     gallery: [
       '/assets/paper-space-hero.png'
@@ -187,9 +259,10 @@ const projects = {
     component: GlucoCheck
   },
   covid19: {
+    id: "covid19",
     route: '/covid19-tracker',
     title: "COVID-19 Tracker",
-    tagline: "",
+    tagline: "Tracking COVID-19 cases",
     description: "A React.js application viewing a COVID-19 Case Data that interacts with an Express server retrieving its data from a COVID-19 API.",
     tags: [
       "Web Development,  ",
@@ -198,34 +271,57 @@ const projects = {
     heroImg: '/assets/COVID-container.svg',
     tileImg: "/assets/COVID-container.svg",
     bgHex: "#DFF5F6",
-    paraColor: "brand-dark-red",
-    bckgColor: "brand-light-red",
+    paraColor: "brand-dark-blue",
+    bckgColor: "brand-light-blue",
     image: "COVID-container.svg",
     logoImg: "/assets/covid-logo.svg",
-    description: "A React.js application viewing a COVID-19 Case Data that interacts with an Express server retrieving its data from a COVID-19 API. ",
-    role: "Front-end & back-end development",
+    role: "Front-end & back-end development + API integration",
     timeline: "1 week",
     platform: "Web Desktop Application",
     tools: "Figma + MERN stack",
-    team: "",
+    team: [
+      ""
+    ],
     problem: "To have a simple digital interface to journal and receive feedback on their entries",
     solution: "To simplify the writing process for the user that feels organic while adding visual feedback that is asethetically pleasing",
-    challenge: " provide users a digital space where they can write freely and reflect on their emotions in an intuitive way?",
-    headerTitle: [
-      "Research",
-      "Synthesis",
-      "Research + define",
-      "Ideation",
-      "Validate",
-      "Branding"
-    ],
-    headerListItems: [
-      "Research, User Interviews",
-      "Affinity Diagram, Persona, Experience Mapping",
-      "Competitive Martket Analysis, Define HMW?",
-      "User Stories, Task Flow, Concept Sketching, Wireframing",
-      "Usability Testing, Iteration", 
-      "Moodboard, Visual Identity, Hi-fidelity Prototype, Design System"
+    hmw: " provide users with a tool that could be integrated into patients' lives in helping them manage and stabilize their diabetes and avoid life threatening complications?",
+    process: [
+      {
+        title: "Research",
+        descriptionList: [
+          "Research + discovery", "User Research", "Competitive Martket Analysis"
+        ]
+      },
+      {
+        title: "Define",
+        descriptionList: [
+          "User Interviews", "Findings + Solutions", "Define HMW?"
+        ]
+      },
+      {
+        title: "Ideation",
+        descriptionList: [
+          "Task Flow", "8-6-4-2 Method", "Wireframing"
+        ]
+      },
+      {
+        title: "Validate",
+        descriptionList: [
+          "Usability Testing", "Iteration"
+        ]
+      },
+      {
+        title: "Visual Design",
+        descriptionList: [
+          "Brand Colors", "Design System", "Hi-Fidelity Mockups"
+        ]
+      },
+      {
+        title: "Reflection",
+        descriptionList: [
+          "Learnings", "Next Steps"
+        ]
+      }
     ],
     gallery: [
       '/assets/paper-space-hero.png'

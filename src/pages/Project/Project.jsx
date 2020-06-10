@@ -28,7 +28,7 @@ const Project = (props) => {
                                 <img className="project__logo" src={project.logoImg}></img>
                             </div>
                             <div className="col-sm-12 col-md-12 col-lg-7">
-                                <Paragraph className="project__description" size="md" weight="reg" color="black">{project.description}</Paragraph>
+                                <Paragraph className="project__description" size="lg" weight="reg" color="black">{project.description}</Paragraph>
                                 <div className="row project__category-list">
                                     <div className="col-sm-12 col-md-6 project__category-item">
                                         <Heading level="h4" style="h6" color="grey-light">ROLE</Heading>
@@ -47,10 +47,10 @@ const Project = (props) => {
                                     </div>
                                     <div className="col-sm-12 col-md-6 project__category-item">
                                         <Heading level="h4" style="h6" color="grey-light">TEAM</Heading>
-                                        <Paragraph size="sm" weight="reg" color="black">
+                                        <Paragraph size="sm" weight="reg" color="blue">
                                             {project.team.map(member => (
                                                 <>
-                                                    {member}
+                                                    <a className="custom-link-blue" href={member.memberSite}>{member.memberName}</a>
                                                     <br></br>
                                                 </>
                                             ))}

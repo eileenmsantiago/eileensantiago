@@ -19,10 +19,11 @@ const Work = (props) => {
                     showEmail = {true}
                 />
             </section>
-            <section className="projects">
-                <Container width="md">
-                    {projects.map((project, index) => {
-                        return (
+
+            {projects.map((project, index) => {
+                return (
+                    <section id={`projects-container--${project.id}`}>
+                        <Container>
                             <FadeIn>
                                 <article className="projects">
                                     <div className="row projects__container" style={{flexDirection: index % 2 == 1 ? 'row-reverse' : undefined}}>
@@ -47,7 +48,7 @@ const Work = (props) => {
                                                             </>
                                                         ))}
                                                     </Paragraph>
-                                                    <a href={project.route} className="cta " >   
+                                                    <a href={project.route} className="cta">   
                                                         <Paragraph size="sm" weight="md" weight="semi" color="black">View More</Paragraph>
                                                         <img className="cta-icon" src="/assets/arrow.svg"/>
                                                     </a>
@@ -57,10 +58,10 @@ const Work = (props) => {
                                     </div>
                                 </article>
                             </FadeIn>
-                        );
-                    })}
-                </Container>
-            </section>
+                        </Container>
+                    </section>
+                );
+            })}
         </> 
     );
 }

@@ -2,6 +2,10 @@
     display: flex;
     flex-direction: column;
 
+    .container {
+        padding-top: 2rem;
+    }
+
     nav {
         margin-top: 60px;
     }

@@ -20,17 +20,23 @@ html {
     }
     
     section {
-        // padding-top: 3rem;
-        // padding-bottom: 3rem;
-        margin-bottom: 3rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
 
         @include media-breakpoint-up(md) {
-            margin-bottom: 5rem;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
         }
 
         @include media-breakpoint-up(lg) {
-            margin-bottom: 8rem;
+            padding-top: 6rem;
+            padding-bottom: 6rem;
         }
+    }
+
+    p {
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
     }
 
     a {
@@ -42,9 +48,15 @@ html {
         }
     }
 
+    .custom-link-blue {
+        color: $color-blue;
+    }
+
     h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 0.85rem;
+
         @include media-breakpoint-up(md) {
-            margin-bottom: 1.25rem;
+            margin-bottom: 1.05rem;
         }
     }
 
