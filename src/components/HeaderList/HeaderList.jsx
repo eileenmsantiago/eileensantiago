@@ -9,8 +9,10 @@ const HeaderList = (props) => {
     return(
         <div className="row header-list">
             {list.map(process => (
-                <div className="col-sm-6 col-md-3 col-lg-2">
-                    <Heading level="h5" style="h5">{process.title}</Heading>
+                <div className="col-sm-6 col-md-3 col-lg-2 block-container">
+                    <Heading level="h5" style="h5">
+                        {process.title}
+                    </Heading>
                         {process.descriptionList.map(description => (
                         <>
                             <Paragraph color="grey" weight="lt">{description}</Paragraph>

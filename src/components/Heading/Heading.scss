@@ -17,7 +17,7 @@
     &-h5 {
         @include type-body-sm();
         font-weight: 600;
-        letter-spacing: 1.15px;
+        letter-spacing: 0.08rem;
     }
     &-h6 {
         @include type-body-xs();
