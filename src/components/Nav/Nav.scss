@@ -38,7 +38,6 @@
     &__list {
         margin-left: auto;
         display: flex;
-        align-items: center;
 
         li {
             font-size: 0.95rem;
@@ -61,9 +60,8 @@
     
 }
 
-#logo-plain {
-    @include type-heading-h3; 
-    line-height: 1.5rem;
+.logo-plain {
+    @include type-heading-h2; 
 
     span {
         color: $color-peach;
