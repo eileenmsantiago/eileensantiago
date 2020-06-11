@@ -11,7 +11,7 @@ const Work = (props) => {
     const {projects} = props;
     return(
         <>
-            <section className="hero">
+            <section id="hero">
                 <Hero 
                     pageTitle="A Portfolio" 
                     heading="by Eileen"

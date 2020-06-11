@@ -48,10 +48,6 @@ html {
         }
     }
 
-    .custom-link-blue {
-        color: $color-blue;
-    }
-
     h1, h2, h3, h4, h5, h6 {
         margin-bottom: 0.85rem;
 
@@ -77,6 +73,10 @@ html {
             text-decoration: underline;
             color: $color-grey;
             transition: all .2s ease-in-out;
+        }
+
+        &--blue {
+            color: $color-blue;
         }
     }
     

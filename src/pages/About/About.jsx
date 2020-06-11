@@ -62,19 +62,39 @@ const skillsData = [
     }
 ]
 
+const statusData = [
+    {
+        title: "DESIGN",
+        description: "Taking a UX course on SkillShare to work on my case study building skills. "
+    },
+    {
+        title: "DEVELOPMENT",
+        description: "Learning some of the best practices for web design + development like polishing up some of my old projects to incorporate + utilize the BEM methodology."
+    },
+    {
+        title: "READING",
+        description: "Recently finished  The Lost Symbol - Dan Brown. Currently starting It Ends with Us - Colleen Hoover."
+    },
+    {
+        title: "BAKING + HEALTH + SHOWS",
+        description: [
+            "Trying to perfect my Levain-like cookie recipe!",
+            "My every day goal is to drink plenty of water + green smoothies",
+            "Recently finished The Last Kingdom, and I’m Uthred-deprived but I’m starting Ozark!"
+        ]
+    }
+]
 const About = (props) => {
 
     return(
         <>
-        <section className="hero">
-            <Container>
-                <Hero
-                    pageTitle="About"
-                    heading="Eileen Santiago"
-                    // description="Aiming to utilize experiences working in the health sector, in nursing, and fusing it with visual and technical creativity to solve product problems."
-                    quote="A designer who builds meaningful interactions & aims to strengthen the bridge between design and development. "
-                />
-            </Container>
+        <section>
+            <Hero
+                pageTitle="About"
+                heading="Eileen Santiago"
+                // description="Aiming to utilize experiences working in the health sector, in nursing, and fusing it with visual and technical creativity to solve product problems."
+                quote="A designer who builds meaningful interactions & aims to strengthen the bridge between design and development. "
+            />
         </section>
         <section className="about">
             <Container width="sm" className="about--wrapper">
@@ -84,7 +104,7 @@ const About = (props) => {
                 <div className="about__content">
                     <FadeIn>
                         <Paragraph className="about__content-statement" size="sm" weight="reg" color="black">
-                        based in Toronto. I recently completed a post-graduate certificate in Interactive Media Management (IMM) at Sheridan College where I furthered my skills in wireframing, prototyping, and building interactive web applications. To learn more about me, have a read through of my <a className="custom-link" target="_blank" href="/assets/Resume-EileenSantiago-2020.pdf">resume</a>.
+                        based in Toronto. I recently completed a post-graduate certificate in Interactive Media Management (IMM) at Sheridan College where I furthered my skills in wireframing, prototyping, and building interactive web applications. To learn more about me, check out my <a className="custom-link--blue" target="_blank" href="/assets/Resume-EileenSantiago-2020.pdf">resume</a> ~
                         </Paragraph>
                     </FadeIn>
                     <div className="about__content-wrapper">
@@ -136,13 +156,15 @@ const About = (props) => {
             <Container bgColor="grey">
                 <section className="about-skills">
                     <div className="row">
-                        <div className="col-md-4">
+                        <div className="col-sm-12 col-md-4">
                             <Heading className="about-skills__title" level="h3" style="h1" color="black">
-                                Skills <br/>
+                                Skills
+                            </Heading>
+                            <Heading className="about-skills__title" level="h3" style="h1" color="black">
                                 & Tools
                             </Heading>
                         </div>
-                        <div className="col-md-8 about-skills__content">
+                        <div className="col-sm-12 col-md-8 about-skills__content">
                             {skillsData.map(skillsTools => {
                                 return (
                                 <FadeIn>
@@ -178,7 +200,26 @@ const About = (props) => {
                 </section>
             </Container> 
             <Container>
-                <Paragraph size="md" weight="lt" color="grey-light"></Paragraph>
+                <section id="status">
+                    <div className="row block-four">
+                        {statusData.map(item => (
+                            <>
+                                <div className="col-sm-6 col-md-3">
+                                    <Heading level="h4" style="h6" color="grey-light">{item.title}</Heading>
+                                    <Paragraph size="sm" weight="reg" color="black">{item.description}</Paragraph>
+                                </div>
+                            </>
+                        ))}
+                    </div>
+                </section>
+                <section id="blurb-collab">
+                    <Paragraph size="md" weight="reg" color="black">
+                        Let's collaborate together! <a className="custom-link--blue" href="mailto:eileenmvs@gmail.com"> eileenmvs@gmail.com</a> 
+                    </Paragraph>
+                    <Paragraph>
+                        Or check out my <a className="custom-link--blue" target="_blank" href="/assets/Resume-EileenSantiago-2020.pdf">resume</a> 
+                    </Paragraph>
+                </section>
             </Container>
         </>
     )

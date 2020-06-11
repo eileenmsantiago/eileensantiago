@@ -1,7 +1,5 @@
 .about {
-    p {
-        line-height: 2rem;
-    }
+
     &--wrapper {
         display: flex;
         justify-content: center;
@@ -32,8 +30,14 @@
     }
 
     &-skills__content {
-        max-width: 60%;
-        padding-left: 1rem;
+
+        max-width: 100%;
+        padding-left: 0.85rem;
+
+        @include media-breakpoint-up(sm) {
+            max-width: 60%;
+            padding-left: 1rem;
+        }
     }
 }
 
