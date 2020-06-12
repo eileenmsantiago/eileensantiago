@@ -15,12 +15,11 @@
         @include type-heading-h3();
     }
     &-h5 {
-        @include type-body-sm();
-        font-weight: 600;
+        @include type-heading-h4();
         letter-spacing: 0.08rem;
     }
     &-h6 {
-        @include type-body-xs();
+        @include type-body-sm();
         font-weight: 600;
         letter-spacing: 0.08rem;
     }

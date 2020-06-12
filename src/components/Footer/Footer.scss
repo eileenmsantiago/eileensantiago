@@ -19,8 +19,7 @@ footer {
         @include media-breakpoint-up(md) {
             display: block;
             &:not(:first-child) {
-                margin-left: 3rem;
-                margin-top: 15px;
+                margin-left: 2rem;
             }
         }
     }

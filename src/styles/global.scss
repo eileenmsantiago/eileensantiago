@@ -61,37 +61,41 @@ html {
     }
 
     .container {
-        padding-right: 2rem;
-        padding-left: 2rem;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        @include media-breakpoint-up(md) {
+            padding-right: 2rem;
+            padding-left: 2rem;
+        }
     }
 
     .custom-link {
-        text-decoration: underline;
-        color: $color-peach;
+        text-decoration: none;
+        color: $color-blue;
         
         &:hover {
-            text-decoration: underline;
+            // text-decoration: underline;
             color: $color-grey;
             transition: all .2s ease-in-out;
         }
-
-        &--blue {
-            color: $color-blue;
-        }
     }
-    
+
     .separator {
-        margin-top: 1.3rem;
-        margin-bottom: 1.3rem;
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
         border-bottom: 1px solid black;
         width: 20rem;
+
 
         @include media-breakpoint-down(sm) {
             margin: 1rem auto;
         }
     }
 
-    .break-space {
-        margin-bottom: 4rem;
+
+    .block-content {
+        margin-bottom: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 }

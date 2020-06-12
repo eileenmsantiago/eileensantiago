@@ -1,45 +1,60 @@
 .about {
 
-    &--wrapper {
+    img {
+        width: 90%;
+    }
+    &__wrapper {
         display: flex;
         justify-content: center;
         display: flex;
         flex-direction: column;
         max-width: 80%;
     }
-    
-    &__content {
-        max-width: 100%;
-        padding-left: 0rem;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
-        
-        @include media-breakpoint-up(md) {
-            padding-left: 5rem;
-            max-width: 70%;
-        }
 
-        &-statement {
-            margin: 4rem 0;
-        }
+    &__cta {
+        display: flex;
+        flex-direction: row;
 
-        &-wrapper {
-            margin-bottom: 8rem;
+        &--secondary {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
         }
     }
+    
+    // &__content {
+    //     max-width: 100%;
+    //     padding-left: 0rem;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //     justify-content: center;
+        
+    //     @include media-breakpoint-up(md) {
+    //         padding-left: 5rem;
+    //         max-width: 70%;
+    //     }
+
+    //     &-statement {
+    //         margin: 4rem 0;
+    //     }
+
+    //     &-wrapper {
+    //         margin-bottom: 8rem;
+    //     }
+    // }
 
     &-skills__content {
-
         max-width: 100%;
-        padding-left: 0.85rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
 
-        @include media-breakpoint-up(sm) {
-            max-width: 60%;
-            padding-left: 1rem;
+        @include media-breakpoint-up(md) {
+            padding-left: 1.5rem;
         }
     }
 }
+
 
 .heading {
     &-border {

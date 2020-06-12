@@ -1,21 +1,16 @@
 .category-container {
-    max-width: 700px;
+    // max-width: 700px;
     margin-bottom: 3rem;
 
     &__nav {
-        border-bottom: 1px solid $color-black;
-        margin-bottom: 2rem;
+        // border-bottom: 1px solid $color-black;
+        margin-bottom: 1rem;
     }
     &__content {
-        margin-left: 10rem;
     
         &:not(:last-child) {
             margin-bottom: 2rem;
             border-bottom: 1px solid $color-grey-light;
-        }
-
-        @include media-breakpoint-down(sm) {
-            margin-left: 0;
         }
 
         &--no-gutter {

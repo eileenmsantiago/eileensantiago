@@ -42,10 +42,10 @@
         li {
             font-size: 0.95rem;
             display: inline-block;
-            margin-left: 60px;
+            margin-left: 2rem;
     
-            @include media-breakpoint-down(sm) {
-                margin-left: 25px;
+            @include media-breakpoint-up(sm) {
+                margin-left: 4rem;
             }
 
             &:first-child {

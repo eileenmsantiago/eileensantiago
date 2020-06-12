@@ -50,7 +50,7 @@ const Project = (props) => {
                                         <Paragraph size="sm" weight="reg" color="blue">
                                             {project.team.map(member => (
                                                 <>
-                                                    <a className="custom-link--blue" href={member.memberSite}>{member.memberName}</a>
+                                                    <a className="custom-link" href={member.memberSite}>{member.memberName}</a>
                                                     <br></br>
                                                 </>
                                             ))}

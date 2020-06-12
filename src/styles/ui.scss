@@ -1,0 +1,30 @@
+.es-button {
+    width: 100%;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    max-width: 20rem;
+    align-self: flex-start;
+    cursor: pointer;
+
+    &--primary { 
+        background-color: transparent;
+        border: solid 1.35px $color-blue;
+        border-radius: 0px;
+        color: $color-blue;
+        display: inline-block;
+        letter-spacing: .1rem;
+        text-align: center;
+        transition: .25s ease-in-out;
+        z-index: -1;
+
+        &:hover {
+            background-color: $color-blue;
+            color: $color-white;
+        }
+
+        &:before {
+            transform: translateX(-101%)
+        }
+    }
+}
+

@@ -49,7 +49,7 @@ const Footer = (props) => {
                         </a>
                     </div>
                     <div className="row">
-                        <div className="col-lg-6">
+                        <div className="col-md-7 col-lg-6">
                             <div className="footer__wrapper">
                                 <div className="footer__nav--top">
                                     <div className="footer__header">
@@ -59,13 +59,13 @@ const Footer = (props) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-md-5 col-lg-6">
                             <div id="blurb-collab">
                                 <Paragraph size="md" weight="reg" color="black">
-                                    Let's collaborate together! <a className="custom-link--blue" href="mailto:eileenmvs@gmail.com"> eileenmvs@gmail.com</a> 
+                                    Let's collaborate together! <a className="custom-link" href="mailto:eileenmvs@gmail.com"> eileenmvs@gmail.com</a> 
                                 </Paragraph>
                                 <Paragraph>
-                                    Or check out my <a className="custom-link--blue" target="_blank" href="/assets/Resume-EileenSantiago-2020.pdf">resume</a> 
+                                    Or check out my <a className="custom-link" target="_blank" href="/assets/Resume-EileenSantiago-2020.pdf">resume</a> 
                                 </Paragraph>
                             </div>
                         </div>                           
@@ -97,49 +97,6 @@ const Footer = (props) => {
                         </div>
                     </div>
                 </Container>
-                {/* <Container bgColor="grey">
-                    <div className="footer__container">
-                        <div className="row footer__logo">
-                            <a href="/" id="logo-plain">
-                                e<span id="logo-color">.</span>
-                            </a>
-                        </div>
-                        <div className="row footer__content">
-                            <a href="/">
-                                <Heading level="h1" style="h2">Eileen Santiago</Heading>
-                            </a>
-                            <Paragraph size="sm" weight="reg" color="black">USER EXPERIENCE DEVELOPER</Paragraph>
-                        </div>
-                        <div className="row footer__nav">
-                            <nav>
-                                <ul>
-                                    {socialLinks.map(social => (
-                                        <li>
-                                            <a href={social.link}>{social.name}</a>
-                                            <br></br>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </nav>
-                            <div className="separator"></div>   
-                        </div>
-                        <div className="row footer__link">
-                            <Paragraph>
-                                Download Resume <a className="custom-link" target="_blank" href="/assets/Resume-EileenSantiago-2020.pdf">here</a>
-                            </Paragraph>
-                            <Paragraph>
-                                👋🏼 Say hello at <a className="custom-link" href="mailto:eileenmvs@gmail.com">eileenmvs@gmail.com</a>
-                            </Paragraph>
-                            <Paragraph 
-                                color="grey"
-                                size="xs"
-                                className="copy-right"
-                            >
-                                © 2020 Eileen Santiago, Made in Toronto, CA.
-                            </Paragraph>
-                        </div>
-                    </div>
-                </Container> */}
             </footer>
         </>
     )
