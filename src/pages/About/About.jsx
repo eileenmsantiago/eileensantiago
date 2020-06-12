@@ -108,12 +108,12 @@ const About = (props) => {
                     <div className="col-lg-5">
                         <img src="/assets/eileensantiago20201.jpg"></img>
                     </div>
-                    <div className="col-lg-7">
+                    <div className="col-lg-7 block-content">
                         <Heading level="h5" style="h4" className="about__heading" color="black">
                             A Toronto based User Experience Developer striving to make user centric products that are meaningful + intuitive
                         </Heading>
                         <div className="about__content">
-                            <div className="block-content">
+                            <div id="content-about-me">
                                 <Paragraph className="about__content-statement" size="sm" weight="reg" color="black">
                                     I recently completed a post-graduate certificate on Interactive Media Management at Sheridan College where I furthered my skills in design + development. In all, I’ve built a handful of fun, meaningful, and interactive digital experiences — <a className="custom-link" href="/">check them out</a>!
                                 </Paragraph>

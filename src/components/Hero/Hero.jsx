@@ -11,7 +11,7 @@ const Hero = (props) => {
     return(
         <>
         <Container>
-            <Heading className="hero__title" level="h1" style="h5">
+            <Heading className="hero__title" level="h1" style="h6">
                 {pageTitle}
             </Heading>
             <div className="row">   

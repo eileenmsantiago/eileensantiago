@@ -10,7 +10,7 @@ const ProjectHero = (props) => {
     return(
         <Container bgHex={bgHex}>
             <section className="project-hero">
-                <Heading className="project-hero__title" level="h1" style="h5">
+                <Heading className="project-hero__title" level="h1" style="h6">
                     {pageTitle}
                 </Heading>
                 <div className="row">   

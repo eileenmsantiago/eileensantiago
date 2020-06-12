@@ -22,7 +22,7 @@ const Project = (props) => {
             <Container>
                 <section className={`project ${project.id}`}>
                     <div className="project__wrapper">
-                        <Heading level="h1" style="h5" weight="semi" className="project__header">PROJECT OVERVIEW</Heading>
+                        <Heading level="h1" style="h6" weight="semi" className="project__header">PROJECT OVERVIEW</Heading>
                         <div className="row project__container">
                             <div className="col-sm-12 col-md-12 col-lg-5">
                                 <img className="project__logo" src={project.logoImg}></img>
@@ -69,7 +69,7 @@ const Project = (props) => {
                 <section>
                     <div className="project__container" id="project-process">
                         <div className="project-process__container" id="process">
-                            <Heading level="h3" style="h5" weight="semi">PROCESS</Heading>
+                            <Heading level="h3" style="h6" weight="semi">PROCESS</Heading>
                             <HeaderList list={project.process}></HeaderList>
                         </div>
                     </div>
