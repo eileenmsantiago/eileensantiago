@@ -110,7 +110,7 @@ const About = (props) => {
                     </div>
                     <div className="col-lg-7 block-content">
                         <Heading level="h5" style="h4" className="about__heading" color="black">
-                            A Toronto based User Experience Developer striving to make user centric products that are meaningful + intuitive
+                            A User Experience Developer striving to make user centric products that are meaningful + intuitive
                         </Heading>
                         <div className="about__content">
                             <div id="content-about-me">
@@ -124,7 +124,7 @@ const About = (props) => {
                                     My passion for understanding people accompanies my approach to product issues with simple design solutions. I'm a creative thinker who embraces data to help drive continuous improvements to projects I'm working on. When I’m not designing you can catch me <a className="custom-link" href="/">learning/ doing</a> a few other things
                                 </Paragraph>
                             </div>
-                            <div className="row about__cta block-content">
+                            <div className="row about__cta">
                                 <div className="col-lg-6">
                                     <a className="es-button es-button--primary" href="https://calendly.com/eileensantiago/30min">
                                         <Paragraph size="sm" weight="reg">GET IN TOUCH</Paragraph>
@@ -235,16 +235,18 @@ const About = (props) => {
                         </div>
                         {/* <div className="col-md-auto"></div> */}
                         <div className="col-lg-6">
-                            {statusData.map(item => (
-                                <>
-                                    <div className="">
-                                        <Heading level="h4" style="h6" color="grey-light">{item.title}</Heading>
-                                        {item.description.map(statusItem => (
-                                            <Paragraph size="sm" weight="reg" color="black">{statusItem}</Paragraph>
-                                        ))}
-                                    </div>
-                                </>
-                            ))}
+                            <FadeIn>
+                                {statusData.map(item => (
+                                    <>
+                                        <div className="break" id="status-description">
+                                            <Heading level="h4" style="h6" color="grey-light">{item.title}</Heading>
+                                            {item.description.map(statusItem => (
+                                                <Paragraph size="sm" weight="reg" color="black">{statusItem}</Paragraph>
+                                            ))}
+                                        </div>
+                                    </>
+                                ))}
+                            </FadeIn>
                         </div>
                     </div>
                 </section>
