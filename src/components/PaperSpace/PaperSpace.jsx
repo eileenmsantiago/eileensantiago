@@ -18,7 +18,7 @@ const PaperSpace = (props) => {
                         </div>
                         <div className="col-lg-7 project__content-container" >
                             <div className="project__content-block">
-                                <Heading level="h4" style="h6" color="grey" className="project__content__heading">THE PROBLEM</Heading>
+                                <Heading level="h4" style="h6" weight="semi" color="grey" className="project__content__heading">THE PROBLEM</Heading>
                                 <Paragraph size="sm" weight="reg" color="black">
                                     {project.problem.map(paragraph => (
                                         <>
@@ -29,7 +29,7 @@ const PaperSpace = (props) => {
                                 </Paragraph>
                             </div>
                             <div className="project__content-block">
-                                <Heading level="h4" style="h6" color="grey" className="project__content__heading">THE SOLUTION</Heading>
+                                <Heading level="h4" style="h6" weight="semi" color="grey" className="project__content__heading">THE SOLUTION</Heading>
                                 <Paragraph size="sm" weight="reg" color="black">{project.solution}</Paragraph>
                             </div>
                         </div>

@@ -19,7 +19,7 @@ const GlucoCheck = (props) => {
                         <div className="col-md-auto"></div>
                         <div className="col-lg-7 project__content-container" >
                             <div className="project__content-block">
-                                <Heading level="h4" style="h6" color="grey" className="project__header">RESEARCH + DISCOVERY </Heading>
+                                <Heading level="h4" style="h5" color="grey" className="project__header">RESEARCH + DISCOVERY </Heading>
                                 <Heading level="h5" style="h4" color="black" weight="lt">Leveraging current tools and technology</Heading>
                                 <Paragraph size="sm" weight="reg" color="black">
                                     One of the biggest technological advancements in blood glucose management is the continuous glucose monitors (CGM). A CGM automatically tracks blood glucose levels, aka blood sugars, for a continuous duration of time (National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK), June 2017). A CGM contains a small sensor that is inserted underneath your skin around he abdomen or arm. The sensor tests glucose from the interstitial fluid every few minutes and is sent wirelessly to a monitoring device. 
@@ -91,7 +91,7 @@ const GlucoCheck = (props) => {
                         </div>
                         <div className="col-lg-7 project__content-container">
                             <div className="project__content-block">
-                                <Heading level="h4" style="h6" color="grey" className="project__header">THE PROBLEM</Heading>
+                                <Heading level="h4" style="h5" color="grey" className="project__header">THE PROBLEM</Heading>
                                 <Paragraph size="sm" weight="reg" color="black">
                                     {project.problem.map(paragraph => (
                                         <>

@@ -45,7 +45,7 @@
     line-height: 2.75rem;
 
     @include media-breakpoint-up(md) {
-        font-size: 2rem; // 37.9px
+        font-size: 2rem; 
         line-height: 3.25rem;
     }
 }
@@ -85,10 +85,10 @@
 }
 
 @mixin type-heading-h3 {
+    letter-spacing: 0.1rem;
     @include type-heading-base();
     font-size: 1.777rem;
     line-height: 2rem;
-    letter-spacing: 0.05rem;
     
     @include media-breakpoint-up(md) {
         font-size: 2.369rem;
@@ -96,17 +96,17 @@
     }
 }
 
-@mixin type-heading-h4 {
-    @include type-heading-base();
-    font-size: 1.333rem;
-    line-height: 2rem;
-    letter-spacing: 0.05rem;
+// @mixin type-heading-h4 {
+//     @include type-heading-base();
+//     font-size: 1.333rem;
+//     line-height: 2rem;
+//     letter-spacing: 0.05rem;
     
-    @include media-breakpoint-up(md) {
-        font-size: 1.777rem;
-        line-height: 2.85rem;
-    }
-}
+//     @include media-breakpoint-up(md) {
+//         font-size: 1.777rem;
+//         line-height: 2.85rem;
+//     }
+// }
 
 
 

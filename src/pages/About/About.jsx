@@ -115,13 +115,13 @@ const About = (props) => {
                         <div className="about__content">
                             <div id="content-about-me">
                                 <Paragraph className="about__content-statement" size="sm" weight="reg" color="black">
-                                    I recently completed a post-graduate certificate on Interactive Media Management at Sheridan College where I furthered my skills in design + development. In all, I’ve built a handful of fun, meaningful, and interactive digital experiences — <a className="custom-link" href="/">check them out</a>!
+                                    I recently completed a post-graduate certificate on Interactive Media Management at Sheridan College where I furthered my skills in design + development. In all, I’ve built a handful of fun, meaningful, and interactive digital experiences - check out some of <a className="custom-link" href="/"> my best work</a>!
                                 </Paragraph>
                                 <Paragraph className="about__content-statement" size="sm" weight="reg" color="black">
                                     Prior to this, I studied health sciences, in nursing, where now I can proudly say I fuse my knowledge and experience in the health sector alongside with my technical creativity to build experiences that are digitally intuitive.
                                 </Paragraph>
                                 <Paragraph className="about__content-statement" size="sm" weight="reg" color="black">
-                                    My passion for understanding people accompanies my approach to product issues with simple design solutions. I'm a creative thinker who embraces data to help drive continuous improvements to projects I'm working on. When I’m not designing you can catch me <a className="custom-link" href="/">learning/ doing</a> a few other things
+                                    My passion for understanding people accompanies my approach to product issues with simple design solutions. I'm a creative thinker who embraces data to help drive continuous improvements to projects I'm working on. When I’m not designing you can catch me <a className="custom-link" href="#status">learning/ doing</a> a few other things
                                 </Paragraph>
                             </div>
                             <div className="row about__cta">
@@ -202,7 +202,7 @@ const About = (props) => {
                                                         {skillsTools.items.map(item => (
                                                             <>
                                                                 <div id="tools-block">
-                                                                    <Heading className="about-skills__heading" style="h6" color="grey-light">
+                                                                    <Heading className="about-skills__heading" style="h5" weight="semi" color="grey-light">
                                                                         {item.subTitle}
                                                                     </Heading>
                                                                     <Paragraph className="about-skills__items" size="sm" weight="reg" color="black">
@@ -233,13 +233,12 @@ const About = (props) => {
                                 currently,
                             </Heading>
                         </div>
-                        {/* <div className="col-md-auto"></div> */}
                         <div className="col-lg-6">
                             <FadeIn>
                                 {statusData.map(item => (
                                     <>
                                         <div className="break" id="status-description">
-                                            <Heading level="h4" style="h6" color="grey-light">{item.title}</Heading>
+                                            <Heading level="h4" style="h5" weight="semi" color="grey-light">{item.title}</Heading>
                                             {item.description.map(statusItem => (
                                                 <Paragraph size="sm" weight="reg" color="black">{statusItem}</Paragraph>
                                             ))}

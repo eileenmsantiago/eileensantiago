@@ -5,23 +5,22 @@
     }
     &-h2 {
         @include type-heading-h2();
-        letter-spacing: 2px;
+        letter-spacing: 0.1rem;
     }
     &-h3 {
-        @include type-body-xl();
-        font-weight: 600;
+        @include type-body-lg();
     }
     &-h4 {
         @include type-heading-h3();
     }
     &-h5 {
-        @include type-heading-h4();
+        @include type-body-sm();
         letter-spacing: 0.08rem;
     }
     &-h6 {
-        @include type-body-sm();
-        font-weight: 600;
+        @include type-body-xs();
         letter-spacing: 0.08rem;
+        font-weight: 600;
     }
 
     &--color {
