@@ -82,11 +82,10 @@ const statusData = [
         ]
     },
     {
-        title: "BAKING + HEALTH + SHOWS",
+        title: "BAKING + SHOWS",
         description: [
             "Trying to perfect my Levain-like cookie recipe!",
-            "Drink plenty of water + green smoothies every day",
-            "Recently finished The Last Kingdom, and now I’m Uthred-deprived but I’m starting Ozark!"
+            "Recently finished The Last Kingdom, and now I’m Uthred-deprived. Starting Ozark, Hunters and Upload :}"
         ]
     }
 ]
@@ -120,7 +119,7 @@ const About = (props) => {
                                     Prior to this, I studied health sciences, in nursing, where now I can proudly say I fuse my knowledge and experience in the health sector alongside with my technical creativity to build experiences that are digitally intuitive.
                                 </Paragraph>
                                 <Paragraph className="about__content-statement" size="sm" weight="reg" color="black">
-                                    My passion for understanding people accompanies my approach to product issues with simple design solutions. I'm a creative thinker who embraces data to help drive continuous improvements to projects I'm working on. When I’m not designing you can catch me <a className="custom-link" href="#status">learning/ doing</a> a few other things!
+                                    My passion for understanding people accompanies my approach to product issues with simple design solutions. I'm a creative thinker who embraces data to help drive continuous improvements to projects I'm working on. When I’m not designing you can catch me <a className="custom-link" href="#status">learning/ doing</a> a few other things! 
                                 </Paragraph>
                             </div>
                             <div className="row about__cta">
@@ -232,11 +231,11 @@ const About = (props) => {
                                 currently,
                             </Heading>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6" >
                             <FadeIn>
                                 {statusData.map(item => (
                                     <>
-                                        <div className="break" id="status-description">
+                                        <div className="break status-description">
                                             <Heading level="h4" style="h5" weight="semi" color="grey-light">{item.title}</Heading>
                                             {item.description.map(statusItem => (
                                                 <Paragraph size="sm" weight="reg" color="black">{statusItem}</Paragraph>

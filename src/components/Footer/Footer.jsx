@@ -53,8 +53,8 @@ const Footer = (props) => {
                             <div className="footer__wrapper">
                                 <div className="footer__nav--top">
                                     <div className="footer__header">
-                                        <a href="/"><Heading level="h2" style="h2">Eileen Santiago</Heading></a>
-                                        <Paragraph size="sm" weight="reg" color="black">USER EXPERIENCE DEVELOPER</Paragraph>
+                                        <a href="/"><Heading level="h4" style="h2">Eileen Santiago</Heading></a>
+                                        <Paragraph size="md" weight="lt" color="black">User Experience Designer</Paragraph>
                                     </div>
                                 </div>
                             </div>

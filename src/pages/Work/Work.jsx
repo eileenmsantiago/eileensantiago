@@ -15,7 +15,7 @@ const Work = (props) => {
                 <Hero 
                     pageTitle="A Portfolio" 
                     heading="by Eileen"
-                    description="A design systems thinker, based in Toronto, who uses design and code to make user-centric digital products that are meaningful + intuitive"
+                    description="A User Exeperience Designer, who uses design and code to make user-centric digital products that are meaningful + intuitive"
                     showEmail = {true}
                 />
             </section>

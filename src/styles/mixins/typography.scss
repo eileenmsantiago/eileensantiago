@@ -19,11 +19,11 @@
 @mixin type-body-sm{
     @include type-body-base();
     font-size: 0.85rem;
-    line-height: 1.85rem;
+    line-height: 1.75rem;
 
     @include media-breakpoint-up(md) {
         font-size: 1rem;
-        line-height: 2.45rem;
+        line-height: 2rem;
     }
 }
 
