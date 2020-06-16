@@ -1,7 +1,8 @@
 .comment{
     display: flex;
     flex-direction: column;
-    margin: 0 3rem;
+    justify-content: center;
+
     &__heading {
         margin-bottom: 3rem;
     }
@@ -19,7 +20,7 @@
     }
 }
 
-.form-container {
+.contact-form {
     margin-bottom: 1rem;
     &__label {
         margin-right: 2rem;

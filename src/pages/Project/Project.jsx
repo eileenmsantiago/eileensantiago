@@ -76,9 +76,11 @@ const Project = (props) => {
                 </section>
             </Container>
                 {children}
-            <Container>
-                <CommentContainer/>
-            </Container>
+            {/* <Container>
+                <section id="comment">
+                    <CommentContainer/>
+                </section>
+            </Container> */}
         </>
     )
 }

@@ -32,11 +32,10 @@ class CommentContainer extends Component {
                 {this.state.allComments.map((comment, index) => { 
                     return (
                         <>
-                            <CommentDisplay key={index} comment={comment} updateComments={this.getComments}/>
+                            {/* <CommentDisplay key={index} comment={comment} updateComments={this.getComments}/> */}
                         </>
                     )
                 })}
-                {/* <CommentForm updateComments={this.getComments}/> */}
             </React.Fragment>
         )
     }

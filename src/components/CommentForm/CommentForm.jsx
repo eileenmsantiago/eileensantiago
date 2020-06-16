@@ -33,54 +33,53 @@ class CommentForm extends Component {
         console.log(this.state);
         return (
             <>
-                <Heading className="comment-section__heading" level="h4" style="h5">
-                    I would love to hear from you 💞
-                </Heading>
-                <form 
-                    onSubmit={this.handleSubmit}
-                    className="contact-form"
-                >
-                    <label>
-                        <input 
-                            type='text'
-                            name='name'
-                            className="inp"
-                            placeholder='Your name'
-                            value={ this.state.name }
-                            onChange={ this.handleChange } />
-                        <span class="label">Your name</span>
-                        <span class="focus-bg"></span>
-                    </label>
-                    <label>
-                        <input 
-                            type='text'
-                            name='email'
-                            className="inp"
-                            placeholder='Your email'
-                            value={ this.state.email }
-                            onChange={ this.handleChange } />
-                        <span class="label">Your email</span>
-                        <span class="focus-bg"></span>
-                    </label>
-                    <label>
-                        <input 
-                            type='text'
-                            name='comment'
-                            className="inp"
-                            placeholder='Your comment'
-                            value={ this.state.text }
-                            onChange={ this.handleChange } />
-                        <span class="label">Your comment</span>
-                        <span class="focus-bg"></span>
-                    </label>
-                    <label>
-                        <input 
-                            className="inp"
-                            type="submit" 
-                            value="Submit" 
-                        />
-                    </label>
-                </form>
+                <div className="comment__container">
+                    <form 
+                        onSubmit={this.handleSubmit}
+                        className="contact-form"
+                    >
+                        <label>
+                            <input 
+                                type='text'
+                                name='name'
+                                className="inp"
+                                placeholder='Your name'
+                                value={ this.state.name }
+                                onChange={ this.handleChange } />
+                            <span class="label">Your name</span>
+                            <span class="focus-bg"></span>
+                        </label>
+                        <label>
+                            <input 
+                                type='text'
+                                name='email'
+                                className="inp"
+                                placeholder='Your email'
+                                value={ this.state.email }
+                                onChange={ this.handleChange } />
+                            <span class="label">Your email</span>
+                            <span class="focus-bg"></span>
+                        </label>
+                        <label>
+                            <input 
+                                type='text'
+                                name='comment'
+                                className="inp"
+                                placeholder='Your comment'
+                                value={ this.state.text }
+                                onChange={ this.handleChange } />
+                            <span class="label">Your comment</span>
+                            <span class="focus-bg"></span>
+                        </label>
+                        <label>
+                            <input 
+                                className="inp"
+                                type="submit" 
+                                value="Submit" 
+                            />
+                        </label>
+                    </form>
+                </div>
             </>
         )
     }

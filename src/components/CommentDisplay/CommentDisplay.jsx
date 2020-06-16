@@ -17,8 +17,8 @@ const CommentDisplay = (props) => {
     return (
         <div className="comment">
             <div className="comment__label">
-                <Paragraph className="comment__label-para" size="md" weight="bold">{props.comment.name}</Paragraph>
-                <Paragraph size="md" weight="reg">({props.comment.email})</Paragraph>
+                <Paragraph className="comment__label-para" size="md" weight="semi">{props.comment.name}</Paragraph>
+                <Paragraph size="md" weight="lt">({props.comment.email})</Paragraph>
             </div>
             <div className="comment__label">
                 <Paragraph>{props.comment.text}</Paragraph>

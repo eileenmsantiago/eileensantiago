@@ -1,6 +1,5 @@
 import React from 'react'
 import Container from '../Container/Container';
-import Jumbotron from 'react-bootstrap/Jumbotron';
 import Heading from '../Heading/Heading';
 import Paragraph from '../Paragraph/Paragraph';
 import Blob from '../Blob/Blob';

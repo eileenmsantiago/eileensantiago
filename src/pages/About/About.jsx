@@ -36,15 +36,15 @@ const experienceData = [
 ]
 const skillsData = [
     {
-        title: "design",
+        title: "Design",
         description: "Product (UX/UI), Visual Design, Interaction Design, Typograpy, Sketching + Illustration, Wireframing, Prototyping, Usability Testing, Visual Design, Design Systems, & Brand Identity"
     },
     {
-        title: "development",
+        title: "Development",
         description: "Front-end & back-end development, web design + development, databases, CMS, Interactive Coding"
     },
     {
-        title: "tools + tech stack",
+        title: "Tools + Tech Stack",
         items: [
             {
                 subTitle: "DESIGN",
@@ -98,8 +98,7 @@ const About = (props) => {
             <Hero
                 pageTitle="About"
                 heading="Eileen Santiago"
-                // description="Aiming to utilize experiences working in the health sector, in nursing, and fusing it with visual and technical creativity to solve product problems."
-                quote="A designs systems thinker who builds meaningful interactions & aims to strengthen the bridge between design and development. "
+                quote="A design systems thinker, based in Toronto, who uses design and code to make user-centric digital products that are meaningful + intuitive"
             />
         </section>
         <section className="about">
@@ -110,10 +109,10 @@ const About = (props) => {
                     </div>
                     <div className="col-lg-7 block-content">
                         <Heading level="h5" style="h4" className="about__heading" color="black">
-                            A User Experience Developer striving to make user centric products that are meaningful + intuitive
+                            A User Experience Developer striving to make user-centric products that are meaningful + intuitive
                         </Heading>
                         <div className="about__content">
-                            <div id="content-about-me">
+                            <div id="about__content">
                                 <Paragraph className="about__content-statement" size="sm" weight="reg" color="black">
                                     I recently completed a post-graduate certificate on Interactive Media Management at Sheridan College where I furthered my skills in design + development. In all, I’ve built a handful of fun, meaningful, and interactive digital experiences - check out some of <a className="custom-link" href="/"> my best work</a>!
                                 </Paragraph>
@@ -121,16 +120,16 @@ const About = (props) => {
                                     Prior to this, I studied health sciences, in nursing, where now I can proudly say I fuse my knowledge and experience in the health sector alongside with my technical creativity to build experiences that are digitally intuitive.
                                 </Paragraph>
                                 <Paragraph className="about__content-statement" size="sm" weight="reg" color="black">
-                                    My passion for understanding people accompanies my approach to product issues with simple design solutions. I'm a creative thinker who embraces data to help drive continuous improvements to projects I'm working on. When I’m not designing you can catch me <a className="custom-link" href="#status">learning/ doing</a> a few other things
+                                    My passion for understanding people accompanies my approach to product issues with simple design solutions. I'm a creative thinker who embraces data to help drive continuous improvements to projects I'm working on. When I’m not designing you can catch me <a className="custom-link" href="#status">learning/ doing</a> a few other things!
                                 </Paragraph>
                             </div>
                             <div className="row about__cta">
-                                <div className="col-lg-6">
+                                <div className="col-lg-7">
                                     <a className="es-button es-button--primary" href="https://calendly.com/eileensantiago/30min">
                                         <Paragraph size="sm" weight="reg">GET IN TOUCH</Paragraph>
                                     </a>
                                 </div>
-                                <div className="col-lg-6">
+                                <div className="col-lg-5">
                                     <div className="about__cta--secondary">
                                         <div>
                                             <Paragraph size="sm" weight="reg">

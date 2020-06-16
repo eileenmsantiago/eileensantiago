@@ -23,7 +23,7 @@
 
     @include media-breakpoint-up(md) {
         font-size: 1rem;
-        line-height: 2rem;
+        line-height: 2.45rem;
     }
 }
 
@@ -92,21 +92,9 @@
     
     @include media-breakpoint-up(md) {
         font-size: 2.369rem;
-        line-height: 2.85rem;
+        line-height: 3.2rem;
     }
 }
-
-// @mixin type-heading-h4 {
-//     @include type-heading-base();
-//     font-size: 1.333rem;
-//     line-height: 2rem;
-//     letter-spacing: 0.05rem;
-    
-//     @include media-breakpoint-up(md) {
-//         font-size: 1.777rem;
-//         line-height: 2.85rem;
-//     }
-// }
 
 
 

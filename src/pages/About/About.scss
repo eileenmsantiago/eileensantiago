@@ -22,27 +22,16 @@
             justify-content: center;
         }
     }
-    
-    // &__content {
-    //     max-width: 100%;
-    //     padding-left: 0rem;
-    //     margin-left: auto;
-    //     margin-right: auto;
-    //     justify-content: center;
-        
-    //     @include media-breakpoint-up(md) {
-    //         padding-left: 5rem;
-    //         max-width: 70%;
-    //     }
 
-    //     &-statement {
-    //         margin: 4rem 0;
-    //     }
+    &__heading {
+        h5 {
+            line-height: 3.25rem;
+        }
+    }
 
-    //     &-wrapper {
-    //         margin-bottom: 8rem;
-    //     }
-    // }
+    &__content-container {
+        margin-bottom: 3rem;
+    }
 
     &-skills__content {
         max-width: 100%;
@@ -72,8 +61,4 @@
     h4 {
         margin-bottom: 0.1rem;
     }
-}
-
-#content-about-me {
-    margin-bottom: 3rem;
 }

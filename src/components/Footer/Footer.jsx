@@ -49,7 +49,7 @@ const Footer = (props) => {
                         </a>
                     </div>
                     <div className="row">
-                        <div className="col-md-7 col-lg-6">
+                        <div className="col-md-7 col-lg-5">
                             <div className="footer__wrapper">
                                 <div className="footer__nav--top">
                                     <div className="footer__header">
@@ -59,7 +59,7 @@ const Footer = (props) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-5 col-lg-6">
+                        <div className="col-md-5 col-lg-7">
                             <div id="blurb-collab">
                                 <Paragraph size="md" weight="reg" color="black">
                                     Let's collaborate together! <a className="custom-link" href="mailto:eileenmvs@gmail.com"> eileenmvs@gmail.com</a> 
