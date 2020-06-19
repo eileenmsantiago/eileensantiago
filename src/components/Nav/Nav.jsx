@@ -53,13 +53,19 @@ const Nav = (props) => {
                                 </a>
                             </li>
                             <li>
-                                <NavLink
+                                <a
+                                    href="#contact" 
+                                    className="e-nav__link"
+                                >
+                                    Contact
+                                </a>
+                                {/* <NavLink
                                     to="/contact"
                                     className="e-nav__link"
                                     activeClassName="e-nav__link--active"
                                 >
                                     Contact
-                                </NavLink>
+                                </NavLink> */}
                             </li>
                         </ul>
                     </div>

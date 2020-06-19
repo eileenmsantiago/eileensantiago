@@ -9,7 +9,7 @@ footer {
     li {
         @include links();
         display: inline-block;
-        font-weight: 600;
+        font-weight: 400;
         text-align: center;
         
         &:not(:first-child) {

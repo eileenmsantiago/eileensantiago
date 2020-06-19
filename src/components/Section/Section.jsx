@@ -9,7 +9,7 @@ const Section = (props) => {
         <>
         <div className="category-container ">
             <div className="category-container__nav">
-                <Heading level="h3" style="h5" color="black" weight="semi">                    
+                <Heading level="h3" style="h4" color="black" weight="semi">                    
                     {heading}
                 </Heading>
             </div>

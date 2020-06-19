@@ -12,7 +12,6 @@ import Yodae from '../Yodae/Yodae';
 import Nav from '../Nav/Nav';
 import { NoMatch } from '../../NoMatch';
 import Footer from '../Footer/Footer';
-import Container from '../Container/Container';
 
 const projects = {
   paperSpace: {
@@ -200,7 +199,7 @@ const projects = {
     role: "Wireframing, Prototyping, User Researcher ",
     timeline: "2 weeks",
     platform: "Apple Smartwatch",
-    tools: "Figma",
+    tools: "User Research + Interviews, 8-6-4-2 Prototyping Method, Wireframing, Figma ",
     team: [
       "",
     ],

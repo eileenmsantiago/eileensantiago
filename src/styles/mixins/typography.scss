@@ -1,8 +1,9 @@
 @mixin type-body-base {
     // font-family: 'Karla', sans-serif;
+    // font-family: 'Manrope', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
 }
 
 @mixin type-heading-base {
@@ -22,7 +23,7 @@
     line-height: 1.75rem;
 
     @include media-breakpoint-up(md) {
-        font-size: 1rem;
+        font-size: 1.11111rem;
         line-height: 2rem;
     }
 }
