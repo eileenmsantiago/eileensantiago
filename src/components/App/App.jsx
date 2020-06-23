@@ -18,8 +18,8 @@ const projects = {
     id: "paper-space",
     route: '/paper-space',
     title: "Paper Space",
-    tagline: "Tracking and visualizing emotions through journal writing",
-    description: "A journaling App that tracks user’s emotions based on their written entries.",
+    tagline: "A journaling App that tracks user’s emotions based on their written entries.",
+    description: "PaperSpace is a journaling application that aims to create a space for users to freely write; and through which they can make sense of emotions to gain relief. This app tracks and helps users to be mindful of their emotions through gradient color-coded indicators. This app also offer guided prompts for users who need a kick-starter to write. ",
     tags: [
       "Mobile Development,   ",
       "UX/UI Design,  ",
@@ -31,7 +31,7 @@ const projects = {
     paraColor: "brand-ps-brown-light",
     bckgColor: "#FAF5F0",
     logoImg: "/assets/ps-logo-full.svg",
-    description: "A journaling App that tracks user’s emotions based on their written entries.",
+    descriptionPara: "A journaling App that tracks user’s emotions based on their written entries.",
     role: "Front-end & back-end Development, Design Systems, & Project Management",
     timeline: "Jan - Apr 2020 4 months",
     platform: "Mobile iOS",
@@ -102,7 +102,7 @@ const projects = {
     tagline: "Say what you want and draw doodles with your voice.",
     description: "An experimental project that uses Google Speech API and Natural Language API to interpret voice commands and render doodles using Quick,Draw!",
     tags: [
-      "API Integration  ", 
+      "API Integration,  ", 
       "Mobile + Web Development   "
     ],
     heroImg: '/assets/YODAE-mockup.svg',
@@ -111,7 +111,7 @@ const projects = {
     paraColor: "brand-dark-purple",
     bckgColor: "brand-light-purple",
     logoImg: "/assets/YODAE-logo-small.svg",
-    description: "A doodling experiment utilizing Google Speech API and Natural Language API that transcribes voice commands to display doodles using a dataset by Quick,Draw!",
+    descriptionPara: "A doodling experiment utilizing Google Speech API and Natural Language API that transcribes voice commands to display doodles using a dataset by Quick,Draw!",
     role: "Front-end development, UX/UI, Project Management",
     timeline: "Feb - Apr 2020 4 months",
     platform: "Web & Mobile",
@@ -203,7 +203,7 @@ const projects = {
     team: [
       "",
     ],
-    descriptionBlurb: "UX is about solving everyday problems and optimizing the user's way of completing the task. As a type 1 diabetic, I face this every day, which is why for a school UX case study assignment I wanted take this opportunity and strategize how I can better manage diabetes easier for myself and hopefully for others.", 
+    descriptionPara: "UX is about solving everyday problems and optimizing the user's way of completing the task. As a type 1 diabetic, I face this every day, which is why for a school UX case study assignment I wanted take this opportunity and strategize how I can better manage diabetes easier for myself and hopefully for others.", 
     problem: [
       "Self-management of diabetes undoubtedly faces daily challenges of maintaining blood glucose levels to avert diabetes complications. As such, the work is tedious and for some, it is time-consuming. ",
       "With technological advancements in diabetes technology has answered some of these tiring tasks. There are a number of beneficial hardware, devices and software that people with diabetes use to manage their blood glucose levels, if applied correctly, will assuredly reduce the burden of living with diabetes and improve in one's quality of life.",

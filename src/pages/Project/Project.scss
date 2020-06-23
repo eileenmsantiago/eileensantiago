@@ -10,6 +10,13 @@
         margin-bottom: 3rem;
     }
 
+    &__header {
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 3.5rem;
+        }
+    }
+
     &__logo { 
         margin-bottom: 2rem;
 

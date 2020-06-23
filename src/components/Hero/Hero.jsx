@@ -22,9 +22,12 @@ const Hero = (props) => {
                         {description}
                     </Paragraph>
                     {showEmail ?
-                        <Paragraph className="hero__description-email" size="sm" weight="reg" color="black">
-                            Say hello at <a className="custom-link" href="mailto:eileenmvs@gmail.com">eileenmvs@gmail.com</a>
-                        </Paragraph>
+                        <>
+                            <Paragraph className="hero__description-email" size="sm" weight="semi" color="black">
+                                Say hello at <a className="custom-link" href="mailto:eileenmvs@gmail.com">eileenmvs@gmail.com</a>
+                            </Paragraph>
+                            <Paragraph size="xs" weight="semi">Selected work ↓</Paragraph>
+                        </>
                     : null }
                 </div>
                 <div className="col-md-6 hero__container">

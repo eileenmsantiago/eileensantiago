@@ -30,7 +30,7 @@ const Footer = (props) => {
     const { projects } = props;
     return (
         <>
-            <footer id="#contact">
+            <footer id="contact">
                     {/* <div className="row footer__project-next">
                         <Paragraph className="col" size="lg" weight="reg" color="black">
                             {

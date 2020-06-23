@@ -66,7 +66,7 @@ const statusData = [
     {
         title: "DESIGN",
         description: [
-            "Taking a UX course on SkillShare to work on my case study building skills. "
+            "Taking a Design Thinking course on IDF to work on my case study building skills. "
         ]
     },
     {
@@ -78,7 +78,7 @@ const statusData = [
     {
         title: "READING",
         description: [
-            "Recently finished  The Lost Symbol - Dan Brown. Currently starting It Ends with Us - Colleen Hoover."
+            "Recently finished  The Lost Symbol - Dan Brown. Currently 📖 It Ends with Us - Colleen Hoover + Factfulness - Hans Rosling."
         ]
     },
     {
@@ -97,7 +97,7 @@ const About = (props) => {
             <Hero
                 pageTitle="About"
                 heading="Eileen Santiago"
-                quote="A design systems thinker, based in Toronto, who uses design and code to make user-centric digital products that are meaningful + intuitive"
+                quote="A design systems thinker, who uses design and code to make user-centric digital products that are meaningful + intuitive"
             />
         </section>
         <section className="about">
@@ -107,9 +107,14 @@ const About = (props) => {
                         <img src="/assets/eileensantiago20201.jpg"></img>
                     </div>
                     <div className="col-lg-7 block-content">
-                        <Heading level="h5" style="h4" className="about__heading" color="black">
-                            A User Experience Developer striving to make user-centric products that are meaningful + intuitive
-                        </Heading>
+                        <div id="about-me__heading">
+                            <Paragraph className="header__1--top" size="sm" weight="semi" color="black">
+                                A Toronto based
+                            </Paragraph>
+                            <Heading className="header__2--bottom" level="h3" style="h4" color="black">
+                                User Experience Designer + Developer
+                            </Heading>
+                        </div>
                         <div className="about__container">
                             <div className="content" id="about-description__content">
                                 <Paragraph size="sm" weight="reg" color="black">
@@ -177,10 +182,10 @@ const About = (props) => {
             <Container bgColor="grey">
                 <section className="about-skills">
                     <div class="block-content" id="skills-tools__heading">
-                        <Paragraph className="about-skills__title" size="sm" weight="semi" color="black">
+                        <Paragraph className="header__1--top" size="sm" weight="semi" color="black">
                             Skills & Tools
                         </Paragraph>
-                        <Heading className="about-skills__title" level="h3" style="h4" color="black">
+                        <Heading className="header__2--bottom" level="h3" style="h4" color="black">
                             I’ve learned so far
                         </Heading>
                     </div>
@@ -224,10 +229,10 @@ const About = (props) => {
                 <section id="status">
                     <div className="row block-four">
                         <div className="col-lg-6 block-content" id="currently">
-                            <Paragraph className="about-skills__title" size="sm" weight="semi" color="black">
+                            <Paragraph className="header__1--top" size="sm" weight="semi" color="black">
                                 What I’m focused on
                             </Paragraph>
-                            <Heading className="about-skills__title" level="h3" style="h4" color="black">
+                            <Heading className="header__2--bottom" level="h3" style="h4" color="black">
                                 currently,
                             </Heading>
                         </div>

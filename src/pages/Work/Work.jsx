@@ -38,7 +38,7 @@ const Work = (props) => {
                                                     <Heading className="project__container--header" level="h3" style="h2">{project.title}</Heading>
                                                 </a>
                                                 <Paragraph size="sm" color="black">
-                                                    {project.description}
+                                                    {project.tagline}
                                                 </Paragraph>
                                                 <div className="description">
                                                     <Paragraph className="tags" size="sm" weight="lt" color="grey">

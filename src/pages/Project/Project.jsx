@@ -28,7 +28,7 @@ const Project = (props) => {
                                 <img className="project__logo" src={project.logoImg}></img>
                             </div>
                             <div className="col-sm-12 col-md-12 col-lg-7">
-                                <Paragraph className="project__description" size="lg" weight="reg" color="black">{project.description}</Paragraph>
+                                <Paragraph className="project__description" size="sm" weight="reg" color="black">{project.description}</Paragraph>
                                 <div className="row project__category-list">
                                     <div className="col-sm-12 col-md-6 project__category-item">
                                         <Heading level="h4" style="h6" color="grey-light">ROLE</Heading>
@@ -62,14 +62,14 @@ const Project = (props) => {
                     </div>
                     {/* <div className="project__container">
                         <Paragraph className="project-block" size="md" weight="lt" color="black">
-                            {project.descriptionBlurb}
+                            {project.descriptionPara}
                         </Paragraph>
                     </div> */}
                 </section>
                 <section>
                     <div className="project__container" id="project-process">
                         <div className="project-process__container" id="process">
-                            <Heading level="h3" style="h5" weight="semi">PROCESS</Heading>
+                            <Heading level="h1" style="h5" weight="semi" className="project__header">PROCESS</Heading>
                             <HeaderList list={project.process}></HeaderList>
                         </div>
                     </div>

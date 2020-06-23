@@ -31,11 +31,11 @@
 @mixin type-body-md {
     @include type-body-base();
     font-size: 1rem;
-    line-height: 2.25rem;
+    line-height: 2rem;
     
     @include media-breakpoint-up(md) {
         font-size: 1.333em;
-        line-height: 2.75rem;
+        line-height: 2.25rem;
     }
 }
 
@@ -43,22 +43,22 @@
     @include type-body-base();
     // font-size: 28px;
     font-size: 1.777rem;
-    line-height: 2.75rem;
+    line-height: 2.25rem;
 
     @include media-breakpoint-up(md) {
         font-size: 2rem; 
-        line-height: 3.25rem;
+        line-height: 2.5rem;
     }
 }
 
 @mixin type-body-xl {
     @include type-body-base();
     font-size: 2.369rem;
-    line-height: 4rem;
+    line-height: 2.5rem;
     
     @include media-breakpoint-up(md) {
         font-size: 3rem; // 37.9px 
-        line-height: 4.5rem;
+        line-height: 3rem;
     }
 }
 
