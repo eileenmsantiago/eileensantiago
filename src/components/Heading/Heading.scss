@@ -2,46 +2,44 @@
 
     &-h1 {
         @include type-heading-h1();
+        margin-bottom: 2rem;
     }
     &-h2 {
         @include type-heading-h2();
         letter-spacing: 0.1rem;
     }
     &-h3 {
-        @include type-body-lg();
-    }
-    &-h4 {
         @include type-heading-h3();
     }
-    &-h5 {
-        @include type-body-sm();
-        letter-spacing: 0.08rem;
+    &-h4 {
+        @include type-body-md();
+        line-height: 1.5rem;
     }
-    &-h6 {
+    &-h5 {
         @include type-body-xs();
         letter-spacing: 0.08rem;
-        font-weight: 600;
+        line-height: 1.5rem;
     }
 
     &--color {
         @include color();
     }
 
-    &--weight {
-        &-xbold {
-            font-weight: 800;
-        }
-        &-bold {
-            font-weight: 700;
-        }
-        &-semi {
-            font-weight: 600;
-        }
-        &-reg {
-            font-weight: 400;
-        }
-        &-lt {
-            font-weight: 300;
-        }
-    }
+    // &--weight {
+    //     &-xbold {
+    //         font-weight: 800;
+    //     }
+    //     &-bold {
+    //         font-weight: 700;
+    //     }
+    //     &-semi {
+    //         font-weight: 600;
+    //     }
+    //     &-reg {
+    //         font-weight: 400;
+    //     }
+    //     &-lt {
+    //         font-weight: 300;
+    //     }
+    // }
 }

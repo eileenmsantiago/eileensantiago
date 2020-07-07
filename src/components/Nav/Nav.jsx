@@ -16,9 +16,9 @@ const Nav = (props) => {
     })
 
     return(
-        <nav className="e-nav" style={{backgroundColor: bgHex}}>
-            <Container>   
-                <div className="e-nav--wrapper">
+        <Container>
+            <nav className="e-nav" style={{backgroundColor: bgHex}}>
+                <div className="e-nav__wrapper">
                     <a href="/" className="logo-plain">
                         e<span className="logo-color">.</span>
                     </a>
@@ -70,8 +70,8 @@ const Nav = (props) => {
                         </ul>
                     </div>
                 </div>
-            </Container>
-        </nav>
+            </nav>
+        </Container>
     )
 
 }

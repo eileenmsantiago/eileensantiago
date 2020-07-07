@@ -104,21 +104,21 @@ const About = (props) => {
             <Container className="about__wrapper">
                 <div className="row">
                     <div className="col-lg-5">
-                        <img src="/assets/eileensantiago20201.jpg"></img>
+                        <img src="/assets/EileenSantiago.jpeg"></img>
                     </div>
                     <div className="col-lg-7 block-content">
                         <div id="about-me__heading">
-                            <Paragraph className="header__1--top" size="sm" weight="semi" color="black">
+                            <Heading className="header__1--top" level="h3" style="h4" color="black">
                                 A Toronto based
-                            </Paragraph>
-                            <Heading className="header__2--bottom" level="h3" style="h4" color="black">
-                                User Experience Designer + Developer
+                            </Heading>
+                            <Heading className="header__2--bottom" level="h3" style="h1" color="black">
+                                User Experience Developer
                             </Heading>
                         </div>
                         <div className="about__container">
                             <div className="content" id="about-description__content">
                                 <Paragraph size="sm" weight="reg" color="black">
-                                    I recently completed a post-graduate certificate on Interactive Media Management at Sheridan College where I furthered my skills in design + development. In all, I’ve built a handful of fun, meaningful, and interactive digital experiences - check out some of <a className="custom-link" href="/"> my best work</a>!
+                                I completed a Interactive Media Management program at Sheridan College where I furthered my skills in design + development. I’ve built a handful of fun, meaningful, and interactive digital experiences - check out some of<a className="custom-link" href="/"> my best work</a>!
                                 </Paragraph>
                                 <Paragraph size="sm" weight="reg" color="black">
                                     Prior to this, I studied health sciences, in nursing, where now I can proudly say I fuse my knowledge and experience in the health sector alongside with my technical creativity to build experiences that are digitally intuitive.
@@ -182,10 +182,10 @@ const About = (props) => {
             <Container bgColor="grey">
                 <section className="about-skills">
                     <div class="block-content" id="skills-tools__heading">
-                        <Paragraph className="header__1--top" size="sm" weight="semi" color="black">
+                        <Heading className="header__1--top" level="h3" style="h4" color="black">
                             Skills & Tools
-                        </Paragraph>
-                        <Heading className="header__2--bottom" level="h3" style="h4" color="black">
+                        </Heading>
+                        <Heading className="header__2--bottom" level="h3" style="h2" color="black">
                             I’ve learned so far
                         </Heading>
                     </div>
@@ -205,7 +205,7 @@ const About = (props) => {
                                                         {skillsTools.items.map(item => (
                                                             <>
                                                                 <div id="tools-block">
-                                                                    <Heading className="about-skills__heading" level="h4" style="h6" weight="semi" color="grey-light">
+                                                                    <Heading className="about-skills__heading" level="h4" style="h5" weight="semi" color="grey-light">
                                                                         {item.subTitle}
                                                                     </Heading>
                                                                     <Paragraph className="about-skills__items" size="sm" weight="reg" color="black">
@@ -229,10 +229,10 @@ const About = (props) => {
                 <section id="status">
                     <div className="row block-four">
                         <div className="col-lg-6 block-content" id="currently">
-                            <Paragraph className="header__1--top" size="sm" weight="semi" color="black">
+                            <Heading className="header__1--top" level="h3" style="h4" color="black">
                                 What I’m focused on
-                            </Paragraph>
-                            <Heading className="header__2--bottom" level="h3" style="h4" color="black">
+                            </Heading>
+                            <Heading className="header__2--bottom" level="h3" style="h2" color="black">
                                 currently,
                             </Heading>
                         </div>

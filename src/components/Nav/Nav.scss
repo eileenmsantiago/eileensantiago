@@ -1,11 +1,11 @@
 .e-nav {
     position: relative;
     background: white;
-    width: 100%;
-    position: fixed;
     z-index: 10;
-    
-    &--wrapper {
+    width: 100%;
+        
+    &__wrapper {
+        width: 100%;
         align-items: center;
         display: flex;
         height: 100px;
@@ -25,15 +25,15 @@
         }
     }
 
-    &__logo {
-        text-decoration: none;
-        margin-bottom: 0;
-        &:hover {
-            text-decoration: none;
-            color: $color-peach;
-            transition: all .2s ease-in-out;
-        }
-    }
+    // &__logo {
+    //     text-decoration: none;
+    //     margin-bottom: 0;
+    //     &:hover {
+    //         text-decoration: none;
+    //         color: $color-peach;
+    //         transition: all .2s ease-in-out;
+    //     }
+    // }
 
     &__list {
         margin-left: auto;
@@ -61,7 +61,7 @@
 }
 
 .logo-plain {
-    @include type-heading-h2; 
+    @include type-heading-h1; 
 
     span {
         color: $color-peach;

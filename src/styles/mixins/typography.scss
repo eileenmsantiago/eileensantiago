@@ -1,29 +1,28 @@
 @mixin type-body-base {
-    // font-family: 'Karla', sans-serif;
-    // font-family: 'Manrope', sans-serif;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sneak', sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: normal;
 }
 
 @mixin type-heading-base {
     font-family: 'Berlingske', sans-serif;
     font-style: normal;
+    font-weight: normal;
 }
 
 @mixin type-body-xs{
     @include type-body-base();
-    font-size: 0.85rem;
-    // letter-spacing: -0.02em;
+    font-size: 0.875rem;
+    line-height: 1.05rem;
 }
 
 @mixin type-body-sm{
     @include type-body-base();
-    font-size: 0.85rem;
-    line-height: 1.75rem;
+    font-size: 0.95rem;
+    line-height: 1.875rem;
 
     @include media-breakpoint-up(md) {
-        font-size: 1.11111rem;
+        font-size: 1rem;
         line-height: 2rem;
     }
 }
@@ -32,22 +31,22 @@
     @include type-body-base();
     font-size: 1rem;
     line-height: 2rem;
+    font-weight: normal;
     
     @include media-breakpoint-up(md) {
-        font-size: 1.333em;
-        line-height: 2.25rem;
+        font-size: 1.125rem;
+        line-height: 2.1875rem;
     }
 }
 
 @mixin type-body-lg {
     @include type-body-base();
-    // font-size: 28px;
     font-size: 1.777rem;
-    line-height: 2.25rem;
+    line-height: 2.55rem;
 
     @include media-breakpoint-up(md) {
         font-size: 2rem; 
-        line-height: 2.5rem;
+        line-height: 3rem;
     }
 }
 
@@ -65,35 +64,35 @@
 // =========== HEADINGS
 @mixin type-heading-h1 {
     @include type-heading-base();
-    font-size: 3.157rem;
+    font-size: 2.375rem;
     line-height: 100%;
     margin-bottom: 1.8rem;
     
     @include media-breakpoint-up(md) {
-        font-size: 4.209rem;
+        font-size: 3rem;
     }
 }
 
 @mixin type-heading-h2 {
     @include type-heading-base();
-    font-size: 2.369rem;
-    line-height: 2.75rem;
+    font-size: 1.55rem;
+    line-height: 2rem;
 
     @include media-breakpoint-up(md) {
-        font-size: 3.157rem;
-        line-height: 3.75rem;
+        font-size: 1.75rem;
+        line-height: 2.125rem;
     }
 }
 
 @mixin type-heading-h3 {
-    letter-spacing: 0.1rem;
+    // letter-spacing: 0.1rem;
     @include type-heading-base();
-    font-size: 1.777rem;
+    font-size: 1.15rem;
     line-height: 2rem;
     
     @include media-breakpoint-up(md) {
-        font-size: 2.369rem;
-        line-height: 3.2rem;
+        font-size: 1.25rem;
+        line-height: 2.125rem;
     }
 }
 

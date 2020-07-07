@@ -1,8 +1,3 @@
-p {
-    line-height: 1.65rem;
-    margin-bottom: 0;
-}
-
 .p-text {
     &--size {
         &-xs {
@@ -17,26 +12,26 @@ p {
         &-lg {
             @include type-body-lg();
         }
-        &-xl {
-            @include type-body-xl();
-        }
+        // &-xl {
+        //     @include type-body-xl();
+        // }
     }
 
     &--weight {
-        &-xbold {
+        &-black {
             font-weight: 800;
         }
         &-bold {
-            font-weight: 700;
-        }
-        &-semi {
             font-weight: 600;
         }
+        &-medium {
+            font-weight: 500;
+        }
         &-reg {
-            font-weight: 300;
+            font-weight: 400;
         }
         &-lt {
-            font-weight: 200;
+            font-weight: 300;
         }
     }
     

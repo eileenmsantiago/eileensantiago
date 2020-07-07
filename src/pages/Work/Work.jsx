@@ -15,7 +15,7 @@ const Work = (props) => {
                 <Hero 
                     pageTitle="A Portfolio" 
                     heading="by Eileen"
-                    description="A User Exeperience Designer, who uses design and code to make user-centric digital products that are meaningful + intuitive"
+                    description="Currently a User Experience Developer with Raise.dev. With a Health Sci background, I bring thinking in systems to design and code. I strive to make user-centric digital products that are meaningful + intuitive."
                     showEmail = {true}
                 />
             </section>
@@ -34,11 +34,11 @@ const Work = (props) => {
                                         </div>
                                         <div className="col-md-6 projects__container-content">
                                             <div className="projects__container-content-wrapper">
-                                                <a href={project.route} className="cta " >   
-                                                    <Heading className="project__container--header" level="h3" style="h2">{project.title}</Heading>
+                                                <a href={project.route}>   
+                                                    <Heading className="project__container--header" level="h2" style="h1">{project.title}</Heading>
                                                 </a>
                                                 <Paragraph size="sm" color="black">
-                                                    {project.tagline}
+                                                    {project.description}
                                                 </Paragraph>
                                                 <div className="description">
                                                     <Paragraph className="tags" size="sm" weight="lt" color="grey">
@@ -48,9 +48,8 @@ const Work = (props) => {
                                                             </>
                                                         ))}
                                                     </Paragraph>
-                                                    <a href={project.route} className="cta">   
-                                                        <Paragraph size="sm" weight="md" weight="semi" color="black">View More</Paragraph>
-                                                        <img className="cta-icon" src="/assets/arrow.svg"/>
+                                                    <a href={project.route} className="es-button es-button--primary">   
+                                                        <Paragraph size="sm" weight="semi">View Project ↗︎</Paragraph>
                                                     </a>
                                                 </div>
                                             </div>

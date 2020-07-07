@@ -11,10 +11,6 @@
 }
 
 .hero {
-    // margin: 0 2.7rem;
-    // @include media-breakpoint-down(md) {
-    //     margin: 0;
-    // }
 
     &__title {
         opacity: 0;
@@ -27,6 +23,14 @@
         
         @include media-breakpoint-up(md) {
             line-height: 2.85rem;
+        }
+
+        &-email {
+            margin-bottom: 1rem;
+            
+            @include media-breakpoint-up(md) {
+                margin-bottom: 6rem;
+            }
         }
     }
 
