@@ -4,27 +4,22 @@
 }
 @font-face {
     font-family: 'Sneak-Regular';
-    font-weight: 400;
-    src: url('/assets/Sneak-Regular.ttf') format("opentype");
+    src: url('/assets/Sneak-Regular.ttf');
 }
 @font-face {
     font-family: 'Sneak-Black';
-    font-weight: 800;
     src: url('/assets/Sneak-Black.otf') format("opentype");
 }
 @font-face {
     font-family: 'Sneak-Bold';
-    font-weight: 600;
     src: url('/assets/Sneak-Bold.otf') format("opentype");
 }
 @font-face {
     font-family: 'Sneak-Medium';
-    font-weight: 500;
     src: url('/assets/Sneak-Medium.otf') format("opentype");
 }
 @font-face {
     font-family: 'Sneak-Light';
-    font-weight: 300;
     src: url('/assets/Sneak-Light.otf') format("opentype");
 }
 
@@ -53,6 +48,7 @@ html {
 
     p {
         line-height: 2rem;
+        margin-top: unset;
     }
     
     a {

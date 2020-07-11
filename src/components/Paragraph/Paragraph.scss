@@ -12,28 +12,25 @@
         &-lg {
             @include type-body-lg();
         }
-        // &-xl {
-        //     @include type-body-xl();
-        // }
     }
 
-    &--weight {
-        &-black {
-            font-weight: 800;
-        }
-        &-bold {
-            font-weight: 600;
-        }
-        &-medium {
-            font-weight: 500;
-        }
-        &-reg {
-            font-weight: 400;
-        }
-        &-lt {
-            font-weight: 300;
-        }
-    }
+    // &--weight {
+    //     &-black {
+    //         font-weight: 800;
+    //     }
+    //     &-bold {
+    //         font-weight: 600;
+    //     }
+    //     &-medium {
+    //         font-weight: 500;
+    //     }
+    //     &-reg {
+    //         font-weight: 400;
+    //     }
+    //     &-lt {
+    //         font-weight: 300;
+    //     }
+    // }
     
     &--color {
         @include color();

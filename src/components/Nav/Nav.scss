@@ -61,7 +61,7 @@
 }
 
 .logo-plain {
-    @include type-heading-h1; 
+    @include type-heading-h2; 
 
     span {
         color: $color-peach;

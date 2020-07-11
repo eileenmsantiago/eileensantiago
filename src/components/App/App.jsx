@@ -21,9 +21,9 @@ const projects = {
     tagline: "A journaling App that visualizes and tracks emotions based on your written entries.",
     description: "PaperSpace is a journaling application that aims to create a space for users to freely write; and through which they can make sense of emotions to gain relief. This app tracks and helps users to be mindful of their emotions through gradient color-coded indicators. This app also offer guided prompts for users who need a kick-starter to write. ",
     tags: [
-      "Mobile Development,   ",
-      "UX/UI Design,  ",
-      "Product Strategy  "
+      "WEB DEVELOPMENT,   ",
+      "UX/UI DESIGN,  ",
+      "PRODUCT STRATEGY + DESIGN  "
     ],
     heroImg: '/assets/paper-space-hero.png',
     tileImg: "/assets/tile-img-PaperSpace.jpg",
@@ -102,9 +102,9 @@ const projects = {
     tagline: "Where diabetes health care meets technology ",
     description: "A case study using the 8-6-4-2 methodology on a diabetes technology tracking App that records user’s glucose levels, activities, food & insulin consumption",
     tags: [
-      "UX/UI Design,   ",
-      "Case Ctudy,  ",
-      "Interaction Design  "
+      "UX/UI DESIGN,   ",
+      "CASE STUDY,  ",
+      "INTERACTION DESIGN  "
     ],
     heroImg: '/assets/GlucoCheck-1.svg',
     tileImg: "/assets/tile-img-GlucoCheck.jpg",
@@ -179,8 +179,8 @@ const projects = {
     tagline: "Better Budgeting. More Saving",
     description: "A ReactJS budget tracker App using a CSS Preprocessor (SCSS). A fun and playful UI exploring the readability, reusability, and maintainability of CSS code.",
     tags: [
-      "UI Design  ", 
-      "Design System   "
+      "UI DESIGN,  ", 
+      "DESIGN SYSTEM  "
     ],
     heroImg: '/assets/Freely-browser.jpg',
     tileImg: "/assets/tile-img-freely.jpg",
@@ -247,8 +247,8 @@ const projects = {
     tagline: "Tracking COVID-19 cases",
     description: "A React.js application viewing a COVID-19 Case Data that interacts with an Express server retrieving its data from a COVID-19 API.",
     tags: [
-      "Web Development,  ",
-      "API Integration   "
+      "WEB DEVELOPMENT,  ",
+      "API INTEGRATION   "
     ],
     heroImg: '/assets/COVID-container.svg',
     tileImg: "/assets/tile-img-COVID.jpg",
@@ -317,8 +317,8 @@ const projects = {
     tagline: "Say what you want and draw doodles with your voice.",
     description: "An experimental project that uses Google Speech API and Natural Language API to interpret voice commands and render doodles using Quick,Draw!",
     tags: [
-      "API Integration,  ", 
-      "Mobile + Web Development   "
+      "API INTEGRATION,  ", 
+      "MOBILE + WEB DEVELOPMENT  "
     ],
     heroImg: '/assets/YODAE-mockup.svg',
     tileImg: "/assets/tile-img-yodae.jpg",

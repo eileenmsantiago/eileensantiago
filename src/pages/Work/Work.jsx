@@ -41,15 +41,15 @@ const Work = (props) => {
                                                     {project.description}
                                                 </Paragraph>
                                                 <div className="description">
-                                                    <Paragraph className="tags" size="sm" weight="lt" color="grey">
+                                                    <Heading className="tags" level="h4" style="h5" color="grey">
                                                         {project.tags.map(tag => (
                                                             <>
                                                                 {tag} 
                                                             </>
                                                         ))}
-                                                    </Paragraph>
+                                                    </Heading>
                                                     <a href={project.route} className="es-button es-button--primary">   
-                                                        <Paragraph size="sm" weight="semi">View Project ↗︎</Paragraph>
+                                                        View Project ↗︎
                                                     </a>
                                                 </div>
                                             </div>

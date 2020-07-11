@@ -78,7 +78,7 @@ const statusData = [
     {
         title: "READING",
         description: [
-            "Recently finished  The Lost Symbol - Dan Brown. Currently 📖 It Ends with Us - Colleen Hoover + Factfulness - Hans Rosling."
+            "Recently finished It Ends with Us - Colleen Hoover. Currently 📖 The Courage to Be Disliked + Factfulness - Hans Rosling."
         ]
     },
     {
@@ -127,20 +127,14 @@ const About = (props) => {
                                     My passion for understanding people accompanies my approach to product issues with simple design solutions. I'm a creative thinker who embraces data to help drive continuous improvements to projects I'm working on. When I’m not designing you can catch me <a className="custom-link" href="#status">learning/ doing</a> a few other things! 
                                 </Paragraph>
                             </div>
-                            <div className="row about__cta">
-                                <div className="col-lg-7">
-                                    <a className="es-button es-button--primary" href="https://calendly.com/eileensantiago/30min">
-                                        <Paragraph size="sm" weight="reg">GET IN TOUCH</Paragraph>
-                                    </a>
-                                </div>
-                                <div className="col-lg-5">
-                                    <div className="about__cta--secondary">
-                                        <div>
-                                            <Paragraph size="sm" weight="reg">
-                                                Or check out <a className="custom-link" target="_blank" href="/assets/Resume-EileenSantiago-2020.pdf"> my resume</a> 
-                                            </Paragraph>
-                                        </div>
-                                    </div>
+                            <div className="about__cta">
+                                <a className="es-button es-button--primary about__cta--primary" href="https://calendly.com/eileensantiago/30min">
+                                    GET IN TOUCH
+                                </a>
+                                <div className="about__cta--secondary">
+                                    <span>
+                                        Or check out <a className="custom-link" target="_blank" href="/assets/Resume-EileenSantiago-2020.pdf"> my resume</a> 
+                                    </span>
                                 </div>
                             </div>
                         </div>
