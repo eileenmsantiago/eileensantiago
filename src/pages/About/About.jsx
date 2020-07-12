@@ -128,8 +128,11 @@ const About = (props) => {
                                 </Paragraph>
                             </div>
                             <div className="about__cta">
-                                <a className="es-button es-button--primary about__cta--primary" href="https://calendly.com/eileensantiago/30min">
+                                {/* <a className="es-button es-button--primary about__cta--primary" href="https://calendly.com/eileensantiago/30min">
                                     GET IN TOUCH
+                                </a> */}
+                                <a href="https://calendly.com/eileensantiago/30min" className="es-button es-button--primary about__cta--primary">   
+                                    GET IN TOUCH ↗︎
                                 </a>
                                 <div className="about__cta--secondary">
                                     <span>

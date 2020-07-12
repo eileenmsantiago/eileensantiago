@@ -10,10 +10,15 @@
         padding: 7rem 0;
     }
     img {
-        width: 100%;
+        width: 60%;
+        margin: 0 auto;
+        display: block;
 
         @include media-breakpoint-up(md) {
-            width: 90%;
+            width: 50%;
+        }
+        @include media-breakpoint-up(lg) {
+            width: 70%;
         }
     }
 

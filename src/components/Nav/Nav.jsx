@@ -16,8 +16,8 @@ const Nav = (props) => {
     })
 
     return(
-        <Container>
-            <nav className="e-nav" style={{backgroundColor: bgHex}}>
+        <Container bgHex={bgHex}>
+            <nav className="e-nav">
                 <div className="e-nav__wrapper">
                     <a href="/" className="logo-plain">
                         e<span className="logo-color">.</span>
@@ -74,6 +74,10 @@ const Nav = (props) => {
         </Container>
     )
 
+}
+
+Nav.defaultProps = {
+    bgHex: "#ffffff"
 }
 
 export default Nav

@@ -250,7 +250,7 @@ const projects = {
       "WEB DEVELOPMENT,  ",
       "API INTEGRATION   "
     ],
-    heroImg: '/assets/COVID-container.svg',
+    heroImg: '/assets/Covid19-1.svg',
     tileImg: "/assets/tile-img-COVID.jpg",
     bgHex: "#DFF5F6",
     paraColor: "brand-dark-blue",
