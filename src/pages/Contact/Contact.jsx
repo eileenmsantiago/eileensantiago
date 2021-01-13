@@ -27,7 +27,7 @@ const Contact = () => {
                         </a>
                         <div className="cta--secondary">
                             <Paragraph size="sm" weight="reg">
-                                Or check out <a className="custom-link" target="_blank" href="/assets/Resume-EileenSantiago-2020.pdf"> my resume</a> 
+                                Or check out <a className="custom-link" target="_blank" href="/assets/EileenSantiago_Resume.pdf"> my resume</a> 
                             </Paragraph>
                         </div>
                     </div>

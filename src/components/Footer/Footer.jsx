@@ -65,7 +65,7 @@ const Footer = (props) => {
                                     Let's collaborate together! <a className="custom-link" href="mailto:eileenmvs@gmail.com"> eileenmvs@gmail.com</a> 
                                 </Paragraph>
                                 <Paragraph>
-                                    Or check out my <a className="custom-link" target="_blank" href="/assets/Resume-EileenSantiago-2020.pdf">resume</a> 
+                                    Or check out my <a className="custom-link" target="_blank" href="/assets/EileenSantiago_Resume.pdf">resume</a> 
                                 </Paragraph>
                             </div>
                         </div>                           

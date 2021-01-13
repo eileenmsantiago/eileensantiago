@@ -45,7 +45,7 @@ const Nav = (props) => {
                             </li>
                             <li>
                                 <a 
-                                    href="/assets/Resume-EileenSantiago-2020.pdf" 
+                                    href="/assets/EileenSantiago_Resume.pdf" 
                                     target="_blank"
                                     className="e-nav__link"
                                 >
