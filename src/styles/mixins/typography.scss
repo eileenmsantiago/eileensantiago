@@ -1,29 +1,30 @@
 @mixin type-body-base {
-    font-family: 'Sneak-Regular', sans-serif;
+    font-family: 'Karla', sans-serif;
     font-style: normal;
     font-weight: 400;
 }
 
 @mixin type-body-base-black {
+    @include type-body-base();
     font-family: 'Sneak-Black', sans-serif;
     font-style: normal;
     font-weight: 800;
 }
 
 @mixin type-body-base-bold {
-    font-family: 'Sneak-Bold', sans-serif;
+    @include type-body-base();
     font-style: normal;
     font-weight: 600;
 }
 
 @mixin type-body-base-med {
-    font-family: 'Sneak-Medium', sans-serif;
+    @include type-body-base();
     font-style: normal;
     font-weight: 400;
 }
 
 @mixin type-body-base-light {
-    font-family: 'Sneak-Light', sans-serif;
+    @include type-body-base();
     font-style: normal;
     font-weight: 300;
 }
