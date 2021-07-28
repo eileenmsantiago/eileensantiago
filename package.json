@@ -4,7 +4,7 @@
   "homepage": "https://www.eileensantiago.com",
   "private": true,
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.6.0",
     "classnames": "^2.3.1",
