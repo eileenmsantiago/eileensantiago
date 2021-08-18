@@ -1,0 +1,93 @@
+@import '../../styles/mixins/typography.scss';
+@import '../../styles/variables.scss';
+
+@mixin btn {
+  padding: .8rem 1rem;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  cursor: pointer;
+  color: $color-white;
+  border: 2px solid $color-black;
+  border-radius: 3px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@mixin btn-primary {
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);
+  &:hover {
+    background-position: right center;
+  }
+}
+
+.root {
+  @include btn;
+}
+
+.primary {
+  @include btn-primary;
+}
+
+.sm {
+}
+
+.md {
+}
+
+.lg {
+}
+
+
+
+.h1 {
+  @include type-h1();
+  margin-bottom: 3rem;
+}
+.h2 {
+  @include type-h2();
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.h3 {
+  @include type-h3();
+  margin-bottom: 2rem;
+}
+.h4 {
+  @include type-h4();
+  line-height: 1.5rem;
+}
+.h5 {
+  @include type-h5();
+}
+
+.white {
+  color: $color-white;
+}
+
+.peach {
+  color: $color-peach;
+}
+
+.peach-dark {
+  color: $color-peach-dark;
+}
+
+.blue {
+  color: $color-blue;
+}
+
+.grey-light {
+  color: $color-white;
+}
+
+.grey-dark {
+  color: $color-grey-dark;
+}
+
+.black {
+  color: $color-black;
+}

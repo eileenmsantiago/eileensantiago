@@ -1,0 +1,47 @@
+@import '../../styles/variables.scss';
+
+.nav {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 6.25rem;
+  display: flex;
+  transition: height 0.15s ease-in;
+}
+
+.overlap {
+  height: 60px;
+  background: $color-white;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.navFull {
+  @media screen and (max-width: $bp-tablet) {
+    display: none;
+  }
+}
+
+.burgerMenu {
+  @media screen and (min-width: $bp-tablet) {
+    display: none;
+  }
+}
+
+.links {
+  list-style: none;
+  text-decoration: none;
+  padding-left: 0;
+  list-style-type: none;
+  margin-left: auto;
+}
+
+.linkItem {
+  padding-right: 2rem;
+}
+
+.linkText {
+  color: $color-black;
+}

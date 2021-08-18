@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss';
+
+.wrapper:hover {
+  cursor: pointer;
+}
+
+.projectImage:hover img {
+  transform: scale(1.1);
+  transition: 0.2s linear;
+  -moz-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  -webkit-transition: 0.2s linear;
+}
+
+.title::after {
+  position: absolute;
+  height: 2px;
+  background-color: $color-black;
+  left: 50%;
+  bottom: -10px;
+  transition: all 0.4s ease-in-out;
+}
+
+.title:hover .title::after {
+  width: 100%;
+  left:0;
+}

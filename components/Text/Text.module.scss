@@ -1,0 +1,78 @@
+@import '../../styles/mixins/typography.scss';
+@import '../../styles/variables.scss';
+
+.p {
+  margin-bottom: 1rem;
+}
+.sm {
+  @include type-body-sm;
+}
+
+.sm-bold {
+  @include type-body-sm--bold;
+}
+
+.md {
+  @include type-body-md;
+}
+
+.md-bold {
+  @include type-body-md--bold;
+}
+
+.lg {
+  @include type-body-large;
+}
+
+.lg-md {
+  @include type-body-large--medium;
+}
+
+.h1 {
+  @include type-h1();
+}
+
+.h2 {
+  @include type-h2();
+  letter-spacing: 0.1rem;
+}
+
+.h3 {
+  @include type-h3();
+}
+
+.h4 {
+  @include type-h4();
+}
+
+.h5 {
+  @include type-h5();
+}
+
+.white {
+  color: $color-white;
+}
+
+.peach {
+  color: $color-peach;
+}
+
+.peach-dark {
+  color: $color-peach-dark;
+}
+
+.blue {
+  color: $color-blue;
+}
+
+.grey-light {
+  color: $color-white;
+}
+
+.grey-dark {
+  color: $color-grey-dark;
+}
+
+.black {
+  color: $color-black;
+}

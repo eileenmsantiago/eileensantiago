@@ -1,0 +1,50 @@
+@import "../../styles/variables.scss";
+
+.heroImg {
+  margin-top: -10rem;
+  box-shadow: 9.64532px 9.64532px 24.1133px rgba(0, 0, 0, 0.15),
+    38.5813px 38.5813px 72.3399px rgba(0, 0, 0, 0.15);
+  border-radius: 3.85813px;
+}
+
+.bgWhite {
+  background-color: $color-white;
+}
+ 
+.bgGrey {
+  background-color: $color-grey-light;
+}
+
+.flowContainer {
+  overflow: hidden;
+  position: relative;
+  height: 60rem;
+}
+
+.flowImg {
+  max-height: 60rem;
+  height: 80%;
+  position: absolute;
+  left: 0;
+  width: 200%;
+  max-width: 200%;
+  transition: all 1s ease;
+  
+}
+
+.step_0 {
+  left: 0%; 
+  transform: translate(-0%, 0);
+}
+.step_1 {
+  left: 33%; 
+  transform: translate(-33%, 0);
+}
+.step_2 {
+  left: 66%; 
+  transform: translate(-66%, 0);
+}
+.step_3 {
+  left: 100%; 
+  transform: translate(-100%, 0);
+}
