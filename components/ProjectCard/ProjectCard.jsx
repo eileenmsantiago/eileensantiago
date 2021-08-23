@@ -10,13 +10,12 @@ export default function ProjectCard(props) {
 
   return (
     <div className="mb-24">
-      {/* to change url link to project page */}
-      <Link href="/about">
+      <a className={css.link} href={pageUrl}>
         <div className={css.wrapper}>
-          <div style={{backgroundColor: primaryColor}}>
-            <img className={cx(css.projectImage, ['mx-auto mb-4'])} src={featuredImagePath}/>
+          <div className="mb-4 overflow-hidden" style={{backgroundColor: primaryColor}}>
+            <img className={cx(css.projectImage, ['mx-auto'])} src={featuredImagePath}/>
           </div>
-          <div className="flex flex-row space-x-6 md:space-x-0 md:flex-col md:p-4">
+          <div className="flex flex-row space-x-6 md:space-x-0 md:flex-col sm:p-4">
             <div className={cx(css.title,"flex items-center pb-4")}>
               <Text style="h2">{title}</Text>
             </div>
@@ -40,7 +39,7 @@ export default function ProjectCard(props) {
             </div>
           </div>
         </div>
-      </Link>
+      </a>
     </div>
   )
 }

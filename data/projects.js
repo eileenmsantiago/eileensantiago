@@ -1,7 +1,7 @@
 export const projects = {
   raise: {
     id: "raise",
-    pageUrl: "/",
+    pageUrl: "/raise-dev",
     primaryColor: '#E1EBFF',
     featuredImagePath: "/assets/raise-dev/raisedev-desktop.png",
     projectHeroPath: "/assets/raise-dev/raisedev-browser.svg",
@@ -15,6 +15,7 @@ export const projects = {
   },
   paperSpace: {
     id: "paperSpace",
+    pageUrl: "/paper-space",
     primaryColor: '#FAF5F0',
     featuredImagePath: "/assets/paper-space/paper-space-mobile-grid.png",
     title: "Paper Space",

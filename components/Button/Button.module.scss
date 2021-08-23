@@ -17,8 +17,10 @@
 }
 
 @mixin btn-primary {
-  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);
+  // background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);
   &:hover {
+    background-color: $color-white;
+    color: $color-black;
     background-position: right center;
   }
 }
@@ -29,6 +31,11 @@
 
 .primary {
   @include btn-primary;
+}
+
+.secondary {
+  @include btn-primary;
+  
 }
 
 .sm {

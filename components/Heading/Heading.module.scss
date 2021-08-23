@@ -27,8 +27,17 @@
   margin-bottom: 1.5rem;
   line-height: 1.5rem;
 }
+
 .h5 {
   @include type-h5;
+}
+
+.lg {
+  @include type-body-large;
+}
+
+.lg-md {
+  @include type-body-large--medium;
 }
 
 .peach {

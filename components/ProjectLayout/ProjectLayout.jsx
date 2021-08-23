@@ -5,6 +5,7 @@ import cx from 'classnames';
 import css from './ProjectLayout.module.scss';
 import {Container} from '../index';
 import { NAV_HEIGHT } from '../Navbar/Navbar';
+// import video from '../../public/assets/raise-dev/log-in.mov';
 
 
 const ProjectLayout = ({data}) => {
@@ -37,7 +38,7 @@ const ProjectLayout = ({data}) => {
               ))}
             </ul>
             <a className="mb-10" href="https://raise.dev">
-              <Text>View live site</Text>
+              <Text >View live site</Text>
             </a>
           </Container>
         </div>
@@ -45,22 +46,28 @@ const ProjectLayout = ({data}) => {
       <Container width="sm" marginY="lg" classes="py-24">
         <img className={cx('full-width mb-10', css.heroImg)} src={data.projectHeroPath}/>
         <Heading level="h3" style="h2"> Overview </Heading>
-        <Text as="div" classes={{root: "mb-4"}}>
+        <Text as="div" classes={{root: "mb-8"}}>
           Raise.dev is focusing on helping professional developers advance their careers, through on-demand pair programming, longer-term coaching relationships, and employment opportunities. 
         </Text>
-        <Text as="div" style="sm" classes={{root: "mb-8"}}>
-          Due to NDA restrictions, I can not disclose all the details of my contributions.
-        </Text>
+        <div className="p-4 mb-8 text-gray-500 border-l-2 border-gray-500 rounded bg-gray-50">
+          <Text as="div" style="sm">
+            Due to NDA restrictions, I can not disclose all the details of my contributions.
+          </Text>
+        </div>
         <Text style="lg-md" as="div" classes={{root: "mb-8"}}>
-        Working cross-functionally with the founder, product and engineering, I created the end-to-end experiences of three features:
+        Working cross-functionally with the founder, product and engineering, I created the end-to-end experiences of the following features:
         </Text>
-        <Text style="lg" as="div" classes={{root: "mb-12"}}>
-          <ul>
-            <li>Marketing landing pages</li> 
-            <li>Sign up & requesting a session user experience flow</li> 
-            <li>Design system</li> 
-          </ul>
-        </Text>
+        <DescriptionList items={[
+          {
+            title:"Marketing landing pages",
+          },
+          {
+            title:"Sign up & requesting a session user experience flow",
+          },
+          {
+            title:"Establish a working design system from scratch",
+          }
+          ]}/>
         <DescriptionGrid items={[
           {
             title: "Skill set",
@@ -144,12 +151,12 @@ const ProjectLayout = ({data}) => {
           <SectionHeading color="grey-light" heading="02 UX Flow" subheading="Defining a user experience for the developer onboarding flow
         "/>
         </div>
-        <div className="grid grid-cols-2 gap-6 sm:grid-cols-1">
-          <div className={css.bgWhite}>
-            <img className="p-12 mx-auto" src="/assets/raise-dev/signin.svg"/>
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-1">
+          <div className="bg-gray-50">
+            <img className="p-10 mx-auto" src="/assets/raise-dev/log-in.gif" alt="log in screens"/>
           </div>
-          <div className={css.bgWhite}>
-            <img className="p-12 mx-auto" src="/assets/raise-dev/signup.svg"/>
+          <div className="bg-gray-50">
+            <img className="p-10 mx-auto" src="/assets/raise-dev/sign-up.gif"/>
           </div>
         </div>
       </Container>
@@ -163,10 +170,21 @@ const ProjectLayout = ({data}) => {
         </Text>
       </Container>
       <Container bgColor="black" width="lg" paddingX="none">
-        <div className="flex w-40 mx-auto">
-        {flowStep > 0 && <button onClick={() => setFlowStep(flowStep - 1)}><Text color="white">⬅️</Text></button>}
-        <Text color="white">{flowStep + 1}/4</Text>
-        {flowStep < 3 && <button onClick={() => setFlowStep(flowStep + 1)}><Text color="white">➡️</Text></button>}
+        <div className="flex w-40 mx-auto space-x-4">
+          {flowStep > 0 && (
+            <div className="px-4 py-2 border border-white rounded">
+              <button onClick={() => setFlowStep(flowStep - 1)}>
+                <Text color="white" style="lg-md">←</Text>
+              </button>
+            </div>
+          )}
+          {flowStep < 3 && (
+            <div className="px-4 py-2 border border-white rounded">
+              <button onClick={() => setFlowStep(flowStep + 1)}>
+                <Text color="white" style="lg-md">→</Text>
+              </button>
+            </div>
+          )}
         </div>
         <div ref={flowRef} className={css.flowContainer}>
           <img className={cx(css.flowImg, css[`step_${flowStep}`])} src="/assets/raise-dev/task-analysis.svg"/>

@@ -19,9 +19,11 @@ const DescriptionList = (props) => {
               <Text style="lg-md" color={color}>{item.title}</Text>
             </div>
           </div>
-          <Text as="p" color="grey-dark" classes={{root: 'pl-12'}}>
-            {item.description}
-          </Text>
+          {item.description && (
+            <Text as="p" color="grey-dark" classes={{root: 'pl-12'}}>
+              {item.description}
+            </Text>
+          )}
         </div>
       ))}
     </div>

@@ -6,7 +6,7 @@ import Footer from '../Footer';
 
 const Layout = props => {
 
-  const { pageTitle, children, transparentNav } = props;
+  const { pageTitle, children, transparentNav, isDark } = props;
   let title = `Eileen Santiago`;
 
   if(pageTitle) {
@@ -22,7 +22,7 @@ const Layout = props => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={css.container}>
-        <Navbar />
+        <Navbar isDark={isDark}/>
         {transparentNav ? children : (
           <div style={{paddingTop: NAV_HEIGHT}}>
             {children}
