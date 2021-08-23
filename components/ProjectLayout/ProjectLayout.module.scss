@@ -10,7 +10,7 @@
 .bgWhite {
   background-color: $color-white;
 }
- 
+
 .bgGrey {
   background-color: $color-grey-light;
 }
@@ -19,6 +19,9 @@
   overflow: hidden;
   position: relative;
   height: 60rem;
+  @media screen and (max-width:$bp-tablet) {
+    height: 30rem;
+  }
 }
 
 .flowImg {

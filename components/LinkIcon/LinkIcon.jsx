@@ -7,15 +7,13 @@ const LinkIcon = (props) => {
 
   const { children, href, classes, color } = props
 
-  console.log(classes)
-
   return (
     <div className="flex flex-row space-x-4">
       <Text as="p" style="lg-md" color={color ? color : undefined}>
         ↗ 
       </Text>
       <Text as="p" style="lg" color={color ? color : undefined}>
-        <a href={href} className={classes.link}>
+        <a href={href} className={cx(css.linkUnderline, classes.link)}>
           {children}
         </a>
       </Text>

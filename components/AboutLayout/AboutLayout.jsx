@@ -10,7 +10,6 @@ import cx from 'classnames';
 import css from "./AboutLayout.module.scss"
 import { socials } from "../../data/footer"
 import { facts, imageCaption } from "../../data/about";
-import { NAV_HEIGHT } from '../Navbar/Navbar';
 import ResumeItem from '../ResumeItem/ResumeItem';
 
 const AboutLayout = (props) => {
@@ -19,49 +18,49 @@ const AboutLayout = (props) => {
   const linkTextClass = isDark ? css.linkTextWhite : css.linkText
 
   return (
-    <Layout transparentNav isDark>
-      <div className="bg-black">
-        <div style={{paddingTop: NAV_HEIGHT}}>
-          <div className="relative">
-            <Container classes={{ root: "relative z-10" }} paddingY="lg">
-              <div className="flex flex-row space-x-8 sm:space-x-0 sm:flex-col">
-                <div className="flex mx-auto mb-8">
-                  <img className="mx-auto mb-auto" src="/assets/profile/eileen.jpg"/>
-                </div>
-                <div className="">
-                  <Text style="lg-md" as="p" color="white">
-                    Hello, I'm Eileen.
-                  </Text>
-                  <Heading level="h2" style="h2" className="w-full lg:w-5/6" color="white">
-                    I am an Experience Designer, an Agile Practitioner, a Problem-solver and a Visual Communicator.
-                  </Heading>
-                  <div className="flex flex-col">
-                    {facts.map(fact => (
-                      <Text 
-                        color="grey-light"
-                        className="inline mr-4"
-                        classes={{root:"mr-6"}}
-                        as="p"
-                        >
-                          {fact} 
-                      </Text>
-                    ))}
-                    <LinkIcon color="white" href="mailto:eileenmaesantiago@gmail.com">
-                      eileenmaesantiago@gmail.com
-                    </LinkIcon>
-                    <LinkIcon color="white" href={socials.linkedIn.link}>
-                      {socials.linkedIn.name}
-                    </LinkIcon>
-                    <LinkIcon color="white" href="/assets/resume/Resume_EileenSantiago.pdf">
-                      View my resume
-                    </LinkIcon>
-                  </div>
+    <Layout
+      isDark
+      navBgColor="#2D2F34"
+      transparentNav={() => (
+        <div className="relative">
+          <Container classes={{ root: "relative z-10" }} paddingY="lg">
+            <div className="flex flex-row space-x-8 sm:space-x-0 sm:flex-col">
+              <div className="flex mx-auto mb-8">
+                <img className="mx-auto mb-auto" src="/assets/profile/eileen.jpg"/>
+              </div>
+              <div className="">
+                <Text style="lg-md" as="p" color="white">
+                  Hello, I'm Eileen.
+                </Text>
+                <Heading level="h2" style="h2" className="w-full lg:w-5/6" color="white">
+                  I am an Experience Designer, an Agile Practitioner, a Problem-solver and a Visual Communicator.
+                </Heading>
+                <div className="flex flex-col">
+                  {facts.map(fact => (
+                    <Text 
+                      color="grey-light"
+                      className="inline mr-4"
+                      classes={{root:"mr-6"}}
+                      as="p"
+                      >
+                        {fact} 
+                    </Text>
+                  ))}
+                  <LinkIcon color="white" href="mailto:eileenmaesantiago@gmail.com">
+                    eileenmaesantiago@gmail.com
+                  </LinkIcon>
+                  <LinkIcon color="white" href={socials.linkedIn.link}>
+                    {socials.linkedIn.name}
+                  </LinkIcon>
+                  <LinkIcon color="white" href="/assets/resume/Resume_EileenSantiago.pdf">
+                    View my resume
+                  </LinkIcon>
                 </div>
               </div>
-            </Container>
-          </div>
+            </div>
+          </Container>
         </div>
-      </div>
+      )}>
       <Container>
         <div className="flex flex-row space-x-8 md:flex-col md:space-x-0">
           <div className="flex">

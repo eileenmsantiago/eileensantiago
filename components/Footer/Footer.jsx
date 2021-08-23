@@ -11,17 +11,6 @@ export default function Footer(props) {
   return (
     <footer id={css.footer}>
       <Container>
-        {/* <div className={cx('pb-4 md:pb-12',css.marquee)}>
-          <div className="marqueeText">
-            <Text 
-              style="h1"
-              color="grey-light">
-                <Link href="https://calendly.com/eileenmae/60min">
-                  LET'S CONNECT ↗ LET'S CONNECT ↗ LET'S CONNECT ↗ LET'S CONNECT ↗ LET'S CONNECT ↗ LET'S CONNECT ↗ 
-                </Link>
-            </Text>
-          </div>
-        </div> */}
         <div className="container px-4">
           <div className="flex mb-16 md:flex-col">
             <div className="flex-auto sm:mb-8">

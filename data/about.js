@@ -18,7 +18,7 @@ export const skills = [
 export const facts = [
   'I studied Nursing at York University and completed a post-graduate in Interactive Media Management where furthered my skills in UI/UX design and web development.',
   'From nursing to design and development, helping people has always been a core value in my education and past experiences, and so pivoting to UI/UX design made sense to continue practicing user-centered design. Creating design systems became a passion of mine, where I can solve technical and design problems, both creatively and efficiently.',
-  'Hobbys I enjoy doing are reading on my Kindle, learning new recipes, and staying active and well-hydrated - as a type 1 diabetic, doing the latter are crucial to my day-to-day life.',
+  'Hobbys I enjoy doing are reading on my Kindle, learning new recipes, going camping with my family, taking snapshot of micro moments in my day-to-day, and staying active and well-hydrated.',
 ]
 
 export const values = [

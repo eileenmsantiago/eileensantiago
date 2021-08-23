@@ -11,7 +11,24 @@ export const projects = {
       "Front-end development",
       "Design System",
       "Product Design"
-    ]
+    ],
+    myRole: {
+      subheading: "as the sole UI/UX designer, I",
+      items: [
+        {
+          title:"Designed systems for the internal and external user experiences",
+          description:"Conducted user research, synthesized qualitative data to identify feature specifications for the marketing pages, and wireframing. Also responsible for creating a design system for the Raise.dev design foundations."
+        },
+        {
+          title:"Created the branding and facilitated in the strategy for marketing the product",
+          description:"Responsible for branding, creating the style guide, designing the marketing landing pages and also collaborated with the Chief Operating Officer in creating the email drip campaign."
+        },
+        {
+          title:"Designed and implemented the user interface",
+          description:"Facilitated in building the front-end for the landing pages. Worked closely with the lead developer to create a design system for the app’s front-end that was built by views (ViewComponents) for the Raise.dev design foundations."
+        }
+      ]
+    }
   },
   paperSpace: {
     id: "paperSpace",
@@ -24,7 +41,24 @@ export const projects = {
       "UI/UX design",
       "Full-stack development",
       "Design System",
-    ]
+    ],
+    myRole: {
+      subheading: "as the sole UI/UX designer and Developer, I",
+      items: [
+        {
+          title:"Designed systems for the internal and external user experiences",
+          description:"Conducted user research, synthesized qualitative data to identify feature specifications for the marketing pages, and wireframing. Also responsible for creating a design system for the Raise.dev design foundations."
+        },
+        {
+          title:"Created the branding and facilitated in the strategy for marketing the product",
+          description:"Responsible for branding, creating the style guide, designing the marketing landing pages and also collaborated with the Chief Operating Officer in creating the email drip campaign."
+        },
+        {
+          title:"Designed and implemented the user interface",
+          description:"Facilitated in building the front-end for the landing pages. Worked closely with the lead developer to create a design system for the app’s front-end that was built by views (ViewComponents) for the Raise.dev design foundations."
+        }
+        ]
+    }
   }
 }
 

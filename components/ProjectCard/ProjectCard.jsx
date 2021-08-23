@@ -15,7 +15,7 @@ export default function ProjectCard(props) {
           <div className="mb-4 overflow-hidden" style={{backgroundColor: primaryColor}}>
             <img className={cx(css.projectImage, ['mx-auto'])} src={featuredImagePath}/>
           </div>
-          <div className="flex flex-row space-x-6 md:space-x-0 md:flex-col sm:p-4">
+          <div className="flex flex-row p-4 space-x-6 md:space-x-0 md:flex-col sm:p-0">
             <div className={cx(css.title,"flex items-center pb-4")}>
               <Text style="h2">{title}</Text>
             </div>

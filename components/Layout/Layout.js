@@ -1,12 +1,12 @@
 import Head from 'next/head';
-import Navbar, { NAV_HEIGHT } from '../Navbar/Navbar';
+import Navbar from '../Navbar/Navbar';
 import css from './Layout.module.scss';
 import siteData from '../../data/site';
 import Footer from '../Footer';
 
 const Layout = props => {
 
-  const { pageTitle, children, transparentNav, isDark } = props;
+  const { pageTitle, children, transparentNav, isDark, navBgColor } = props;
   let title = `Eileen Santiago`;
 
   if(pageTitle) {
@@ -23,10 +23,19 @@ const Layout = props => {
       </Head>
       <main className={css.container}>
         <Navbar isDark={isDark}/>
-        {transparentNav ? children : (
-          <div style={{paddingTop: NAV_HEIGHT}}>
+        {transparentNav ? (
+          <>
+            <div style={{backgroundColor: navBgColor}}>
+              <div className={css.transparentSection}>
+                {transparentNav()}
+              </div>
+            </div>
             {children}
-          </div>
+          </>
+        ) : (
+          <div className={css.transparentSection}>
+            {children}
+           </div>
         )}
       </main>
       <Footer/>

@@ -68,11 +68,18 @@ body {
 }
 
 a {
-  text-decoration: none;
+  // background: linear-gradient(to right, $color-grey-dark, $color-grey-dark 50%, $color-black 50%);
+  // background-clip: text;
+  // -webkit-background-slip: text;
+  // -webkit-text-fill-color: transparent;
+  // background-size: 200% 100%;
+  // background-position: 100%;
+  // transition: background-position 275ms ease;
 }
 
 a:hover {
-  text-decoration: underline;
+  // text-decoration: underline;
+  background-position: 0 100%;
 }
 
 img {

@@ -6,7 +6,6 @@ import css from './Navbar.module.scss';
 import BurgerMenu from '../BurgerMenu';
 
 export const Y_BREAKPOINT = 40;
-export const NAV_HEIGHT = '6.25rem';
 
 export default function Navbar(props) {
   const { isDark } = props;
