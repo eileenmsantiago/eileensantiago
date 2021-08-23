@@ -239,7 +239,40 @@ const ProjectLayout = ({data}) => {
         ]}/>
       </Container>
       <Container width="lg" bgColor="black" paddingY="sm">
+        <Container>
+          <Heading level="h3" style="h5" color="white" classes={{root: "mb-8"}}>Outcome</Heading>
+          <div className="mb-8">
+            <Text as="p" color="white">
+              Creating the design system, through the process, constant iterations, design critique and feedback from team stakeholder members, the Raise.dev design system allowed developers and product owners to strengthen the quality of product. No doubt will this fulfill a richer user experience for developers using the platform. 
+            </Text>
+            <Text as="p" color="white">
+              For a successful design to developer collaboration, consistency in our designs were imperative. I designed the style guide early on in such a way that was helpful for when we were ready to create a design system. 
+            </Text>
+          </div>
+          <div className="p-4 mb-8 text-gray-500 bg-opacity-25 border-l-2 rounded border-gray-50 bg-gray-50">
+            <Text as="p" style="sm" color="white">
+              This feature is an on-going project and the following visuals are snippets of the progress and outcomes that were made.
+            </Text>
+          </div>
+        </Container>
+        <div className="text-center">
+          <Heading level="h3" style="h2" color="white">Raise.dev Design System </Heading>
+        </div>
         <img className="mx-auto" src="/assets/raise-dev/design-system-grid.svg"/>
+      </Container>
+      <Container width="sm">
+        <SectionHeading color="grey-light" heading="Retrospective" subheading="Executing the MVP amidst the chaos of a global pandemic"/>
+        <img className="mx-auto mb-16" src="/assets/raise-dev/raisedev-team.png"/>
+        <DescriptionList items={[
+          {
+            title:"Asynchronous work setting",
+            description:"The pandemic undoubtedly altered the way people and companies work, collaborate and communicate together. The process in building the MVP was definitely not linear and the team encountered, both UX and technical aspects, challenges. My experience with this is to communicate as effecively and efficiently as possible. Also, laying out the details in your response was imperative to ensure what you're saying is clear to the other person."
+          },
+          {
+            title:"Design to developer handoff",
+            description:"Friction is easily spotted between designers and developers since both perform different tasks and can view the same challenge very differently. Communicating and reducing any knowledge gaps will lead to better results. My experience with this is learning to hold conversations early on to decrease the chances of the unexpected. Other things include: providing all design files and necessary documentation in GitHub issues and hold meetings with the right people to sync up."
+          }
+        ]}/>
       </Container>
     </Layout>
   )
