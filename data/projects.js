@@ -12,6 +12,20 @@ export const projects = {
       "Design System",
       "Product Design"
     ],
+    overview: "Raise.dev is focusing on helping professional developers advance their careers, through on-demand pair programming, longer-term coaching relationships, and employment opportunities.",
+    disclaimer: "Due to NDA restrictions, I can not disclose all the details of my contributions.",
+    featureDescription: "Working cross-functionally with the founder, product and engineering, I created the end-to-end experiences of the following features:",
+    featureItem: [
+      {
+        title: "Marketing landing pages"
+      },
+      {
+        title: "Sign up & requesting a session user experience flow"
+      },
+      {
+        title: "Establish a working design system from scratch"
+      }
+    ],
     myRole: {
       subheading: "as the sole UI/UX designer, I",
       items: [
@@ -28,7 +42,7 @@ export const projects = {
           description:"Facilitated in building the front-end for the landing pages. Worked closely with the lead developer to create a design system for the app’s front-end that was built by views (ViewComponents) for the Raise.dev design foundations."
         }
       ]
-    }
+    }, 
   },
   paperSpace: {
     id: "paperSpace",

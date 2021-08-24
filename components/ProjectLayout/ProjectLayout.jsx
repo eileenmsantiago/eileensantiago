@@ -24,9 +24,9 @@ const ProjectLayout = (props) => {
       navBgColor={data.primaryColor}
       transparentNav={() => (
         <Container width="sm" paddingY="none" classes={{root:"pt-24 pb-48", container:"text-center"}}>
-          <Heading level="h1" style="h5" classes={{root:'mb-2'}}>Raise.dev</Heading>
+          <Heading level="h1" style="h5" classes={{root:'mb-2'}}>{data.title}</Heading>
           <Heading level="h2" style="h2" classes={{root:'mb-4'}}>
-            Redesigning a developer mentorship platform
+            {data.description}
           </Heading>
           <div className="mb-10">
             {data.tags.map(tag => (
@@ -46,27 +46,17 @@ const ProjectLayout = (props) => {
         <img className={cx('full-width mb-10', css.heroImg)} src={data.projectHeroPath}/>
         <Heading level="h3" style="h2"> Overview </Heading>
         <Text as="div" classes={{root: "mb-8"}}>
-          Raise.dev is focusing on helping professional developers advance their careers, through on-demand pair programming, longer-term coaching relationships, and employment opportunities. 
+          {data.overview}
         </Text>
         <div className="p-4 mb-8 text-gray-500 border-l-2 border-gray-500 rounded bg-gray-50">
           <Text as="div" style="sm">
-            Due to NDA restrictions, I can not disclose all the details of my contributions.
+            {data.disclaimer}
           </Text>
         </div>
         <Text style="lg-md" as="div" classes={{root: "mb-8"}}>
-        Working cross-functionally with the founder, product and engineering, I created the end-to-end experiences of the following features:
+          {data.featureDescription}
         </Text>
-        <DescriptionList items={[
-          {
-            title:"Marketing landing pages",
-          },
-          {
-            title:"Sign up & requesting a session user experience flow",
-          },
-          {
-            title:"Establish a working design system from scratch",
-          }
-          ]}/>
+        <DescriptionList items={data.featureItem}/>
         <DescriptionGrid items={[
           {
             title: "Skill set",

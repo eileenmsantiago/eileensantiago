@@ -10,12 +10,12 @@ const DescriptionList = (props) => {
     color = "white";
   }
   return (
-    <div>
+    <div className="mb-8">
       {items.map((item, idx) => (
-        <div className="mb-8">
+        <div>
           <div className="flex flex-col">
-            <div className="flex space-x-6 left-side">
-              <Heading level="h4" style="h3" color={color}>{`0${idx+1}`}</Heading>
+            <div className="flex pb-4 space-x-6 left-side">
+              <Text style="h3" color={color}>{`0${idx+1}`}</Text>
               <Text style="lg-md" color={color}>{item.title}</Text>
             </div>
           </div>
