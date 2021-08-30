@@ -90,7 +90,7 @@ export const projects = {
   paperSpace: {
     id: "paperSpace",
     pageUrl: "/paper-space",
-    siteURL: null,
+    siteURL: "https://www.figma.com/proto/DhTlr9NKICfuTrJ897Bzc1/PaperSpace-prototype?node-id=308%3A196&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=308%3A196",
     primaryColor: '#FAF5F0',
     featuredImagePath: "/assets/paper-space/paper-space-mobile-grid.png",
     projectHeroPath: "/assets/paper-space/paper-space.png",

@@ -44,7 +44,7 @@ const ProjectLayout = (props) => {
         </div>
         {data.siteURL && (
           <div className="flex justify-center">
-            <LinkIcon href={data.siteURL}>
+            <LinkIcon openNewTab href={data.siteURL}>
               {data.cta}
             </LinkIcon>
           </div>
