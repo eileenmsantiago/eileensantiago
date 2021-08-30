@@ -1,8 +1,10 @@
 export default {
-  title: 'Eileen Santiago - A Product Designer',
-  description: 'Eileen Santiago is a Product Designer also doing front-end development.',
+  title: 'Eileen Mae - A product designer portfolio',
+  titleDescription: 'Eileen Mae is a Product Designer and Front-end Developer',
+  author: 'Eileen Mae',
+  description: 'Hello, I\'m Eileen — a Product Designer with experience in front-end development. Creating design systems for a better digital experience',
   keywords: [
-    'Eileen Santiago',
+    'Eileen Mae Santiago',
     'portfolio',
     'product designer',
     'product thinking',
@@ -10,6 +12,11 @@ export default {
     'UI/UX',
     'front-end developer',
     'web developer',
-    'web designer'
-  ]
+    'web designer',
+    'marketing',
+    'ui/ux portfolio'
+  ],
+  year: '2021',
+  url: 'https://eileensantiago.com/',
+  twitterHandle: '@eileenmsantiago'
 }

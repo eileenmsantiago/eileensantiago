@@ -7,7 +7,7 @@ export const projects = {
     siteURL: "https://raise.dev",
     primaryColor: '#E1EBFF',
     featuredImagePath: "/assets/raise-dev/raisedev-desktop.png",
-    projectHeroPath: "/assets/raise-dev/raisedev-browser.svg",
+    projectHeroPath: "/assets/raise-dev/raisedev-browser.png",
     title: "Raise.Dev",
     description: "Redesigning a digital experience for a developer mentorship platform",
     tags: [

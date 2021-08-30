@@ -163,13 +163,13 @@ export default function project() {
       </Container>
       <Container width="sm" paddingY="lg" bgColorHex={primaryColor} classes={{root: css.negativeMarginBottom}}>
         <SectionHeading heading="Introducing the final designs" subheading="PaperSpace"/>
-        <div className="my-32">
+        <div className="my-48">
           <br/>
         </div>
       </Container>
       <Container paddingY="none" width="sm" classes={{root: css.topOffset}}>
         <img src="/assets/paper-space/mockups-product.png" className="mb-16"/>
-        <Text as="p">
+        <Text as="p" style="lg-md" color="grey-dark">
           A journaling application that creates a digital space for people to freely write, while making sense of their emotions and to gain relief. People can practice mindfulness through gradient color-coded indicators, and also find the guided prompts users who need a kick-starter to write. 
         </Text>
       </Container>
