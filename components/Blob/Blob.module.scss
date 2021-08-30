@@ -1,0 +1,28 @@
+@import '../../styles/variables.scss';
+
+@keyframes blob-move {
+  0%   { transform: scale(1)   translate(5px, -10px); }
+  35%  { transform: scale(0.8, 1) translate(40px, 15px) rotate(160deg); }
+  40%  { transform: scale(0.8, 1) translate(40px, 15px) rotate(160deg); }
+  75%  { transform: scale(1.2) translate(0px, 25px) rotate(-20deg); }
+  80%  { transform: scale(1.2) translate(0px, 25px) rotate(-20deg); }
+  100% { transform: scale(1)   translate(5px, -30px); }
+}
+
+.container {
+  width: 100%;
+  top: 0;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+}
+
+.blob {
+  position: absolute;
+  background-size: cover;
+  max-width: 600px;
+  top: 0px;
+  right: 0px;
+  width: 70%;
+  animation: blob-move 20s ease-in-out infinite;
+}

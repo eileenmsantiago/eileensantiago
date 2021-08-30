@@ -1,0 +1,28 @@
+@import '../../styles/variables.scss';
+
+.heading {
+  color: #2D2F34;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  text-decoration: underline;
+  padding-left: 0;
+}
+
+.nav-link-item {
+  padding-right: 2rem;
+}
+
+.nav-link-text {
+  color: #2D2F34;
+}
+
+
+.transparentSection {
+  padding-top: 6rem;
+  @media screen and (max-width: $bp-tablet) {
+    padding-top: 4rem;
+  }
+}

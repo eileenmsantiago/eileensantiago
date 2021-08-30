@@ -1,0 +1,78 @@
+@import "../../styles/mixins/typography.scss";
+@import "../../styles/variables.scss";
+
+.root {
+  em {
+    @include type-heading-book--italic;
+  }
+}
+
+.h1 {
+  @include type-h1;
+  margin-bottom: 3rem;
+}
+
+.h2 {
+  @include type-h2;
+  margin-bottom: 2rem;
+}
+
+.h3 {
+  @include type-h3;
+  margin-bottom: 2rem;
+  line-height: 2.25rem;
+}
+
+.h4 {
+  @include type-h4;
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.h5 {
+  @include type-h5;
+}
+
+.lg {
+  @include type-body-large;
+}
+
+.lg-md {
+  @include type-body-large--medium;
+}
+
+.peach {
+  color: $color-peach;
+}
+
+.peach-dark {
+  color: $color-peach-dark;
+}
+
+.blue {
+  color: $color-blue;
+}
+
+.white {
+  color: $color-white;
+}
+
+.grey-light {
+  color: $color-grey-light;
+}
+
+.grey-dark {
+  color: $color-grey-dark;
+}
+
+.black {
+  color: $color-black;
+}
+
+.light-italic {
+  @include type-heading-light--italic;
+}
+
+.book-italic {
+  @include type-heading-book--italic;
+}

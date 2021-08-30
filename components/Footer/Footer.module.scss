@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+
+#footer {
+  background-color: $color-black;
+  color: $color-white;
+}
+
+#footer a {
+  color: $color-white;
+}
+
+.marquee {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}

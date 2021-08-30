@@ -1,0 +1,96 @@
+@mixin type-primary {
+  font-family: NHaasRg, sans-serif;
+}
+
+@mixin type-secondary {
+  font-family: OggLight;
+}
+
+// Body styles 
+
+@mixin type-body-sm {
+  @include type-primary;
+  font-size: 0.8rem;
+}
+
+@mixin type-body-sm--bold {
+  @include type-body-sm;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@mixin type-body-md {
+  @include type-primary;
+  font-size: inherit;
+}
+
+@mixin type-body-md--bold {
+  font-family: NHaasBd, sans-serif;
+  font-size: inherit;
+}
+
+@mixin type-body-large {
+  @include type-primary;
+  font-size: 1.25rem;
+}
+
+@mixin type-body-large--medium {
+  @include type-body-large;
+  font-family: NHaasMd, sans-serif;
+}
+
+// Heading styles
+
+// ---- weights
+
+@mixin type-heading-light--italic {
+  font-family: OggLightItalic;
+}
+
+@mixin type-heading-book--italic {
+  font-family: OggBookItalic;
+}
+
+// ---- levels
+
+@mixin type-h1 {
+  @include type-secondary;
+  font-size: 3rem;
+  line-height: auto;
+
+  @media screen and (max-width: $bp-mobile) {
+    font-size: 2rem;
+    line-height: auto;
+  }
+}
+
+@mixin type-h2 {
+  @include type-secondary;
+  font-size: 2.375rem;
+  line-height: auto;
+  
+  @media screen and (max-width: $bp-mobile) {
+    font-size: 2rem;
+    line-height: auto;
+  }
+}
+
+@mixin type-h3{
+  @include type-secondary;
+  font-size: 1.75rem;
+  line-height: 2.35rem;
+}
+
+@mixin type-h4{
+  @include type-secondary;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@mixin type-h5{
+  @include type-body-sm--bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  line-height: 3em;
+}
