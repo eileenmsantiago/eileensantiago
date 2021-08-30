@@ -47,11 +47,6 @@ export default function Navbar(props) {
                 About
               </a>
             </li>
-            <li className={css.linkItem}>
-              <a href="/playground" className={linkTextClass}>
-                Other
-              </a>
-            </li>
           </ul>
           <div className="flex hidden sm:block">
             <BurgerMenu />

@@ -90,7 +90,7 @@ export const projects = {
   paperSpace: {
     id: "paperSpace",
     pageUrl: "/paper-space",
-    siteURL: "https://raise.dev",
+    siteURL: null,
     primaryColor: '#FAF5F0',
     featuredImagePath: "/assets/paper-space/paper-space-mobile-grid.png",
     projectHeroPath: "/assets/paper-space/paper-space.png",

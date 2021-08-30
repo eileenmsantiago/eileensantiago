@@ -42,11 +42,13 @@ const ProjectLayout = (props) => {
             </Text>
           ))}
         </div>
-        <div className="flex justify-center">
-          <LinkIcon href={data.siteURL}>
-            {data.cta}
-          </LinkIcon>
-        </div>
+        {data.siteURL && (
+          <div className="flex justify-center">
+            <LinkIcon href={data.siteURL}>
+              {data.cta}
+            </LinkIcon>
+          </div>
+        )}
       </Container>
       )}>
       <Container width="sm" marginY="lg" >

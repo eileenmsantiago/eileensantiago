@@ -30,11 +30,6 @@ const BurgerMenu = (props) => {
                 <Text color="white">About me</Text>
               </a>
             </li>
-            <li className="">
-              <a href="/playground">
-                <Text color="white">Playground</Text>
-              </a>
-            </li>
           </ul>
         </div>
       )}
