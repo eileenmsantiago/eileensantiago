@@ -19,6 +19,9 @@ const Home = () => {
       <div className="relative">
         <Container classes={{ root: "relative z-10" }} paddingY="lg">
           <div className={css.heroText}>
+            <Heading level="h1" style="h5" color="grey-dark" classes={{ root: "mb-4" }}>
+              Hello, I'm Eileen.
+            </Heading>
             <Heading level="h1" className="w-full lg:w-5/6">
               A <em>Product Designer</em> experienced in{" "}
               <em>front-end development</em>, and creating design systems for better

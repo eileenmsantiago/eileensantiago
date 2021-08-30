@@ -1,7 +1,8 @@
-import {Heading} from '../'
+import { Heading } from '../'
+
 const SectionHeading = (props) => {
 
-  const { heading= "", subheading, isDark } = props;
+  const { heading= "", items, subheading, isDark } = props;
 
   let color;
   if(isDark) {
@@ -9,8 +10,12 @@ const SectionHeading = (props) => {
   }
   return (
     <>
-      <Heading level="h3" style="h5" color={color} classes={{root: "mb-2"}}>{heading}</Heading>
-      <Heading level="h3" style="h2" color={color} classes={{root: "mb-6"}}>{subheading}</Heading>
+      <Heading level="h3" style="h5" color={color} classes={{root: "mb-2"}}>
+        {heading}
+      </Heading>
+      <Heading level="h3" style="h2" color={color} classes={{root: "mb-8"}}>
+        {subheading}
+      </Heading>
     </>
   )
 }

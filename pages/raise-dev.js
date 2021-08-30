@@ -31,7 +31,8 @@ export default function project() {
         <SectionHeading color="grey-light" heading="01 marketing" subheading="Redesigning Raise.dev and implementing a visual tone and language that speaks to the developer education space"/>
       </Container>
       <Container width="lg" paddingY="sm" paddingX="none">
-        <img src={featuredImagePath}/>
+        {/* <img src={featuredImagePath}/> */}
+        <img className="p-10 mx-auto" src="/assets/raise-dev/landing.gif" alt="log in screens"/>
       </Container>
       <Container width="sm">
         <Heading level="h3">Developers who need a second set of eyes to take the next step forward</Heading>
@@ -169,7 +170,7 @@ export default function project() {
             </Text>
           </div>
           <div className="p-4 mb-8 text-gray-500 bg-opacity-25 border-l-2 rounded border-gray-50 bg-gray-50">
-            <Text as="p" style="sm" color="white">
+            <Text as="span" style="sm" color="white" classes={{root: 'mb-0'}}>
               This feature is an on-going project and the following visuals are snippets of the progress and outcomes that were made.
             </Text>
           </div>
@@ -178,6 +179,10 @@ export default function project() {
           <Heading level="h3" style="h2" color="white">Raise.dev Design System </Heading>
         </div>
         <img className="mx-auto" src="/assets/raise-dev/design-system-grid.svg"/>
+      </Container>
+      <Container width="lg" paddingX="none">
+        
+        <img className="p-10 mx-auto" src="/assets/raise-dev/mockups.svg" alt="log in screens"/>
       </Container>
     </ProjectLayout>
   )

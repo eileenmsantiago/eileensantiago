@@ -6,7 +6,7 @@ const DescriptionGrid = (props) => {
   const { items, color } = props
 
   return (
-    <div className="grid grid-cols-2 gap-8 md:grid-cols-1">
+    <div className="grid grid-cols-2 gap-12 md:grid-cols-1">
       {items.map(item => {
         let description = item.description;
         if(description instanceof Function) {
