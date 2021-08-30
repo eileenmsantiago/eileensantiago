@@ -107,39 +107,49 @@ export default function project() {
         <Text as="p" classes={{root: "pt-8 pb-24"}}>
           <strong>Collaboratively, we identified which features deemed higher priority.</strong> It was important for everyone to agree on the definite core features while also considering the technical and time limitations during that time. 
         </Text>
-        <Heading level="h3" style="h5">
-          Low-fidelity sketches
-        </Heading>
-        <Text as="p">
-          We started with low-fidelity sketches after determining our user task flow and continued iterating collaboratively
-        </Text>
-        <ModalImage
-          small="/assets/paper-space/wireframe-lo-fi.png"
-          large="/assets/paper-space/wireframe-lo-fi.png"
-          alt="Wireframes sketch"
-        />
+        <div className="mb-24">
+          <Heading level="h3" style="h5">
+            Low-fidelity sketches
+          </Heading>
+          <Text as="div" classes={{root: 'mb-16'}}>
+            We started with low-fidelity sketches after determining our user task flow and continued iterating collaboratively
+          </Text>
+          <ModalImage
+            small="/assets/paper-space/wireframe-lo-fi.png"
+            large="/assets/paper-space/wireframe-lo-fi.png"
+            alt="Wireframes sketch"
+          />
+        </div>
+        <div className="mb-24">
+          <Heading level="h3" style="h5">
+            Mid Fidelity Wireframes
+          </Heading>
+          <Text as="div" classes={{root: 'mb-16'}}>
+            Continued on design iterations and 
+          </Text>
+          <ModalImage
+            small="/assets/paper-space/wireframes-homepage.svg"
+            large="/assets/paper-space/wireframes-homepage.svg"
+            alt="Wireframes sketch"
+          />
+        </div>
       </Container>
       <Container width="sm" bgColor="black">
-        <SectionHeading isDark heading="Problems identified" subheading="Work flow challenges"/>
-        <DescriptionList isDark items={[
-            {
-              title:"Technical feasibility",
-              description: "We were challenged with the technical feasibility in incorporating our proposed feature ideas as well as meeting the deadlines. This led us to think about the product more intuitively to determine the right core feature(s) we wanted to successfully attain for the app."
-            },
-            {
-              title:"Created the branding and facilitated in the strategy for marketing the product",
-              description: "Taking a second look at our proposed ideas and in doing a second round of market research for journaling, we observed the use of graphical interfaces for displaying mood and behaviour."
-            }
-          ]}/>
+        <div className="mt-24 mb-16">
+          <SectionHeading isDark heading="Problems identified" subheading="Work flow challenges"/>
+          <DescriptionList isDark items={[
+              {
+                title:"Technical feasibility",
+                description: "We were challenged with the technical feasibility in incorporating our proposed feature ideas as well as meeting the deadlines. This led us to think about the product more intuitively to determine the right core feature(s) we wanted to successfully attain for the app."
+              },
+              {
+                title:"Created the branding and facilitated in the strategy for marketing the product",
+                description: "Taking a second look at our proposed ideas and in doing a second round of market research for journaling, we observed the use of graphical interfaces for displaying mood and behaviour."
+              }
+            ]}/>
+        </div>
       </Container>
-      <Container width="lg" bgColor="black">
-        <ModalImage
-          small="/assets/paper-space/wireframes-homepage.svg"
-          large="/assets/paper-space/wireframes-homepage.svg"
-          alt="Wireframes sketch"
-        />
-      </Container>
-      <Container>
+      <Container paddingY="lg">
         <div className="grid grid-cols-2 gap-4 md:grid-cols-1">
           <div>
             <SectionHeading heading="03 Solution" subheading="Simplifying the product features for a seamless digital journaling experience"/>
