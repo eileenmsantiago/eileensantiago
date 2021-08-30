@@ -1,6 +1,7 @@
 export {default as Blob} from './Blob';
 export {default as Button} from './Button';
 export {default as Container} from './Container';
+export {default as DescriptionHorizontalList} from './DescriptionHorizontalList';
 export {default as DescriptionList} from './DescriptionList';
 export {default as DescriptionGrid} from './DescriptionGrid';
 export {default as Footer} from './Footer';

@@ -42,7 +42,9 @@
 }
 
 .linkItem {
-  padding-right: 2rem;
+  &:not(:last-child) {
+    padding-right: 2rem;
+  }
 }
 
 .linkText {

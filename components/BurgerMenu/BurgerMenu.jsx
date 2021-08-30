@@ -12,12 +12,12 @@ const BurgerMenu = (props) => {
   return (
     <>
       <button className="" onClick={() => setShowBurgerMenu(true)}>
-        🍔
+        <img src="/assets/ui-elements/menu.svg"/>
       </button>
       {showBurgerMenu && (
         <div className={css.burgerBar}>
           <button className="w-8 h-8 ml-auto" onClick={() => setShowBurgerMenu(false)}>
-            ⛔️
+            <img src="/assets/ui-elements/close.svg"/>
           </button>
           <ul className={cx('mx-auto', css.menuItem, css.links)}>
             <li className="">

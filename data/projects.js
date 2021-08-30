@@ -93,29 +93,19 @@ export const projects = {
     siteURL: "https://raise.dev",
     primaryColor: '#FAF5F0',
     featuredImagePath: "/assets/paper-space/paper-space-mobile-grid.png",
-    projectHeroPath: "/assets/paper-space/paper-space.svg",
+    projectHeroPath: "/assets/paper-space/paper-space.png",
     title: "Paper Space",
     description: "Giving people a digital space to track and visualize their emotions through journaling. ",
     tags: [
       "UI/UX design",
+      "Mobile App",
       "Full-stack development",
-      "Product Thinking",
     ],
     cta: "View prototype",
     overview: "PaperSpace gives people a digital space to track and visualize their emotions through journaling. This app also provides users with guided prompts if they need a kick-starter to writing. Aiming to help motivate individuals in keeping a habit to journal while enabling them to reflect intuitively.",
     disclaimer: "",
     featureDescription: "",
-    featureItem: [
-      {
-        title: ""
-      },
-      {
-        title: ""
-      },
-      {
-        title: ""
-      }
-    ],
+    featureItem: [],
     projectScope: [
       {
         title: "Skill set",
@@ -181,19 +171,19 @@ export const projects = {
         }
       ]
     },
-    retrospective: {
-      subheading: "Executing the MVP amidst the chaos of a global pandemic",
-      items: [
-        {
-          title:"Asynchronous work setting",
-          description:"The pandemic undoubtedly altered the way people and companies work, collaborate and communicate together. The process in building the MVP was definitely not linear and the team encountered, both UX and technical aspects, challenges. My experience with this is to communicate as effecively and efficiently as possible. Also, laying out the details in your response was imperative to ensure what you're saying is clear to the other person."
-        },
-        {
-          title:"Design to developer handoff",
-          description:"Friction is easily spotted between designers and developers since both perform different tasks and can view the same challenge very differently. Communicating and reducing any knowledge gaps will lead to better results. My experience with this is learning to hold conversations early on to decrease the chances of the unexpected. Other things include: providing all design files and necessary documentation in GitHub issues and hold meetings with the right people to sync up."
-        }
-      ]
-    },
+    // retrospective: {
+    //   subheading: "Executing the MVP amidst the chaos of a global pandemic",
+    //   items: [
+    //     {
+    //       title:"Asynchronous work setting",
+    //       description:"The pandemic undoubtedly altered the way people and companies work, collaborate and communicate together. The process in building the MVP was definitely not linear and the team encountered, both UX and technical aspects, challenges. My experience with this is to communicate as effecively and efficiently as possible. Also, laying out the details in your response was imperative to ensure what you're saying is clear to the other person."
+    //     },
+    //     {
+    //       title:"Design to developer handoff",
+    //       description:"Friction is easily spotted between designers and developers since both perform different tasks and can view the same challenge very differently. Communicating and reducing any knowledge gaps will lead to better results. My experience with this is learning to hold conversations early on to decrease the chances of the unexpected. Other things include: providing all design files and necessary documentation in GitHub issues and hold meetings with the right people to sync up."
+    //     }
+    //   ]
+    // },
   }
 }
 

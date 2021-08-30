@@ -5,6 +5,7 @@ import cx from 'classnames';
 import ModalImage from "react-modal-image";
 import { 
   Container, 
+  DescriptionHorizontalList,
   DescriptionList, 
   DescriptionGrid, 
   Heading, 
@@ -22,10 +23,12 @@ export default function project() {
   return (
     <ProjectLayout data={projects.paperSpace}>
       <Container width="sm">
-        <SectionHeading color="grey-light" heading="01 Problem space" subheading="Identifying the problem"/>
+        <SectionHeading color="grey-light" heading="01 Problem Space" subheading="Identifying the problem"/>
       </Container>
-      <Container width="lg" paddingY="sm" paddingX="none">
-        <img src={featuredImagePath}/>
+      <Container paddingY="no" paddingX="none">
+        <div className="flex">
+          <img src="/assets/paper-space/mobile-view-2.png" className="w-1/2 mx-auto"/>
+        </div>
       </Container>
       <Container width="sm">
         <Heading level="h3">
@@ -55,7 +58,7 @@ export default function project() {
             />
           </div>
           <SectionHeading color="grey-light" heading="Main Insights" subheading="Identifying the Commonalities"/>
-          <Text as="div" classes={{root: 'mb-16'}}>
+          <Text as="div" classes={{root: "mb-12"}}>
             The themes discovered from the user interviews revealed a common experience of people’s perception and purpose of journaling.
             <br />
             The user interviews revealed common themes on people’s perception and purpose of journaling and also habits.
@@ -74,35 +77,100 @@ export default function project() {
               additionals: "“I really want to journal everyday but It’s hard to find the motivation to write consistently on a daily basis.“"
             },
           ]}/>
+          <SectionHeading color="grey-light" heading="User Persona" subheading="From a journaller’s POV"/>
+          <Text as="p" >
+            Collaboratively, we gathered insights and themes from our user research to create this user persona, Emilie, to identify our target audience’s user needs. We explored how this could drive the success of our product and design.
+          </Text>
+          <ModalImage
+            small="/assets/paper-space/user-persona.svg"
+            large="/assets/paper-space/user-persona.svg"
+            alt="Interview script"
+          />
         </div>
       </Container>
-      <Container width="sm">
-        <SectionHeading color="grey-light" heading="User Persona" subheading="From a journaller’s POV"/>
-      </Container>
-      <Container paddingY="none">
-        <ModalImage
-          small="/assets/paper-space/user-persona.svg"
-          large="/assets/paper-space/user-persona.svg"
-          alt="Interview script"
-        />
-      </Container>
-      <Container width="sm">
-        <Text as="div" classes={{root: 'mb-20'}}>
-          Collaboratively, we gathered insights and themes from our user research to create this user persona, Emilie, to identify our target audience’s user needs. We explored how this could drive the success of our product and design.
-        </Text>
-        <SectionHeading color="grey-light" heading="02 Design Process" subheading="Designing the product"/>
-        <Text as="div" classes={{root: 'mb-12'}}>
+      <Container width="sm" paddingY="lg">
+        <div className="mb-16">
+          <SectionHeading color="grey-light" heading="02 Design Process" subheading="Designing the product"/>
+        </div>
+        <Heading level="h3" style="h5">
+          HMW
+        </Heading>
+        <Text as="div" classes={{root: 'mb-16'}}>
           We mapped out our solutions by going through each step and asked ourselves HMW's to find design opportunities, and followed by gathering inspiration. We enjoyed this part because it allowed for creative thinking and bringing in ideas on what people like. Our design sprint, facilitated by one of our team members, undeniably helped our decision in delivering the success of the product feature.
           <br />
+        </Text>
+        <ModalImage
+            small="/assets/paper-space/hmw.svg"
+            large="/assets/paper-space/hmw.svg"
+            alt="Wireframes sketch"
+          />
+        <Text as="p" classes={{root: "pt-8 pb-24"}}>
           <strong>Collaboratively, we identified which features deemed higher priority.</strong> It was important for everyone to agree on the definite core features while also considering the technical and time limitations during that time. 
         </Text>
+        <Heading level="h3" style="h5">
+          Low-fidelity sketches
+        </Heading>
+        <Text as="p">
+          We started with low-fidelity sketches after determining our user task flow and continued iterating collaboratively
+        </Text>
+        <ModalImage
+          small="/assets/paper-space/wireframe-lo-fi.png"
+          large="/assets/paper-space/wireframe-lo-fi.png"
+          alt="Wireframes sketch"
+        />
       </Container>
-      <Container width="lg" paddingY="lg" bgColor="black">
-        <SectionHeading isDark heading="HMW" subheading="How might we provide a digital writing space that motivates people to journal and reflect upon their emotions in an intuitive way?"/>
-        <Text as="p" color="grey-light">
-          We were challenged with the technical feasibility in incorporating our proposed feature ideas as well as meeting the deadlines. This led us to think about the product more intuitively to determine the right core feature(s) we wanted to successfully attain for the app. 
-          <br />
-          Having looked into the competitive market for journaling, we observed the use of graphical interfaces for displaying mood and behaviour.
+      <Container width="sm" bgColor="black">
+        <SectionHeading isDark heading="Problems identified" subheading="Work flow challenges"/>
+        <DescriptionList isDark items={[
+            {
+              title:"Technical feasibility",
+              description: "We were challenged with the technical feasibility in incorporating our proposed feature ideas as well as meeting the deadlines. This led us to think about the product more intuitively to determine the right core feature(s) we wanted to successfully attain for the app."
+            },
+            {
+              title:"Created the branding and facilitated in the strategy for marketing the product",
+              description: "Taking a second look at our proposed ideas and in doing a second round of market research for journaling, we observed the use of graphical interfaces for displaying mood and behaviour."
+            }
+          ]}/>
+      </Container>
+      <Container width="lg" bgColor="black">
+        <ModalImage
+          small="/assets/paper-space/wireframes-homepage.svg"
+          large="/assets/paper-space/wireframes-homepage.svg"
+          alt="Wireframes sketch"
+        />
+      </Container>
+      <Container>
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-1">
+          <div>
+            <SectionHeading heading="03 Solution" subheading="Simplifying the product features for a seamless digital journaling experience"/>
+          </div>
+          <div>
+            <Text as="div" classes={{root: 'mb-12'}}>
+              We started with low-fidelity sketches after determining our user task flow and continued iterating collaboratively
+            </Text>
+            <DescriptionList items={[
+              {
+                title:"Centering the core experience on the “must-have” features",
+                description: "Given the time and technical resources we had, the group agreed on removing the “should-have” and “nice-to-have” features. It was important to focus on our technical capabilities and to ensure that we provided an exceptional user experience for these selected features."
+              },
+              {
+                title:"Improving our technology stack for better user experience",
+                description: "Our goal diverted into finding a technical solution that would identify and analyze emotions from written text, thus uncovering user’s emotions while using the app. We researched APIs that would allow for analyzing emotions through user input text, and discovered the Watson Tone Analyzer, by IBM."
+              }
+            ]}/>
+          </div>
+        </div>
+      </Container>
+      <Container width="sm" paddingY="lg" bgColorHex={primaryColor} classes={{root: css.negativeMarginBottom}}>
+        <SectionHeading heading="Introducing the final designs" subheading="PaperSpace"/>
+        <div className="my-32">
+          <br/>
+        </div>
+      </Container>
+      <Container paddingY="none" width="sm" classes={{root: css.topOffset}}>
+        <img src="/assets/paper-space/mockups-product.png" className="mb-16"/>
+        <Text as="p">
+          A journaling application that creates a digital space for people to freely write, while making sense of their emotions and to gain relief. People can practice mindfulness through gradient color-coded indicators, and also find the guided prompts users who need a kick-starter to write. 
         </Text>
       </Container>
     </ProjectLayout>

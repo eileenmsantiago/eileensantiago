@@ -68,7 +68,7 @@ body {
 }
 
 a {
-  color: $color-blue;
+  color: $color-grey-dark;
   // background: linear-gradient(to right, $color-grey-dark, $color-grey-dark 50%, $color-black 50%);
   // background-clip: text;
   // -webkit-background-slip: text;
@@ -79,7 +79,6 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
   background-position: 0 100%;
 }
 

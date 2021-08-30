@@ -140,7 +140,7 @@ export default function project() {
       <Container paddingX="none" width="lg" paddingY="sm">
         <img src="/assets/raise-dev/design-system-feature.svg"/>
       </Container>
-      <Container width="sm" paddingY="md">
+      <Container width="sm" paddingY="lg">
         <Heading level="h3" style="h5" classes={{root: "mb-8"}}>Proposed solutions</Heading>
         <div className="mb-16">
           <Text as="p">
@@ -179,10 +179,6 @@ export default function project() {
           <Heading level="h3" style="h2" color="white">Raise.dev Design System </Heading>
         </div>
         <img className="mx-auto" src="/assets/raise-dev/design-system-grid.svg"/>
-      </Container>
-      <Container width="lg" paddingX="none">
-        
-        <img className="p-10 mx-auto" src="/assets/raise-dev/mockups.svg" alt="log in screens"/>
       </Container>
     </ProjectLayout>
   )

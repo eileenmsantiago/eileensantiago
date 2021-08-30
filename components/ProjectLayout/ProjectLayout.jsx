@@ -37,7 +37,7 @@ const ProjectLayout = (props) => {
         </Heading>
         <div className="mb-10">
           {data.tags.map(tag => (
-            <Text as="span" style="sm" color="grey-dark" classes={{root: 'rounded bg-gray-50 px-2 m-1 rounded inline-flex items-center align-middle'}}>
+            <Text as="span" style="sm" color="grey-dark" classes={{root: 'rounded bg-gray-50 px-3 py-1 m-1 rounded inline-flex items-center align-middle'}}>
               {tag}
             </Text>
           ))}
@@ -50,7 +50,7 @@ const ProjectLayout = (props) => {
       </Container>
       )}>
       <Container width="sm" marginY="lg" >
-        <img className={cx('full-width mb-10', css.heroImg)} src={featuredImagePath}/>
+        <img className={cx('full-width mb-10', css.heroImg)} src={projectHeroPath}/>
         <Heading level="h3" style="h5" classes={{root: "mb-8"}}> 
           Overview
         </Heading>
@@ -60,7 +60,9 @@ const ProjectLayout = (props) => {
         <Text style="lg-md" as="div" classes={{root: "mb-8"}}>
           {data.featureDescription}
         </Text>
-        <DescriptionList items={data.featureItem}/>
+        {data.featureItem.length > 0 && (
+          <DescriptionList items={data.featureItem}/>
+        )}
         {data.disclaimer && (
           <div className="p-4 mb-8 text-gray-500 border-l-2 border-gray-500 rounded bg-gray-50">
             <Text as="div" style="sm">
@@ -75,11 +77,13 @@ const ProjectLayout = (props) => {
         <DescriptionList isDark items={data.myRole.items}/>
       </Container>
       {children}
-      <Container width="sm">
-        <SectionHeading color="grey-light" heading="Retrospective" subheading={retrospective.subheading}/>
-        <img className="mx-auto mb-16" src="/assets/raise-dev/raisedev-team.png"/>
-        <DescriptionList items={retrospective.items}/>
-      </Container>
+      {retrospective && (
+        <Container width="sm">
+          <SectionHeading color="grey-light" heading="Retrospective" subheading={retrospective.subheading}/>
+          <img className="mx-auto mb-16" src="/assets/raise-dev/raisedev-team.png"/>
+          <DescriptionList items={retrospective.items}/>
+        </Container>
+      )}
     </Layout>
   )
 }
