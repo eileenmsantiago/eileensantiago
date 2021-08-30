@@ -37,14 +37,14 @@ const Layout = props => {
         <meta property="og:url" content={siteData.url} />
         <meta property="og:type" content={siteData.url} />
         <meta property="og:description" content={siteData.description} />
-        <meta property="og:image" content="https://eileensantiago.com/assets/profile/eileen.jpg" /> 
+        <meta property="og:image" content={siteData.imageUrl} /> 
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content={siteData.twitterHandle} />
         <meta name="twitter:title" content={siteData.titleDescription} />
         <meta name="twitter:description" content={siteData.description} />
         <meta name="twitter:url" content={siteData.url} />
-        <meta name="twitter:image" content="https://eileensantiago.com/assets/profile/eileen.jpg" /> 
+        <meta name="twitter:image" content={siteData.imageUrl} /> 
       </Head>
       <main className={css.container}>
         <Navbar isDark={isDark}/>

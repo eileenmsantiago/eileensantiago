@@ -18,5 +18,6 @@ export default {
   ],
   year: '2021',
   url: 'https://eileensantiago.com/',
-  twitterHandle: '@eileenmsantiago'
+  twitterHandle: '@eileenmsantiago',
+  imageUrl: 'https://eileensantiago.com/assets/profile/eileen.jpg',
 }
