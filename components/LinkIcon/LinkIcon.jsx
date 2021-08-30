@@ -10,7 +10,7 @@ const LinkIcon = (props) => {
   return (
     <div className="flex flex-row space-x-4">
       <Text as="p" style="lg-md" color={color ? color : undefined}>
-        ↗ 
+        <img className="mx-auto" src="/assets/ui-elements/arrow.svg"/>
       </Text>
       <Text as="p" style="lg" color={color ? color : undefined}>
         <a href={href} target={openNewTab ? "_blank" : undefined}  className={cx(css.linkUnderline, classes.link)}>
