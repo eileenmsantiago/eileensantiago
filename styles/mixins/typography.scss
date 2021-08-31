@@ -23,21 +23,37 @@
 @mixin type-body-md {
   @include type-primary;
   font-size: inherit;
+  @media screen and (max-width: $bp-mobile) {
+    font-size: 1.875rem;
+    line-height: auto;
+  }
 }
 
 @mixin type-body-md--bold {
   font-family: NHaasBd, sans-serif;
   font-size: inherit;
+  @media screen and (max-width: $bp-mobile) {
+    font-size: 1.875rem;
+    line-height: auto;
+  }
 }
 
 @mixin type-body-large {
   @include type-primary;
   font-size: 1.25rem;
+  @media screen and (max-width: $bp-mobile) {
+    font-size: 1.125rem;
+    line-height: auto;
+  }
 }
 
 @mixin type-body-large--medium {
   @include type-body-large;
   font-family: NHaasMd, sans-serif;
+  @media screen and (max-width: $bp-mobile) {
+    font-size: 1.125rem;
+    line-height: auto;
+  }
 }
 
 // Heading styles
