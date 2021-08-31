@@ -24,7 +24,7 @@
   @include type-primary;
   font-size: inherit;
   @media screen and (max-width: $bp-mobile) {
-    font-size: 1.875rem;
+    font-size: 0.875rem;
     line-height: auto;
   }
 }
@@ -33,7 +33,7 @@
   font-family: NHaasBd, sans-serif;
   font-size: inherit;
   @media screen and (max-width: $bp-mobile) {
-    font-size: 1.875rem;
+    font-size: 0.875rem;
     line-height: auto;
   }
 }
