@@ -9,18 +9,16 @@ const DescriptionHorizontalList = (props) => {
     color = "white";
   }
   return (
-    <div className="flex mb-8 space-x-8">
+    <div className="grid grid-cols-2 sm:grid-cols-1">
       {items.map((item, idx) => (
-        <div className="flex space-x-8">
-          <div className="flex flex-row">
-            <div className="flex flex-col pb-4">
-              <Text style="lg-md" color="grey-light" classes={{root: 'mb-8'}}>
-                {`0${idx+1}`}
-              </Text>
-              <Text style="lg-md" color={color}>
-                {item.title}
-              </Text>
-            </div>
+        <div className="flex flex-col">
+          <div className="flex flex-col pb-4">
+            <Text style="lg-md" color="grey-light" classes={{root: 'mb-8'}}>
+              {`0${idx+1}`}
+            </Text>
+            <Text style="lg-md" color={color}>
+              {item.title}
+            </Text>
           </div>
           {item.description && (
             <Text as="div" color="grey-dark" classes={{root: 'mb-8'}}>

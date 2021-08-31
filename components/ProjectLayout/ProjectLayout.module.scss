@@ -18,14 +18,15 @@
   overflow: hidden;
   position: relative;
   height: 60rem;
+  margin-bottom: 4rem;
   @media screen and (max-width:$bp-tablet) {
+    margin-bottom: 2rem;
     height: 30rem;
   }
 }
 
 .flowImg {
   max-height: 60rem;
-  height: 80%;
   position: absolute;
   left: 0;
   width: 200%;
