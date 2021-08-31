@@ -20,4 +20,6 @@ export default {
   url: 'https://eileensantiago.com/',
   twitterHandle: '@eileenmsantiago',
   imageUrl: 'https://eileensantiago.com/assets/profile/eileen.jpg',
+  OGMetaImage: 'https://eileensantiago.com/assets/meta/og-facebook.png',
+  twitterMetaImage: 'https://eileensantiago.com/assets/meta/og-facebook.png',
 }
