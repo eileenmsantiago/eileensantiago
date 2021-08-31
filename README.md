@@ -3,7 +3,7 @@ A product designer experienced in front-end development. Creating design systems
 
 ↗  View portfolio [here](https://eileensantiago.com/)
 
-👀  View selected works
+👀  View selected work:
 1. [Raise.dev](https://eileensantiago.com/raise-dev)
 2. [PaperSpace](https://eileensantiago.com/paper-space)
 
