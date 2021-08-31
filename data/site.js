@@ -1,8 +1,8 @@
 export default {
   title: 'Eileen Mae - A product designer portfolio',
-  titleDescription: 'Eileen Mae is a Product Designer and Front-end Developer',
+  titleDescription: 'Eileen Mae is a Product Designer and a Front-end Developer',
   author: 'Eileen Mae',
-  description: 'Hello, I\'m Eileen — a Product Designer with experience in front-end development. Creating design systems for a better digital experience',
+  description: 'A Product Designer with experience in front-end development. Creating design systems for a better digital experience',
   keywords: [
     'Eileen Mae Santiago',
     'portfolio',
