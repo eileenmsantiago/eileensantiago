@@ -34,7 +34,7 @@ export default function project() {
         <Heading level="h3">
           Journaling is an accessible way to define and reach our personal goals, to practice mindfulness, and to provide self-care.
         </Heading>
-        <Text as="div" classes={{root: 'mb-12'}}>
+        <Text as="div" color="grey-dark" classes={{root: 'mb-12'}}>
           The trend of journaling has also grown significantly over the past years. 
           Through our interviews, we’ve discovered many people who view journaling as a beneficial way to understand their emotions and to practice mindfulness. However, we identified the problem of people challenged with journaling inconsistently.
         </Text>
@@ -47,7 +47,7 @@ export default function project() {
       <Container bgColorHex={primaryColor} width="sm" paddingY="lg">
         <div className="flex flex-col">
           <SectionHeading color="grey-light" heading="User Interviews" subheading="Understanding the Habits of People who Journal"/>
-          <Text as="div" classes={{root: 'mb-12'}}>
+          <Text as="div" color="grey-dark" classes={{root: 'mb-12'}}>
             We interviewed 5 individuals, characterized as young adults in college/ university or are working professionals. The questions focused in learning and understanding their <strong>journaling habits, purpose for journaling, and their writing experiences</strong> if that’s using paper or digital. 
           </Text>
           <div className="my-12">
@@ -58,7 +58,7 @@ export default function project() {
             />
           </div>
           <SectionHeading color="grey-light" heading="Main Insights" subheading="Identifying the Commonalities"/>
-          <Text as="div" classes={{root: "mb-12"}}>
+          <Text as="div" color="grey-dark" classes={{root: "mb-12"}}>
             The themes discovered from the user interviews revealed a common experience of people’s perception and purpose of journaling.
             <br />
             The user interviews revealed common themes on people’s perception and purpose of journaling and also habits.
@@ -78,7 +78,7 @@ export default function project() {
             },
           ]}/>
           <SectionHeading color="grey-light" heading="User Persona" subheading="From a journaller’s POV"/>
-          <Text as="p" >
+          <Text as="p" color="grey-dark">
             Collaboratively, we gathered insights and themes from our user research to create this user persona, Emilie, to identify our target audience’s user needs. We explored how this could drive the success of our product and design.
           </Text>
           <ModalImage
@@ -95,7 +95,7 @@ export default function project() {
         <Heading level="h3" style="h5">
           HMW
         </Heading>
-        <Text as="div" classes={{root: 'mb-16'}}>
+        <Text as="div" color="grey-dark" classes={{root: 'mb-16'}}>
           We mapped out our solutions by going through each step and asked ourselves HMW's to find design opportunities, and followed by gathering inspiration. We enjoyed this part because it allowed for creative thinking and bringing in ideas on what people like. Our design sprint, facilitated by one of our team members, undeniably helped our decision in delivering the success of the product feature.
           <br />
         </Text>
@@ -104,14 +104,14 @@ export default function project() {
             large="/assets/paper-space/hmw.svg"
             alt="Wireframes sketch"
           />
-        <Text as="p" classes={{root: "pt-8 pb-24"}}>
+        <Text as="p" color="grey-dark" classes={{root: "pt-8 pb-24"}}>
           <strong>Collaboratively, we identified which features deemed higher priority.</strong> It was important for everyone to agree on the definite core features while also considering the technical and time limitations during that time. 
         </Text>
         <div className="mb-24">
-          <Heading level="h3" style="h5">
+          <Heading level="h3" style="h5" classes={{root: 'mb-8'}}>
             Low-fidelity sketches
           </Heading>
-          <Text as="div" classes={{root: 'mb-16'}}>
+          <Text as="div" color="grey-dark"classes={{root: 'mb-16'}}>
             We started with low-fidelity sketches after determining our user task flow and continued iterating collaboratively
           </Text>
           <ModalImage
@@ -121,11 +121,11 @@ export default function project() {
           />
         </div>
         <div className="mb-24">
-          <Heading level="h3" style="h5">
+          <Heading level="h3" style="h5" classes={{root: 'mb-8'}}>
             Mid Fidelity Wireframes
           </Heading>
-          <Text as="div" classes={{root: 'mb-16'}}>
-            Continued on design iterations and 
+          <Text as="div" color="grey-dark"classes={{root: 'mb-16'}}>
+            We tested the UI layout of certain elements, particularly the entry cards, and determine swiping through the cards was the most natural actionable gesture on mobile for viewing content. 
           </Text>
           <ModalImage
             small="/assets/paper-space/wireframes-homepage.svg"
@@ -155,9 +155,6 @@ export default function project() {
             <SectionHeading heading="03 Solution" subheading="Simplifying the product features for a seamless digital journaling experience"/>
           </div>
           <div>
-            <Text as="div" classes={{root: 'mb-12'}}>
-              We started with low-fidelity sketches after determining our user task flow and continued iterating collaboratively
-            </Text>
             <DescriptionList items={[
               {
                 title:"Centering the core experience on the “must-have” features",
