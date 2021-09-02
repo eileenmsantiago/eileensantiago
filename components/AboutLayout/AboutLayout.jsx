@@ -62,16 +62,27 @@ const AboutLayout = (props) => {
         </div>
       )}>
       <Container>
-        <div className="flex flex-row space-x-8 md:flex-col md:space-x-0">
-          <div className="flex">
+        <div className="grid grid-cols-3 md:grid-cols-1">
+          <div className="col-span-1">
             <Heading level="h3" style="h2">
               Experiences
             </Heading>
           </div>
-          <div className="flex-col">
+          <div className="col-span-2">
             <ResumeItem href="https://eileensantiago.com/" company="By Eileen Mae" position="Freelance UI/UX & Visual Designer" date="Toronto, ON | October 2020 to Present"></ResumeItem>
             <ResumeItem href="https://raise.dev/" company="Raise.dev" position="UI/UX Designer & Front-end Developer" date="New York, NY | June 2020 to June 2021"></ResumeItem>
             <ResumeItem href="https://eileensantiago.com/" company="Dahdaleh Institute of Global Health Research @ York University" position="Graphic Communications Designer" date="Toronto, ON | October 2018 to June 2019"></ResumeItem>
+          </div>
+        </div>
+        <div className="grid grid-cols-3 md:grid-cols-1">
+          <div className="col-span-1">
+            <Heading level="h3" style="h2">
+              Certificates & Community
+            </Heading>
+          </div>
+          <div className="col-span-2">
+            <ResumeItem href="https://www.interaction-design.org/" company="Interaction Design Foundation (IDF)" position="Member Certificate" date="June 2020 to Present"></ResumeItem>
+            <ResumeItem href="https://designx.community/" company="DesignX" position="Community Member" date="Toronto, ON | May 2020 to Present"></ResumeItem>
           </div>
         </div>
       </Container>
