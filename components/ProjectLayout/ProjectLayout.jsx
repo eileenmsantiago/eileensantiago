@@ -11,6 +11,7 @@ import {
 import cx from 'classnames';
 import css from './ProjectLayout.module.scss';
 import LinkIcon from '../LinkIcon';
+import Animate from '../Animate';
 
 const ProjectLayout = (props) => {
   const { data, children } = props;
@@ -52,31 +53,39 @@ const ProjectLayout = (props) => {
       </Container>
       )}>
       <Container width="sm" marginY="lg" >
-        <img className={cx('full-width mb-10', css.heroImg)} src={projectHeroPath}/>
+        <Animate>
+          <img className={cx('full-width mb-10', css.heroImg)} src={projectHeroPath}/>
+        </Animate>
         <Heading level="h3" style="h5" classes={{root: "mb-8"}}> 
           Overview
         </Heading>
-        <Text as="div" style="lg" classes={{root: "mb-8"}}>
-          {data.overview}
-        </Text>
-        <Text style="lg-md" as="div" classes={{root: "mb-8"}}>
-          {data.featureDescription}
-        </Text>
-        {data.featureItem.length > 0 && (
-          <DescriptionList items={data.featureItem}/>
-        )}
-        {data.disclaimer && (
-          <div className="p-4 mb-8 text-gray-500 border-l-2 border-gray-500 rounded bg-gray-50">
-            <Text as="div" style="sm">
-                {data.disclaimer}
-              </Text>
-          </div>
-        )}
-        <DescriptionGrid items={data.projectScope}/>
+        <Animate>
+          <Text as="div" style="lg" classes={{root: "mb-8"}}>
+            {data.overview}
+          </Text>
+          <Text style="lg-md" as="div" classes={{root: "mb-8"}}>
+            {data.featureDescription}
+          </Text>
+          {data.featureItem.length > 0 && (
+            <DescriptionList items={data.featureItem}/>
+          )}
+          {data.disclaimer && (
+            <div className="p-4 mb-8 text-gray-500 border-l-2 border-gray-500 rounded bg-gray-50">
+              <Text as="div" style="sm">
+                  {data.disclaimer}
+                </Text>
+            </div>
+          )}
+        </Animate>
+        <Animate>
+          <DescriptionGrid items={data.projectScope}/>
+        </Animate>
       </Container>
       <Container width="sm" paddingY="lg" bgColor="black">
         <SectionHeading isDark heading="my role" subheading={myRole.subheading}/>
-        <DescriptionList isDark items={data.myRole.items}/>
+        <Animate>
+          <DescriptionList isDark items={data.myRole.items}/>
+        </Animate>
       </Container>
       {children}
       {retrospective && (

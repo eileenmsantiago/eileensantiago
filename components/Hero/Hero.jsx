@@ -12,7 +12,9 @@ export default function Hero(props) {
       <div className="container px-4 mx-auto">
         <Heading level="h1">A</Heading>
         <Text>VIEW SELECTED WORK</Text>
-        <img className={cx(css.projectImage, ['mx-auto mb-4'])} src={featuredImagePath}/>
+        <Animate>
+          <img className={cx(css.projectImage, ['mx-auto mb-4'])} src={featuredImagePath}/>
+        </Animate>
       </div>
     </div>
   )

@@ -12,7 +12,7 @@ import {
   ProjectLayout, 
   SectionHeading, 
   Text, 
-  Quote 
+  Quote, FeatureDescription 
 } from '../components';
 import projects from '../data/projects.js';
 
@@ -120,7 +120,7 @@ export default function project() {
             alt="Wireframes sketch"
           />
         </div>
-        <div className="mb-24">
+        {/* <div className="mb-24">
           <Heading level="h3" style="h5" classes={{root: 'mb-8'}}>
             Mid Fidelity Wireframes
           </Heading>
@@ -132,7 +132,7 @@ export default function project() {
             large="/assets/paper-space/wireframes-homepage.svg"
             alt="Wireframes sketch"
           />
-        </div>
+        </div> */}
       </Container>
       <Container width="sm" bgColor="black">
         <div className="mt-24 mb-16">
@@ -179,6 +179,26 @@ export default function project() {
         <Text as="p" style="lg-md" color="grey-dark">
           A journaling application that creates a digital space for people to freely write, while making sense of their emotions and to gain relief. People can practice mindfulness through gradient color-coded indicators, and also find the guided prompts users who need a kick-starter to write. 
         </Text>
+      </Container>
+      <Container>
+        <FeatureDescription items={[
+          {
+            imageUrl: "/assets/paper-space/feature-0.png",
+            title: "Color Gradients as Mood Indicators",
+            description: "Color-coded categories to visualize user’s emotions based on their writing content over weekly, monthly and yearly. These color gradients summerizes the emotions from the journal entries. It also provides a visual sense of how they’ve been feeling through the varying shades."
+          },
+          {
+            imageUrl: "/assets/paper-space/feature-1.png",
+            title: "Color-coded Categories with Respective Moods",
+            description: "Each color with its respective mood showed on the entry cards based on your writing content."
+          },
+          {
+            imageUrl: "/assets/paper-space/feature-2.png",
+            title: "Guided Prompts for Journal Writing",
+            description: "Guided prompts are offered for users who need a kick-starter to write. "
+          },
+        ]}>
+        </FeatureDescription>
       </Container>
     </ProjectLayout>
   )

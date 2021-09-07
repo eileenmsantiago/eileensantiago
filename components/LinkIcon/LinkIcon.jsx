@@ -13,7 +13,7 @@ const LinkIcon = (props) => {
         <img className="mx-auto" src="/assets/ui-elements/arrow.svg"/>
       </Text>
       <Text as="div" style="lg" color={color ? color : undefined}>
-        <a href={href} target={openNewTab ? "_blank" : undefined}  className={cx(css.linkUnderline, classes.link)}>
+        <a href={href} target="_blank" className={cx(css.linkUnderline, classes.link)}>
           {children}
         </a>
       </Text>

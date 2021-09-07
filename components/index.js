@@ -15,5 +15,8 @@ export {default as ProjectLayout} from './ProjectLayout';
 export {default as Text} from './Text';
 export {default as SectionHeading} from './SectionHeading';
 export {default as Quote} from './Quote';
+export {default as Animate} from './Animate';
+export {default as FeatureDescription} from './FeatureDescription';
+
 
 

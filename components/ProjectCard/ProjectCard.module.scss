@@ -5,17 +5,17 @@
 }
 
 .projectImage:hover img {
-  transform: scale(1.1);
-  transition: 0.2s linear;
-  -moz-transition: 0.2s linear;
-  -o-transition: 0.2s linear;
-  -webkit-transition: 0.2s linear;
+  transform: scale(1.04) ease-in-out;
+  transition: 0.7s ease-in-out;
+  -moz-transition: 0.7s ease-in-out;
+  -o-transition: 0.7s ease-in-out;
+  -webkit-transition: 0.7s ease-in-out;
 }
 
 .link:hover {
   .projectImage {
     transform: scale(1.1);
-    transition: 0.2s linear;
+    transition: 0.7s ease-in-out;
   }
 }
 

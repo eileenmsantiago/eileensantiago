@@ -4,7 +4,8 @@ import {
   Heading,
   Text, 
   Button,
-  LinkIcon
+  LinkIcon,
+  Animate
 } from "../index"
 import cx from 'classnames';
 import css from "./AboutLayout.module.scss"
@@ -28,7 +29,7 @@ const AboutLayout = (props) => {
               <div className="flex mx-auto mb-8">
                 <img className="mx-auto mb-auto" src="/assets/profile/eileen.jpg"/>
               </div>
-              <div className="">
+              <Animate>
                 <Text style="lg-md" as="p" color="white">
                   Hello, I'm Eileen.
                 </Text>
@@ -36,16 +37,17 @@ const AboutLayout = (props) => {
                   I am an Experience Designer, an Agile Practitioner, a Problem-solver and a Visual Communicator.
                 </Heading>
                 <div className="flex flex-col">
-                  {facts.map(fact => (
-                    <Text 
-                      color="grey-light"
-                      className="inline mr-4"
-                      classes={{root:"mr-6"}}
-                      as="p"
-                      >
-                        {fact} 
-                    </Text>
-                  ))}
+                  <div className="mb-8">
+                    {facts.map(fact => (
+                      <Text 
+                        color="grey-light"
+                        className="inline mr-4"
+                        as="p"
+                        >
+                          {fact} 
+                      </Text>
+                    ))}
+                  </div>
                   <LinkIcon color="white" href="mailto:eileenmaesantiago@gmail.com">
                     eileenmaesantiago@gmail.com
                   </LinkIcon>
@@ -56,22 +58,28 @@ const AboutLayout = (props) => {
                     View my resume
                   </LinkIcon>
                 </div>
-              </div>
+              </Animate>
             </div>
           </Container>
         </div>
       )}>
       <Container>
-        <div className="grid grid-cols-3 md:grid-cols-1">
+        <div className="grid grid-cols-3 mb-24 sm:mb-16 md:grid-cols-1">
           <div className="col-span-1">
             <Heading level="h3" style="h2">
               Experiences
             </Heading>
           </div>
           <div className="col-span-2">
-            <ResumeItem href="https://eileensantiago.com/" company="By Eileen Mae" position="Freelance UI/UX & Visual Designer" date="Toronto, ON | October 2020 to Present"></ResumeItem>
-            <ResumeItem href="https://raise.dev/" company="Raise.dev" position="UI/UX Designer & Front-end Developer" date="New York, NY | June 2020 to June 2021"></ResumeItem>
-            <ResumeItem href="https://eileensantiago.com/" company="Dahdaleh Institute of Global Health Research @ York University" position="Graphic Communications Designer" date="Toronto, ON | October 2018 to June 2019"></ResumeItem>
+            <Animate>
+              <ResumeItem href="https://eileensantiago.com/" company="By Eileen Mae" position="Freelance UI/UX & Visual Designer" date="Toronto, ON | October 2020 to Present"></ResumeItem>
+            </Animate>
+            <Animate delay="400">
+              <ResumeItem href="https://raise.dev/" company="Raise.dev" position="UI/UX Designer & Front-end Developer" date="New York, NY | June 2020 to June 2021"></ResumeItem>
+            </Animate>
+            <Animate delay="600">
+              <ResumeItem href="https://eileensantiago.com/" company="Dahdaleh Institute of Global Health Research @ York University" position="Graphic Communications Designer" date="Toronto, ON | October 2018 to June 2019"></ResumeItem>
+            </Animate>
           </div>
         </div>
         <div className="grid grid-cols-3 md:grid-cols-1">
@@ -81,46 +89,60 @@ const AboutLayout = (props) => {
             </Heading>
           </div>
           <div className="col-span-2">
-            <ResumeItem href="https://www.interaction-design.org/" company="Interaction Design Foundation (IDF)" position="Member Certificate" date="June 2020 to Present"></ResumeItem>
-            <ResumeItem href="https://designx.community/" company="DesignX" position="Community Member" date="Toronto, ON | May 2020 to Present"></ResumeItem>
+            <Animate>
+              <ResumeItem href="https://www.interaction-design.org/" company="Interaction Design Foundation (IDF)" position="Member Certificate" date="June 2020 to Present"></ResumeItem>
+            </Animate>
+            <Animate>
+              <ResumeItem href="https://designx.community/" company="DesignX" position="Community Member" date="Toronto, ON | May 2020 to Present"></ResumeItem>
+            </Animate>
           </div>
         </div>
       </Container>
       <Container width="lg" bgColor="white">
         <div className="mx-auto mb-12">
-          <Heading level="h2" style="h2" classes={{root: 'text-center '}}>Captured moments of 2021</Heading>
+          <Heading level="h2" style="h2" classes={{root: 'text-center'}}>Captured moments of 2021</Heading>
         </div>
-        <div className="flex flex-row mx-auto sm:flex-col">
-          {imageCaption.map(image => (
-            <>
-            <div className="flex-row mb-8">
-              <div>
-                <img className='mx-auto mb-2 sm:w-full' src={image.imagePath}/>
+        <Animate>
+          <div className="flex flex-row mx-auto sm:flex-col">
+            {imageCaption.map(image => (
+              <>
+              <div className="flex-row mb-8">
+                <div>
+                  <img className='mx-auto mb-2 sm:w-full' src={image.imagePath}/>
+                </div>
+                <div className="text-center">
+                  <Text as="p" style="sm" color="grey-dark">{image.caption}</Text>
+                </div>
               </div>
-              <div className="text-center">
-                <Text as="p" style="sm" color="grey-dark">{image.caption}</Text>
-              </div>
-            </div>
-            </>
-          ))
-          }
-        </div>
+              </>
+            ))
+            }
+          </div>
+        </Animate>
       </Container>
       <Container width="sm" paddingY="lg">
         <div className="mb-12">
-          <Text style="h1">
-            Thanks for making it this far. Interested in chatting about design or anything else? I’d love to hear from you. 
-          </Text>
+          <Animate>
+            <Text style="h1">
+              Thanks for making it this far. Interested in chatting about making lattes to design or anything in between? I’d love to hear from you. 
+            </Text>
+          </Animate>
         </div>
-        <LinkIcon href="mailto:eileenmaesantiago@gmail.com">
-          eileenmaesantiago@gmail.com
-        </LinkIcon>
-        <LinkIcon  color="black" href={socials.linkedIn.link}>
-          {socials.linkedIn.name}
-        </LinkIcon>
-        <LinkIcon  color="black" href="/assets/resume/Resume_EileenSantiago.pdf">
-          View my resume
-        </LinkIcon>
+        <Animate>
+          <LinkIcon href="mailto:eileenmaesantiago@gmail.com">
+            eileenmaesantiago@gmail.com
+          </LinkIcon>
+        </Animate>
+        <Animate delay="400">
+          <LinkIcon  color="black" href={socials.linkedIn.link}>
+            {socials.linkedIn.name}
+          </LinkIcon>
+        </Animate>
+        <Animate delay="600">
+          <LinkIcon  color="black" href="/assets/resume/Resume_EileenSantiago.pdf">
+            View my resume
+          </LinkIcon>
+        </Animate>
       </Container>
     </Layout>
   )

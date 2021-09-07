@@ -23,19 +23,13 @@
 @mixin type-body-md {
   @include type-primary;
   font-size: inherit;
-  @media screen and (max-width: $bp-mobile) {
-    font-size: 0.875rem;
-    line-height: auto;
-  }
+  line-height: auto;
 }
 
 @mixin type-body-md--bold {
   font-family: NHaasBd, sans-serif;
   font-size: inherit;
-  @media screen and (max-width: $bp-mobile) {
-    font-size: 0.875rem;
-    line-height: auto;
-  }
+  line-height: auto;
 }
 
 @mixin type-body-large {

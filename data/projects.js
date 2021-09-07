@@ -10,6 +10,7 @@ export const projects = {
     projectHeroPath: "/assets/raise-dev/raisedev-browser.png",
     title: "Raise.Dev",
     description: "Redesigning a digital experience for a developer mentorship platform",
+    description: "Redesigning a digital experience for a developer mentorship platform",
     tags: [
       "Front-end",
       "Design System",
@@ -24,7 +25,7 @@ export const projects = {
         title: "Marketing landing pages"
       },
       {
-        title: "Sign up & requesting a session user experience flow"
+        title: "Defining a user experience for the developer onboarding flow"
       },
       {
         title: "Establish a working design system from scratch"
