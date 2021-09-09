@@ -32,7 +32,7 @@ export default function project() {
     <ProjectLayout data={projects.raise}>
       <Container width="sm">
         <Animate>
-          <SectionHeading color="grey-light" heading="01 marketing" subheading="Redesigning Raise.dev and implementing a visual tone and language that speaks to the developer education space"/>
+          <SectionHeading color="grey-medium" heading="01 marketing" subheading="Redesigning Raise.dev and implementing a visual tone and language that speaks to the developer education space"/>
         </Animate>
       </Container>
       <Container width="lg" paddingY="sm" paddingX="none">
@@ -76,7 +76,7 @@ export default function project() {
       <Container>
         <div className="w-3/4 mx-auto xs:w-full">
           <Animate>
-            <SectionHeading color="grey-light" heading="02 UX Flow" subheading="Defining a user experience for the developer onboarding flow"/>
+            <SectionHeading color="grey-medium" heading="02 UX Flow" subheading="Defining a user experience for the developer onboarding flow"/>
         </Animate>
         </div>
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-1">
@@ -121,7 +121,7 @@ export default function project() {
         </div>
       </Container>
       <Container width="sm">
-        <SectionHeading color="grey-light" heading="03 Design System" subheading="A design system providing a 1:1 design to development relationship"/>
+        <SectionHeading color="grey-medium" heading="03 Design System" subheading="A design system providing a 1:1 design to development relationship"/>
       </Container>
       <Container width="md" paddingY="sm">
         <ModalImage

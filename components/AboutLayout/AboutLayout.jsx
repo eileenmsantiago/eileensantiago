@@ -40,7 +40,7 @@ const AboutLayout = (props) => {
                   <div className="mb-8">
                     {facts.map(fact => (
                       <Text 
-                        color="grey-light"
+                        color="grey-medium"
                         className="inline mr-4"
                         as="p"
                         >

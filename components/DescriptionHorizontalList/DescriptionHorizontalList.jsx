@@ -13,7 +13,7 @@ const DescriptionHorizontalList = (props) => {
       {items.map((item, idx) => (
         <div className="flex flex-col">
           <div className="flex flex-col pb-4">
-            <Text style="lg-md" color="grey-light" classes={{root: 'mb-8'}}>
+            <Text style="lg-md" color="grey-medium" classes={{root: 'mb-8'}}>
               {`0${idx+1}`}
             </Text>
             <Text style="lg-md" color={color}>

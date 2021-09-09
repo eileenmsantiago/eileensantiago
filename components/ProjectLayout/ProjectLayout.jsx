@@ -90,7 +90,7 @@ const ProjectLayout = (props) => {
       {children}
       {retrospective && (
         <Container width="sm">
-          <SectionHeading color="grey-light" heading="Retrospective" subheading={retrospective.subheading}/>
+          <SectionHeading color="grey-medium" heading="Retrospective" subheading={retrospective.subheading}/>
           <img className="mx-auto mb-16" src="/assets/raise-dev/raisedev-team.png"/>
           <DescriptionList items={retrospective.items}/>
         </Container>

@@ -9,7 +9,7 @@ const DescriptionList = (props) => {
   let descriptionColor = "grey-dark";
   if(isDark) {
     color = "white";
-    descriptionColor = "grey-light"
+    descriptionColor = "grey-medium"
   }
   return (
     <div className="mb-8">

@@ -13,12 +13,12 @@ const FeatureDescription = (props) => {
         const renderImg = () => <img src={item.imageUrl} className="mb-16"/>;
         const renderImgLeft = idx % 2 === 0;
         return (
-          <div className="flex flex-row mb-24 space-x-16 sm:flex-col md:space-x-0 md:space-x-6 sm:mb-8">
+          <div className="flex flex-row mb-24 space-x-16 sm:flex-col sm:space-x-0 md:space-x-6 sm:mb-8">
             {renderImgLeft && renderImg() }
             <div className="flex flex-row my-auto space-x-6 sm:space-x-0 sm:flex-col">
               {!hideNumber && (
                 <div className="flex pb-4">
-                  <Text style="h2" color="grey-light">
+                  <Text style="h2" color="grey-medium">
                     {`0${idx+1}`}
                   </Text>
                 </div>
