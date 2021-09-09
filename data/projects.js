@@ -10,7 +10,6 @@ export const projects = {
     projectHeroPath: "/assets/raise-dev/raisedev-browser.png",
     title: "Raise.Dev",
     description: "Redesigning a digital experience for a developer mentorship platform",
-    description: "Redesigning a digital experience for a developer mentorship platform",
     tags: [
       "Front-end",
       "Design System",
@@ -71,6 +70,7 @@ export const projects = {
       ]
     }, 
     retrospective: {
+      imageUrl: "/assets/raise-dev/raisedev-team.png",
       subheading: "Executing the MVP amidst the chaos of a global pandemic",
       items: [
         {
@@ -102,7 +102,7 @@ export const projects = {
       "Mobile App",
       "Full-stack development",
     ],
-    cta: "View prototype",
+    cta: "View prototype on Figma",
     overview: "PaperSpace gives people a digital space to track and visualize their emotions through journaling. This app also provides users with guided prompts if they need a kick-starter to writing. Aiming to help motivate individuals in keeping a habit to journal while enabling them to reflect intuitively.",
     disclaimer: "",
     featureDescription: "",
@@ -172,19 +172,20 @@ export const projects = {
         }
       ]
     },
-    // retrospective: {
-    //   subheading: "Executing the MVP amidst the chaos of a global pandemic",
-    //   items: [
-    //     {
-    //       title:"Asynchronous work setting",
-    //       description:"The pandemic undoubtedly altered the way people and companies work, collaborate and communicate together. The process in building the MVP was definitely not linear and the team encountered, both UX and technical aspects, challenges. My experience with this is to communicate as effecively and efficiently as possible. Also, laying out the details in your response was imperative to ensure what you're saying is clear to the other person."
-    //     },
-    //     {
-    //       title:"Design to developer handoff",
-    //       description:"Friction is easily spotted between designers and developers since both perform different tasks and can view the same challenge very differently. Communicating and reducing any knowledge gaps will lead to better results. My experience with this is learning to hold conversations early on to decrease the chances of the unexpected. Other things include: providing all design files and necessary documentation in GitHub issues and hold meetings with the right people to sync up."
-    //     }
-    //   ]
-    // },
+    retrospective: {
+      imageUrl: "/assets/paper-space/retro.gif",
+      subheading: "Key takeaways",
+      items: [
+        {
+          title:"Not everything you plan will be in the final product, and that's okay",
+          description:"Initially, we had inspiring ideas of how we could make this app be exceptional. Due to the time constraints which led to limited technical capabilities, we exercised being adaptive in shuffling to find a method that best worked for our team, and I'll gladly say we did 🎉"
+        },
+        {
+          title:"Designing design systems to documenting meeting notes",
+          description:"These two project tasks were crucial in the product cycle of PaperSpace. There's definitely more space to grow and and improve in, but in all, it was a lot of fun and a wide experience for each of us."
+        }
+      ]
+    },
   }
 }
 
