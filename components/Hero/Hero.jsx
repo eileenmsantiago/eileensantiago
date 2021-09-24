@@ -1,6 +1,6 @@
 import React from 'react'
 import cx from 'classnames'
-import {Heading, Text} from '../index'
+import {Heading, Text, Animate} from '../index'
 import css from './Hero.module.scss'
 
 export default function Hero(props) {
