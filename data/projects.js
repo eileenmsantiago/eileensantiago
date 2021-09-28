@@ -13,7 +13,8 @@ export const projects = {
     tags: [
       "Front-end",
       "Design System",
-      "Product Design"
+      "Product Design",
+      "Brand Strategy"
     ],
     cta: "View live site",
     overview: "Raise.dev is focusing on helping professional developers advance their careers, through on-demand pair programming, longer-term coaching relationships, and employment opportunities.",
