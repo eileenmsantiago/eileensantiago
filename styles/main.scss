@@ -94,20 +94,3 @@ hr {
 ul {
   list-style: disc inside none;
 }
-
-.marqueeText {
-  position: relative;
-  width: 5000px;
-  white-space: nowrap;
-  animation: marqueeAnim 30s linear infinite;
-}
-
-.marqueeText span {
-  text-transform: uppercase;
-}
-
-@keyframes marqueeAnim {
-  0% { left: 100%; }
-  100% {left: -100%;}
-}
-
