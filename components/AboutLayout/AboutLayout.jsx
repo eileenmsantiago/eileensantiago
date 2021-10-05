@@ -10,7 +10,7 @@ import {
 import cx from 'classnames';
 import css from "./AboutLayout.module.scss"
 import { socials } from "../../data/footer"
-import { facts, imageCaption } from "../../data/about";
+import { facts, imageCaption, links } from "../../data/about";
 import ResumeItem from '../ResumeItem/ResumeItem';
 
 const AboutLayout = (props) => {
@@ -48,15 +48,13 @@ const AboutLayout = (props) => {
                       </Text>
                     ))}
                   </div>
-                  <LinkIcon color="white" href="mailto:eileenmaesantiago@gmail.com">
-                    eileenmaesantiago@gmail.com
-                  </LinkIcon>
-                  <LinkIcon color="white" href={socials.linkedIn.link}>
-                    {socials.linkedIn.name}
-                  </LinkIcon>
-                  <LinkIcon color="white" href="/assets/resume/Resume_EileenSantiago.pdf">
-                    View my resume
-                  </LinkIcon>
+                  {
+                    links.map(link => (
+                      <LinkIcon isDark className={linkTextClass} href={link.url}>
+                        {link.title}
+                      </LinkIcon>
+                    ))
+                  }
                 </div>
               </Animate>
             </div>

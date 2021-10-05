@@ -47,3 +47,22 @@ export const imageCaption = [
     caption:'taking a break, going camping',
   }
 ]
+
+export const links = [
+  {
+    title: "eileenmaesantiago@gmail.com",
+    url: "mailto:eileenmaesantiago@gmail.com"
+  },
+  {
+    title: "LinkedIn",
+    url: "https://www.linkedin.com/in/eileensantiago/"
+  },
+  {
+    title: "View my resume",
+    url: "/assets/resume/Resume_EileenSantiago.pdf"
+  },
+  {
+    title: "Notion version of resume",
+    url: "https://eileenmsantiago.notion.site/Resume-0c9a6d6e45b449f6bbab0937a3b815a0"
+  },
+]
