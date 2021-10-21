@@ -25,7 +25,7 @@ const AboutLayout = (props) => {
       transparentNav={() => (
         <div className="relative">
           <Container classes={{ root: "relative z-10" }} paddingY="lg">
-            <div className="flex flex-row space-x-8 sm:space-x-0 sm:flex-col">
+            <div className="flex flex-row space-x-8 md:space-x-0 lg:flex-col">
               <div className="flex mx-auto mb-8">
                 <img className="mx-auto mb-auto" src="/assets/profile/eileen.jpg"/>
               </div>
@@ -36,27 +36,31 @@ const AboutLayout = (props) => {
                 <Heading level="h2" style="h1" className="w-full lg:w-5/6" color="white">
                   An Experience Designer, an Agile Practitioner, a Problem-solver and a Visual Communicator.
                 </Heading>
-                <div className="flex flex-col">
-                  <div className="mb-8">
-                    {facts.map(fact => (
-                      <Text 
-                        color="grey-medium"
-                        className="inline mr-4"
-                        as="p"
-                        >
-                          {fact} 
-                      </Text>
-                    ))}
-                  </div>
-                  {
-                    links.map(link => (
-                      <LinkIcon isDark className={linkTextClass} href={link.url}>
-                        {link.title}
-                      </LinkIcon>
-                    ))
-                  }
-                </div>
               </Animate>
+            </div>
+            <div className="flex flex-row space-x-8 sm:space-x-0 lg:flex-col">
+              <div className="flex flex-col">
+                <div className="mb-8">
+                  {facts.map(fact => (
+                    <Text 
+                      color="grey-medium"
+                      className="inline mr-4"
+                      as="p"
+                      >
+                        {fact} 
+                    </Text>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div>
+              {
+                links.map(link => (
+                  <LinkIcon isDark className={linkTextClass} href={link.url}>
+                    {link.title}
+                  </LinkIcon>
+                ))
+              }
             </div>
           </Container>
         </div>
@@ -77,7 +81,7 @@ const AboutLayout = (props) => {
         </Animate>
       </Container>
       <Container>
-        <div className="grid grid-cols-3 mb-24 sm:mb-16 md:grid-cols-1">
+        <div className="grid grid-cols-3 mb-24 sm:mb-16 lg:grid-cols-1">
           <div className="col-span-1">
             <Heading level="h3" style="h2">
               Experiences
@@ -95,7 +99,7 @@ const AboutLayout = (props) => {
             </Animate>
           </div>
         </div>
-        <div className="grid grid-cols-3 md:grid-cols-1">
+        <div className="grid grid-cols-3 lg:grid-cols-1">
           <div className="col-span-1">
             <Heading level="h3" style="h2">
               Certificates & Community
