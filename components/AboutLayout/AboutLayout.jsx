@@ -10,7 +10,7 @@ import {
 import cx from 'classnames';
 import css from "./AboutLayout.module.scss"
 import { socials } from "../../data/footer"
-import { facts, imageCaption } from "../../data/about";
+import { facts, imageCaption, links, values } from "../../data/about";
 import ResumeItem from '../ResumeItem/ResumeItem';
 
 const AboutLayout = (props) => {
@@ -33,8 +33,8 @@ const AboutLayout = (props) => {
                 <Text style="lg-md" as="p" color="white">
                   Hello, I'm Eileen.
                 </Text>
-                <Heading level="h2" style="h2" className="w-full lg:w-5/6" color="white">
-                  I am an Experience Designer, an Agile Practitioner, a Problem-solver and a Visual Communicator.
+                <Heading level="h2" style="h1" className="w-full lg:w-5/6" color="white">
+                  An Experience Designer, an Agile Practitioner, a Problem-solver and a Visual Communicator.
                 </Heading>
                 <div className="flex flex-col">
                   <div className="mb-8">
@@ -48,21 +48,34 @@ const AboutLayout = (props) => {
                       </Text>
                     ))}
                   </div>
-                  <LinkIcon color="white" href="mailto:eileenmaesantiago@gmail.com">
-                    eileenmaesantiago@gmail.com
-                  </LinkIcon>
-                  <LinkIcon color="white" href={socials.linkedIn.link}>
-                    {socials.linkedIn.name}
-                  </LinkIcon>
-                  <LinkIcon color="white" href="/assets/resume/Resume_EileenSantiago.pdf">
-                    View my resume
-                  </LinkIcon>
+                  {
+                    links.map(link => (
+                      <LinkIcon isDark className={linkTextClass} href={link.url}>
+                        {link.title}
+                      </LinkIcon>
+                    ))
+                  }
                 </div>
               </Animate>
             </div>
           </Container>
         </div>
       )}>
+      <Container>
+        <Animate>
+          <Heading level="h2" style="h1">
+            Things I value the most
+          </Heading>
+          {
+            values.map(item => (
+              <Text style="lg">
+                {item}
+                <br />
+              </Text>
+            ))
+          }
+        </Animate>
+      </Container>
       <Container>
         <div className="grid grid-cols-3 mb-24 sm:mb-16 md:grid-cols-1">
           <div className="col-span-1">
