@@ -33,7 +33,7 @@ const ProjectLayout = (props) => {
       transparentNav={() => (
       <Container width="sm" paddingY="none" classes={{root:"pt-20 pb-36",container:"text-center"}}>
         <Heading level="h1" style="h5" classes={{root:'mb-2'}}>{data.title}</Heading>
-        <Heading level="h2" style="h2" classes={{root:'mb-4'}}>
+        <Heading level="h2" style="h1" classes={{root:'mb-4'}}>
           {data.description}
         </Heading>
         <div className="mb-10">
