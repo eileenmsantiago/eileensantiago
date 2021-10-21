@@ -26,7 +26,7 @@ export const values = [
   '☺️ Honesty and kindness',
   '🤝 Cooperativeness',
   '💬 Communication',
-  '🌱 Eagerness to learn and grow'
+  '🌱 adaptability and eagerness to learn and grow'
 ]
 
 export const imageCaption = [

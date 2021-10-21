@@ -77,7 +77,7 @@ const AboutLayout = (props) => {
         </Animate>
       </Container>
       <Container>
-        <div className="grid grid-cols-3 mb-24 sm:mb-16 md:grid-cols-1">
+        <div className="grid grid-cols-3 mb-24 sm:mb-16 lg:grid-cols-1">
           <div className="col-span-1">
             <Heading level="h3" style="h2">
               Experiences
@@ -95,7 +95,7 @@ const AboutLayout = (props) => {
             </Animate>
           </div>
         </div>
-        <div className="grid grid-cols-3 md:grid-cols-1">
+        <div className="grid grid-cols-3 lg:grid-cols-1">
           <div className="col-span-1">
             <Heading level="h3" style="h2">
               Certificates & Community
