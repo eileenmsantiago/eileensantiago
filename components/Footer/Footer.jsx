@@ -54,7 +54,7 @@ export default function Footer(props) {
         </div>
         <Text
           color="white">
-            © 2021 Designed and coded by Eileen Mae
+            © 2021  Designed on Figma and built using Next.js and Tailwind by Eileen Mae 
         </Text>
       </Container>
     </footer>

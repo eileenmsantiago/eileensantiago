@@ -28,7 +28,7 @@ const Home = () => {
             <Animate duration="500">
               <Heading level="h1" className="w-full lg:w-5/6">
                 A <em>Product Designer</em> experienced in{" "}
-                <em>front-end development</em>. Creating design systems for better
+                <em>front-end development</em> focused on creating design systems for better
                 digital experiences.
               </Heading>
               <LinkIcon color="black" href="mailto:eileenmaesantiago@gmail.com">

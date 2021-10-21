@@ -3,7 +3,7 @@
 
 .root {
   em {
-    @include type-heading-book--italic;
+    @include type-heading-regular--italic;
   }
 }
 
@@ -69,10 +69,6 @@
   color: $color-black;
 }
 
-.light-italic {
-  @include type-heading-light--italic;
-}
-
-.book-italic {
-  @include type-heading-book--italic;
+.regular-italic {
+  @include type-heading-regular--italic;
 }

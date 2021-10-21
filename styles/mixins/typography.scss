@@ -3,7 +3,7 @@
 }
 
 @mixin type-secondary {
-  font-family: OggLight;
+  font-family: OggRegular;
 }
 
 // Body styles 
@@ -23,13 +23,13 @@
 @mixin type-body-md {
   @include type-primary;
   font-size: inherit;
-  line-height: auto;
+  line-height: 1.8;
 }
 
 @mixin type-body-md--bold {
   font-family: NHaasBd, sans-serif;
   font-size: inherit;
-  line-height: auto;
+  line-height: 1.8;
 }
 
 @mixin type-body-large {
@@ -54,12 +54,8 @@
 
 // ---- weights
 
-@mixin type-heading-light--italic {
-  font-family: OggLightItalic;
-}
-
-@mixin type-heading-book--italic {
-  font-family: OggBookItalic;
+@mixin type-heading-regular--italic {
+  font-family: OggRegularItalic;
 }
 
 // ---- levels
