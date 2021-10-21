@@ -178,7 +178,7 @@ export default function project() {
             }
           ]}/>
           <div className="mt-24 mb-16 ">
-            <Heading level="h3" style="h5" classes={{root: "mb-8"}}>Goals & Metrics</Heading>
+            <Heading level="h3" style="h5" classes={{root: "mb-8"}}>Goals & Guidelines</Heading>
             <Text as="div" classes={{root: "mb-8"}}>
               Organizing the assets and files assets was a core value in building the design system, where the goal would be for anyone in the team to have the ability to pull components and piece together a completed piece. Allowing for an efficient and quicker way in creating components. We considered the following criteria in measuring the success of the design system:
             </Text>
@@ -214,7 +214,7 @@ export default function project() {
                 For a successful design to developer collaboration, consistency in our designs were imperative. I designed the style guide early on, in such a way, that was helpful for when we were ready to create a design system.
                 <br />
               </Text>
-              <div className="p-4 mb-8 text-gray-500 bg-opacity-25 border-l-2 rounded border-gray-50 bg-gray-50">
+              <div className="p-4 mb-8 text-gray-200 bg-opacity-25 border-l-2 rounded border-gray-50 bg-gray-50">
                 <Text as="span" style="sm" color="white" classes={{root: 'mb-0'}}>
                   This feature is an on-going project and the following visuals are snippets of the progress and outcomes that were made.
                 </Text>
