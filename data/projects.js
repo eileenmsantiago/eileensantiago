@@ -6,18 +6,36 @@ export const projects = {
     pageUrl: "/raise-dev",
     siteURL: "https://raise.dev",
     primaryColor: '#E1EBFF',
+    date: "2020 - present",
     featuredImagePath: "/assets/raise-dev/raisedev-desktop.png",
-    projectHeroPath: "/assets/raise-dev/raisedev-browser.png",
+    projectHeroPath: "/assets/raise-dev/raisedev-banner.png",
     title: "Raise.Dev",
-    description: "Redesigning a digital experience for a developer mentorship platform",
+    description: "Revamping the developer mentorship platform",
+    tagline: "Bridging the developer experience gap",
     tags: [
-      "Front-end",
+      "Product UI/UX",
+      "Frontend Development",
       "Design System",
-      "Product Design",
-      "Brand Strategy"
+      "Website"
     ],
     cta: "View live site",
-    overview: "Raise.dev is focusing on helping professional developers advance their careers, through on-demand pair programming, longer-term coaching relationships, and employment opportunities.",
+    summary: {
+      overview: "Raise.dev is a developer mentorship platform focusing on helping professional developers advance their careers. A redesign reform for the company was overdue to ensure Raise.dev remains competitive.",
+      problem: "Novice to professional software developers lack experience-driven mentorship to level up their careers, parallelly, experienced developers have valuable industry leadership skills but unknowingly have the right place and person to mentor.",  
+      solution: "Design and build an interactive dashboard allowing users to track their progress. Create a user experience for user to receive software development mentorship provided by a mentor.",
+      roles: [
+        'Product Thinking',
+        'Visual Branding',
+        'UI/UX Design',
+        'Front-end dev'
+      ],
+      impact: [
+        'Increase conversion rate for user sign-ups by redesigning the marketing platform and onboarding experience',
+        'Improved the design-to-developer hand-off by ensuring consistency and efficiency in communication, sharing of design files, and documenting user flows.',
+        'Improved internal services by the creation of the foundational design system'
+      ],
+      tools: 'Figma, Miro, GitHub Projects'
+    },
     disclaimer: "Due to NDA restrictions, I can not disclose all the details of my contributions.",
     featureDescription: "Working cross-functionally with the founder, product and engineering, I created the end-to-end experiences of the following features:",
     featureItem: [

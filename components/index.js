@@ -17,6 +17,8 @@ export {default as SectionHeading} from './SectionHeading';
 export {default as Quote} from './Quote';
 export {default as Animate} from './Animate';
 export {default as FeatureDescription} from './FeatureDescription';
+export {default as Tag} from './Tag';
+export {default as List} from './List';
 
 
 
