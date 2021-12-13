@@ -52,10 +52,10 @@ export const heading = {
             mb: 5
         },
         h2: {
-            mb: [2, 3]
+            mb: [3, 4]
         },
         h3: {
-            mb: [2, 2, 3]
+            mb: [3, 3, 3]
         },
         h4: {
             mb: [2, 2, 3]

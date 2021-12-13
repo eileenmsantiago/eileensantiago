@@ -12,12 +12,13 @@ import {
   ProjectLayout, 
   SectionHeading, 
   Text as TextOld,
-  Animate } from '../components';
+  Animate,
+  LinkIcon } from '../components';
 import ModalImage from "react-modal-image";
 import projects from '../data/projects.js'
 
 export default function project() {
-  const { primaryColor, featuredImagePath } = projects.raise;
+  const { primaryColor, featuredImagePath, siteURL, cta } = projects.raise;
   const [ flowStep, setFlowStep ] = useState(0);
   const flowRef = useRef();
   const {
@@ -33,8 +34,8 @@ export default function project() {
     <ProjectLayout data={projects.raise}>
       <Container bg="black">
         <FlexBox>
-          <Box width="40%">
-            <Text.Heading as="h2" variant="eyebrow" color="grayLight">
+          <Box>
+            <Text.Heading as="h2" variant="eyebrow" color="white">
               Reasearch & Discovery
             </Text.Heading>
             <Text.Heading as="h3" variant="h2" color="white">
@@ -45,52 +46,105 @@ export default function project() {
             <Text.Paragraph variant="bodyLg" color="primary">
               Trend analysis of the current developer population in 2020
             </Text.Paragraph>
+            <img className="" src="/assets/raise-dev/statistics.svg" alt="white boxes with statistics"/>
+            <Text.Paragraph variant="bodySm" color="white">
+              <a href="https://www.statista.com/statistics/627312/worldwide-developer-population/" target="_blank">
+                Source: Statista
+              </a>
+            </Text.Paragraph>
+            <Text.Paragraph variant="bodyLg" color="primary">
+              The digital opportunity ahead
+            </Text.Paragraph>
+            <Text.Paragraph variant="body" color="white">
+              With the increasingly exponential growth in this field, these numbers represent the opportunity for a digital space to provide the in demand mentorship that’s on demand, and this is Raise.dev’s mission to serve these customers globally. 
+            </Text.Paragraph>
           </Box>
         </FlexBox>
       </Container>
-      <ContainerOld width="sm">
-        <Animate>
-          <SectionHeading color="grey-medium" heading="01 marketing" subheading="Redesigning Raise.dev and implementing a visual tone and language that speaks to the developer education space"/>
-        </Animate>
-      </ContainerOld>
-      <ContainerOld width="lg" paddingY="sm" paddingX="none">
-        <img className="px-10 mx-auto" src="/assets/raise-dev/landing.gif" alt="log in screens"/>
-      </ContainerOld>
-      <ContainerOld width="sm" paddingY="lg">
-        <Animate>
-          <Heading level="h3">Developers who need a second set of eyes to take the next step forward</Heading>
-          <TextOld as="p" classes={{root: "mb-12"}}>
-            The previous website was a static page and offered little to no information relating to the product they were offering. In addition to landing, an MVP for an internal coaching platform was needed to facilitate the existing mentorship program.
-            <br />
-            <br />
-            The problem I was on boarded to help solve was how might we brand and market Raise.dev as a platform that focuses on helping professional developers advance in their careers.
-          </TextOld>
-          <TextOld as="p">
-            During the ideation process, I presented mockups to the team to get their feedback, where I was then able to create further definied hi-fi's.
-          </TextOld>
-        </Animate>
-        <Animate>
-          <TextOld as="p" style="lg-md" classes={{root: "my-12"}}>
-            As the sole designer, the design process was still important to work on as a team, as their feedback provided effective changes to the appearance of the mockups and to the live site.
-          </TextOld>
-        </Animate>
-      </ContainerOld>
-      <ContainerOld width="lg" bgColorHex={primaryColor} paddingY="sm" paddingX="none">
-        <img className="mx-auto" src="/assets/raise-dev/raisedev-styleBanner.svg"/>
-      </ContainerOld>
-      <ContainerOld bgColorHex={primaryColor} width="sm" paddingY="sm">
-        <div className="flex flex-col">
-          <Animate>
-            <Heading level="h4" style="h2">Building the brand identity from scratch that’s familiar to the developer world</Heading>
-            <TextOld as="div" classes={{root: 'mb-20 sm:mb-12'}}>
-              To set the developer tone, using a mono typeface was a certain choice, and in combination with a round and bold sans serif to go easy on the eyes.
-              <br/>
-              <br/>
-              The selected colors were calm, yet with an electrifying blue, accompanied with a bright, yet, a warm yellow. These color pairings are settled down with a dark navy, that’s used in the heading styles across the Raise.dev platform. Tertiary and accent colors were used to facilitate in the brand illustrations. 
-            </TextOld>
-          </Animate>
+      <Container variant="lg" py="6">
+        <div className="flex flex-col items-center text-center">
+          <Text.Heading as="h2" variant="eyebrow" color="grey">
+            What I did
+          </Text.Heading>
+          <Text.Heading as="h3" variant="h2">
+            Redesigning the experience of connecting with developers
+          </Text.Heading>
+          <LinkIcon color="black" openNewTab href={siteURL}>
+            {cta}
+          </LinkIcon>
         </div>
-      </ContainerOld>
+        <div className="py-8">
+          <img className="px-10 mx-auto" src="/assets/raise-dev/browser-bar.svg" alt="white browser bar"/>
+          <img className="px-10 mx-auto" src="/assets/raise-dev/landing.gif" alt="log in screens"/>
+        </div>
+      </Container>
+      <Container bg="white" py="6">
+        <FlexBox>
+          <Box>
+            <Text.Heading as="h2" variant="eyebrow">
+              User Research 
+            </Text.Heading>
+            <Text.Heading as="h3" variant="h2">
+              Understanding our users by bringing human-centered design
+            </Text.Heading>
+          </Box>
+          <Box>
+            <Text.Paragraph variant="bodyLg" color="primary">
+              Who are the users?
+            </Text.Paragraph>
+            <Text.Paragraph variant="body">
+              <strong>The user profile targets English-speaking professional developers looking for guidance in taking the next step in their careers.</strong> Specifically, developers who are new grads, career transitioners, and who currently are one and are seeking for a promotion, are the expected customers seeking mentorship from a Raise.dev coach.
+            </Text.Paragraph>
+            <Text.Paragraph variant="bodyLg" color="primary">
+              What challenges are developers experiencing in taking on their next steps?
+            </Text.Paragraph>
+            <Text.Paragraph variant="body">
+              I first started by getting to know the users since I had no previous developer mentorship experiences. But I wanted to know the <strong>challenges of developers seeking mentorship the next steps in their careers:</strong>
+            </Text.Paragraph>
+            <div className="p-4 text-gray-500 rounded rounded-2 bg-gray-50">
+              What current challenges are software developers experiencing in their careers?
+            </div>
+            <div className="p-4 text-gray-500 rounded rounded-2 bg-gray-50">
+              What are the favourite aspects of receiving mentorship for developers? What has previously worked well? 
+            </div>
+            <div className="p-4 text-gray-500 rounded rounded-2 bg-gray-50">
+              What are the least favourite aspects of being matched with a mentor? What could be improved?
+            </div>
+            <div className="p-4 text-gray-500 rounded rounded-2 bg-gray-50">
+              What are the goals of developers seeking mentorship?
+            </div>
+          </Box>
+        </FlexBox>
+      </Container>
+      <Container py="6">
+        <Text.Heading as="h2" variant="eyebrow" color="grey"> 
+          User Research Insights
+        </Text.Heading>
+        <Text.Heading as="h3" variant="h2">
+          What the users have to say 
+        </Text.Heading>
+        <Text.Paragraph variant="body">
+          I conducted video interviews with 11 past and current users (both mentors and mentees) via Google Meets to develop a rich understanding of their experiences and challenges with receiving and providing mentorship. I was able to capture the following insights:
+        </Text.Paragraph>
+        <DescriptionHorizontalList items={[
+          {
+            title:"Skills and Professional growth",
+            description:"Developers struggle with improving on their technical and soft skills because applying for most jobs requires experience when they have little to none."
+          },
+          {
+            title:"Quality of Mentorship",
+            description:"Developers found they need human interaction and a safe place to feel comfortable while working and learning on the job."
+          },
+          {
+            title:"Opportunity & Networking",
+            description:"Developers are challenged with finding suitable open-source projects to gain real-world experiences."
+          }
+        ]}/>
+        <Text.Paragraph variant="bodyLg" py="4">
+          I conducted a competitive market analysis to reflect the synthesized user research findings to other competitors.
+        </Text.Paragraph>
+      </Container>
+      
       <ContainerOld>
         <div className="w-3/4 mx-auto xs:w-full">
           <Animate>
