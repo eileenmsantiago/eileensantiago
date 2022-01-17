@@ -1,11 +1,14 @@
 @import '../../styles/variables.scss';
 
-.wrapper:hover {
-  cursor: pointer;
+
+.wrapper{
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .projectImage:hover img {
-  transform: scale(1.04) ease-in-out;
+  transform: scale(1.09) ease-in-out;
   transition: 0.7s ease-in-out;
   -moz-transition: 0.7s ease-in-out;
   -o-transition: 0.7s ease-in-out;

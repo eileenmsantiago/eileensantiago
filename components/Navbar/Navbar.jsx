@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react';
 import {useWindowScroll} from 'react-use';
-import { Text } from '../index.js';
+import { Image, Text } from 'reviga-ui';
 import cx from 'classnames';
 import css from './Navbar.module.scss';
 import BurgerMenu from '../BurgerMenu';
@@ -29,8 +29,8 @@ export default function Navbar(props) {
     <nav className={cx(css.nav, {
       [css.overlap]: overlap
     })}>
-      <div className={"container flex"}>
-        <Text color="black" classes={{root: 'my-auto'}}>
+      <div className={"container flex items-center"}>
+        <Text color="black" className='ml-2'>
           <a href="/" className={linkTextClass}>
             Eileen Mae
           </a>
@@ -39,12 +39,12 @@ export default function Navbar(props) {
           <ul className={cx('my-auto flex sm:hidden', css.links)}>
             <li className={css.linkItem}>
               <a href="/" className={linkTextClass}>
-                Work
+                <Text>Work</Text>
               </a>
             </li>
             <li className={css.linkItem}>
               <a href="/about" className={linkTextClass}>
-                About
+              <Text>About</Text>
               </a>
             </li>
             <li className={css.linkItem}>
@@ -52,7 +52,7 @@ export default function Navbar(props) {
                 className={linkTextClass}
                 target="_blank"
                 href="/assets/resume/Resume_EileenSantiago.pdf">
-                Resume
+                <Text>Resume</Text>
               </a>
             </li>
           </ul>

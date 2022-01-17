@@ -9,7 +9,7 @@ const DescriptionHorizontalList = (props) => {
     color = "white";
   }
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-1">
+    <div className="grid grid-cols-3 lg:grid-cols-1">
       {items.map((item, idx) => (
         <div className="flex flex-col">
           <div className="flex flex-col pb-4">

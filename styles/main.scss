@@ -3,42 +3,6 @@
 @import '../styles/mixins/typography.scss';
 @import './reset.scss';
 
-@font-face {
-  font-family: "OggThin";
-  src: url("/fonts/Ogg-Thin.ttf");
-}
-
-@font-face {
-  font-family: "OggThinItalic";
-  src: url("/fonts/Ogg-ThinItalic.ttf");
-}
-
-@font-face {
-  font-family: "OggRegular";
-  src: url("/fonts/Ogg-Regular.ttf");
-}
-
-@font-face {
-  font-family: "OggRegularItalic";
-  src: url("/fonts/Ogg-RegularItalic.ttf");
-}
-
-@font-face {
-  font-family: "NHaasRg";
-  src: url("/fonts/NHaasGrotesk-55Rg.ttf");
-}
-
-@font-face {
-  font-family: "NHaasMd";
-  src: url("/fonts/NHaasGrotesk-65Md.ttf");
-}
-
-@font-face {
-  font-family: "NHaasBd";
-  src: url("/fonts/NHaasGrotesk-75Bd.ttf");
-}
-
-
 html,
 body {
   width:100%;
@@ -47,7 +11,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 17px;
-  background: $color-white;
+  background: #F5F4EC;
   overflow-x: hidden;
   z-index: inherit;
 }
@@ -58,10 +22,10 @@ body {
   font-family: NHaasRg;
   color: $color-black;
 
-  h1, h2, h3, h4 {
-    font-family: OggLight;
-    line-height: 130%;
-  }
+  // h1, h2, h3, h4 {
+  //   font-family: OggLight;
+  //   line-height: 130%;
+  // }
 }
 
 * {
@@ -69,11 +33,12 @@ body {
 }
 
 a {
-  color: $color-grey-dark;
+  color: $color-black;
 }
 
 a:hover {
   background-position: 0 100%;
+  color: $color-primary;
 }
 
 a:active {

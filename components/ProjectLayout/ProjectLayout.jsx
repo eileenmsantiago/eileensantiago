@@ -1,13 +1,16 @@
 import { useState, useRef } from 'react';
 import { useInViewport } from 'react-in-viewport';
+import { Text, Image, Container, FlexBox, Box } from 'reviga-ui';
 import { 
-  Container, 
+  Container as ContainerOld,
   DescriptionList, 
   DescriptionGrid, 
   Heading, 
   Layout, 
-  SectionHeading, 
-  Text } from '../index';
+  SectionHeading,
+  Tag,
+  List
+} from '../index';
 import cx from 'classnames';
 import css from './ProjectLayout.module.scss';
 import LinkIcon from '../LinkIcon';
@@ -31,69 +34,100 @@ const ProjectLayout = (props) => {
     <Layout
       navBgColor={primaryColor}
       transparentNav={() => (
-      <Container width="sm" paddingY="none" classes={{root:"pt-20 pb-36",container:"text-center"}}>
-        <Heading level="h1" style="h5" classes={{root:'mb-2'}}>{data.title}</Heading>
-        <Heading level="h2" style="h1" classes={{root:'mb-4'}}>
+      <ContainerOld paddingY="none" classes={{root:"pt-20 pb-60"}}>
+        <Text.Heading as="h1" variant="eyebrow">{data.title}</Text.Heading>
+        <Text.Heading variant="h2">
           {data.description}
-        </Heading>
+        </Text.Heading>
+        <Text.Paragraph variant="bodyLg" color="gray">
+          {data.tagline}
+        </Text.Paragraph>
         <div className="mb-10">
           {data.tags.map(tag => (
-            <Text as="span" style="sm" color="grey-dark" classes={{root: 'rounded bg-gray-50 px-3 py-1 m-1 rounded inline-flex items-center align-middle'}}>
-              {tag}
-            </Text>
+            <Tag>
+              <Text variant="bodySm">
+                {tag}
+              </Text>
+            </Tag>
           ))}
+            {/* {data.siteURL && (
+              <LinkIcon openNewTab href={data.siteURL}>
+                {data.cta}
+              </LinkIcon>
+            )} */}
         </div>
-        {data.siteURL && (
-          <div className="flex justify-center">
-            <LinkIcon openNewTab href={data.siteURL}>
-              {data.cta}
-            </LinkIcon>
-          </div>
-        )}
-      </Container>
+      </ContainerOld>
       )}>
-      <Container width="sm" marginY="lg" >
+      <ContainerOld>
         <Animate>
           <img className={cx('full-width mb-10', css.heroImg)} src={projectHeroPath}/>
         </Animate>
-        <Heading level="h3" style="h5" classes={{root: "mb-8"}}> 
+      </ContainerOld>
+      <Container>
+        <Text.Heading variant="eyebrow" as="h2"> 
           Overview
-        </Heading>
-        <Animate>
-          <Text as="div" style="lg" classes={{root: "mb-8"}}>
-            {data.overview}
-          </Text>
-          <Text style="lg-md" as="div" classes={{root: "mb-8"}}>
-            {data.featureDescription}
-          </Text>
-          {data.featureItem.length > 0 && (
-            <DescriptionList items={data.featureItem}/>
-          )}
-          {data.disclaimer && (
+        </Text.Heading>
+        <FlexBox>
+          <div>
+            <Image src="/assets/raise-dev/logo.svg" width="400" height="60"/>
+          </div>
+          <div>
+            <Text.Paragraph ml={4}>
+              {data.summary.overview}
+            </Text.Paragraph>
+          </div>
+        </FlexBox>
+        <FlexBox>
+          <Box width="70%">
+            <Text.Heading variant="eyebrow" as="h2"> 
+              Problem
+            </Text.Heading>
+            <Text.Paragraph variant="bodyLg">
+              {data.summary.problem}
+            </Text.Paragraph>
+            <Text.Heading variant="eyebrow" as="h2"> 
+              Solution
+            </Text.Heading>
+            <Text.Paragraph>
+              {data.summary.problem}
+            </Text.Paragraph>
+            {data.disclaimer && (
             <div className="p-4 mb-8 text-gray-500 border-l-2 border-gray-500 rounded bg-gray-50">
-              <Text as="div" style="sm">
+              <Text>
                   {data.disclaimer}
                 </Text>
             </div>
           )}
-        </Animate>
-        <Animate>
-          <DescriptionGrid items={data.projectScope}/>
-        </Animate>
-      </Container>
-      <Container width="sm" paddingY="lg" bgColor="black">
-        <SectionHeading isDark heading="my role" subheading={myRole.subheading}/>
-        <Animate>
-          <DescriptionList isDark items={data.myRole.items}/>
-        </Animate>
+            <Text.Heading variant="eyebrow" as="h2"> 
+              Impact
+            </Text.Heading>
+            <Box mb={4}>
+              <List items={data.summary.impact}/>
+            </Box>
+          </Box>
+          <Box ml="5">
+            <Text.Heading variant="eyebrow" as="h2"> 
+              My Role
+            </Text.Heading>
+            <Box mb={4}>
+              <List items={data.summary.roles}/>
+            </Box>
+            <Text.Heading variant="eyebrow" as="h2"> 
+              Tools
+            </Text.Heading>
+            <Text.Paragraph>
+              {data.summary.tools}
+            </Text.Paragraph>
+          </Box>
+        </FlexBox>
       </Container>
       {children}
       {retrospective && (
-        <Container width="sm">
+        <ContainerOld width="sm">
           <SectionHeading color="grey-medium" heading="Retrospective" subheading={retrospective.subheading}/>
           <img className="mx-auto mb-16" src={retrospective.imageUrl}/>
           <DescriptionList items={retrospective.items}/>
-        </Container>
+        </ContainerOld>
       )}
     </Layout>
   )

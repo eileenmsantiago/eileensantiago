@@ -1,10 +1,11 @@
 import {useEffect} from 'react';
+import { App } from 'reviga-ui';
 import 'tailwindcss/tailwind.css';
 import '../styles/tailwind.css';
 import '../styles/main.scss';
 import aos from 'aos/dist/aos.js';
 
-export default function App({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }) {
   useEffect(() => {
     aos.init({
       duration: 600,
@@ -12,5 +13,9 @@ export default function App({ Component, pageProps }) {
       delay: 200,
     });
   }, [])
-  return <Component {...pageProps} />
+  return (
+    <App>
+      <Component {...pageProps} />
+    </App>
+  )
 }
