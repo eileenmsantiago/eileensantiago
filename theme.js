@@ -1,4 +1,3 @@
-
 const space = [0, 4, 8, 16, 32, 64, 128, 256]
 // space.small = space[1]
 // space.medium = space[2]
@@ -12,7 +11,7 @@ breakpoints.xl = breakpoints[3]
 
 const fontSizes = {
     body: [12, 14, 17, 20],
-    heading: [16, 24, 32, 48, 80],
+    heading: [24, 32, 40, 48, 80],
 };
 fontSizes.default = fontSizes.body[2]
 

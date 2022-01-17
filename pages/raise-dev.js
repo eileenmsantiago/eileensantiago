@@ -101,16 +101,16 @@ export default function project() {
             <Text.Paragraph variant="body">
               I first started by getting to know the users since I had no previous developer mentorship experiences. But I wanted to know the <strong>challenges of developers seeking mentorship the next steps in their careers:</strong>
             </Text.Paragraph>
-            <div className="p-4 text-gray-500 rounded rounded-2 bg-gray-50">
+            <div className="p-4 mb-4 text-gray-500 rounded rounded-2 bg-gray-50">
               What current challenges are software developers experiencing in their careers?
             </div>
-            <div className="p-4 text-gray-500 rounded rounded-2 bg-gray-50">
+            <div className="p-4 mb-4 text-gray-500 rounded rounded-2 bg-gray-50">
               What are the favourite aspects of receiving mentorship for developers? What has previously worked well? 
             </div>
-            <div className="p-4 text-gray-500 rounded rounded-2 bg-gray-50">
+            <div className="p-4 mb-4 text-gray-500 rounded rounded-2 bg-gray-50">
               What are the least favourite aspects of being matched with a mentor? What could be improved?
             </div>
-            <div className="p-4 text-gray-500 rounded rounded-2 bg-gray-50">
+            <div className="p-4 mb-4 text-gray-500 rounded rounded-2 bg-gray-50">
               What are the goals of developers seeking mentorship?
             </div>
           </Box>
@@ -144,7 +144,38 @@ export default function project() {
           I conducted a competitive market analysis to reflect the synthesized user research findings to other competitors.
         </Text.Paragraph>
       </Container>
-      
+      <Container bg="black">
+        <FlexBox>
+          <Box>
+            <Text.Heading as="h2" variant="eyebrow" color="white">
+              Market analysis
+            </Text.Heading>
+            <Text.Heading as="h3" variant="h2" color="white">
+              Comparing the Competitors
+            </Text.Heading>
+          </Box>
+          <Box>
+            <Text.Paragraph variant="bodyLg" color="primary">
+              How did my research lead us to the solution?
+            </Text.Paragraph>
+            <Text.Paragraph variant="bodyLg" color="white">
+              The insights from my user research and the notable patterns I took away from the competitive analysis, helped us to identify differentiated values that informed the decision to prioritize the product to offer the following features:
+            </Text.Paragraph>
+            <img className="" src="/assets/raise-dev/statistics.svg" alt="white boxes with statistics"/>
+            <Text.Paragraph variant="bodySm" color="white">
+              <a href="https://www.statista.com/statistics/627312/worldwide-developer-population/" target="_blank">
+                Source: Statista
+              </a>
+            </Text.Paragraph>
+            <Text.Paragraph variant="bodyLg" color="primary">
+              The digital opportunity ahead
+            </Text.Paragraph>
+            <Text.Paragraph variant="body" color="white">
+              With the increasingly exponential growth in this field, these numbers represent the opportunity for a digital space to provide the in demand mentorship that’s on demand, and this is Raise.dev’s mission to serve these customers globally. 
+            </Text.Paragraph>
+          </Box>
+        </FlexBox>
+      </Container>
       <ContainerOld>
         <div className="w-3/4 mx-auto xs:w-full">
           <Animate>
